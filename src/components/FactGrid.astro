@@ -1,0 +1,18 @@
+---
+// 4er-Faktenraster (Distanz, Höhenmeter ...).
+interface Props {
+  facts: { k: string; v: string }[];
+}
+const { facts } = Astro.props;
+---
+
+<div class="facts">
+  {
+    facts.map((f) => (
+      <div class="fact">
+        <div class="k">{f.k}</div>
+        <div class="v">{f.v}</div>
+      </div>
+    ))
+  }
+</div>

@@ -1,0 +1,26 @@
+---
+// Pill-Tabs (Ausruestungs-Kategorien, Versicherungs-Sparten).
+export interface Pill {
+  label: string;
+  href?: string;
+  on?: boolean;
+}
+interface Props {
+  items: Pill[];
+}
+const { items } = Astro.props;
+---
+
+<div class="pills">
+  {
+    items.map((p) =>
+      p.href ? (
+        <a href={p.href} class={p.on ? 'on' : undefined}>
+          {p.label}
+        </a>
+      ) : (
+        <a class={p.on ? 'on' : undefined}>{p.label}</a>
+      )
+    )
+  }
+</div>

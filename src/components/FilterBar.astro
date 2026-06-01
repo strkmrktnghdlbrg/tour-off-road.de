@@ -1,0 +1,28 @@
+---
+// Filterleiste (Listing). Statische Chips + Ergebniszahl (Filterung = Folge-Agent/JS).
+export interface FilterGroup {
+  label: string;
+  chips: { label: string; on?: boolean }[];
+}
+interface Props {
+  groups: FilterGroup[];
+  resultCount?: string; // z.B. "240 Routen"
+}
+const { groups, resultCount } = Astro.props;
+---
+
+<div class="filterbar">
+  {
+    groups.map((g, gi) => (
+      <>
+        <span class="filter-label" style={gi > 0 ? 'margin-left:16px' : undefined}>
+          {g.label}
+        </span>
+        {g.chips.map((c) => (
+          <button class={c.on ? 'filter-chip on' : 'filter-chip'}>{c.label}</button>
+        ))}
+      </>
+    ))
+  }
+  {resultCount && <span class="result-count">{resultCount}</span>}
+</div>

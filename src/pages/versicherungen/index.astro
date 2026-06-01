@@ -1,0 +1,108 @@
+---
+import Base from '../../layouts/Base.astro';
+import Announce from '../../components/Announce.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import Pills from '../../components/Pills.astro';
+import CompareTable from '../../components/CompareTable.astro';
+import QABlock from '../../components/QABlock.astro';
+import MagCard from '../../components/MagCard.astro';
+
+// Seed-Daten inline (Versicherungen sind keine Content-Collection).
+const pills = [
+  { label: 'Auslandskranken', on: true },
+  { label: 'Langzeit' },
+  { label: 'Gruppen' },
+  { label: 'Reiserücktritt' },
+  { label: 'Gepäck' },
+];
+
+const rows = [
+  { provider: 'HanseMerkur Langzeit', cells: ['weltweit, bis 5 J.', 'medizinisch sinnvoll'], rating: '4,8 ★', href: '#' },
+  { provider: 'ADAC Ambulant Welt', cells: ['weltweit, 1 J.', 'inklusive'], rating: '4,6 ★', href: '#' },
+  { provider: 'Hep Young Travel', cells: ['weltweit, 364 Tage', 'inklusive'], rating: '4,5 ★', href: '#' },
+  { provider: 'Würzburger Reise', cells: ['Europa + Nordafrika', 'optional'], rating: '4,3 ★', href: '#' },
+  { provider: 'Care Concept Care', cells: ['weltweit, flexibel', 'inklusive'], rating: '4,2 ★', href: '#' },
+];
+
+const faqs = [
+  {
+    q: 'Reicht meine normale Reisekrankenversicherung für eine Offroad-Tour?',
+    a: 'Meist nicht. Standardtarife schließen abgelegene Regionen, lange Aufenthalte (über 56 Tage) und „gefährliche" Aktivitäten oft aus. Für Overland-Touren brauchst du einen Langzeit- oder Weltreise-Tarif mit explizitem Rücktransport.',
+  },
+  {
+    q: 'Was kostet eine Langzeit-Auslandskrankenversicherung?',
+    a: 'Für eine Person liegen gute Tarife bei rund 40–75 € pro Monat, je nach Alter, Reisedauer und Selbstbeteiligung. Familientarife sind günstiger pro Kopf.',
+  },
+  {
+    q: 'Ist mein Fahrzeug über die Reiseversicherung mitversichert?',
+    a: 'Nein. Personen- und Fahrzeugschutz sind getrennt. Für das Fahrzeug brauchst du eine separate Kfz-Auslandsdeckung bzw. die Grüne Karte plus ggf. Carnet de Passages.',
+  },
+];
+
+const ratgeber = [
+  { href: '/magazin/suedafrika-outdoor-abenteuer/', hero: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=700&q=70', category: 'Versicherung', title: 'Langzeitreise-Versicherung: Langzeitaufenthalte absichern' },
+  { href: '/magazin/suedafrika-outdoor-abenteuer/', hero: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=700&q=70', category: 'Versicherung', title: 'Gruppenreisen-Versicherung: Gruppen sicher unterwegs' },
+  { href: '/magazin/suedafrika-outdoor-abenteuer/', hero: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=700&q=70', category: 'Versicherung', title: 'Reisegepäck-Versicherung: Wertgegenstände auf Reisen sichern' },
+];
+---
+
+<Base
+  title="Reiseversicherungen für Overlander im Vergleich - tour-off-road.de"
+  description="Auslandskranken-, Reiserücktritts- und Langzeit-Versicherungen speziell für Offroad-Reisende verglichen."
+  path="/versicherungen/"
+>
+  <Announce />
+  <Header active="versicherungen" />
+
+  <Breadcrumb items={[{ label: 'Start', href: '/' }, { label: 'Versicherungen' }]} />
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Vergleich 2026</p>
+      <h1>Abgesichert auf jeder Piste.</h1>
+      <p>
+        Auslandskranken-, Reiserücktritts- und Langzeit-Versicherungen - speziell für
+        Offroad-Reisende verglichen. Welcher Schutz wirklich zählt, wenn die nächste Klinik
+        400 km entfernt ist.
+      </p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <Pills items={pills} />
+  </div>
+
+  <section class="section tight" style="padding-top:0">
+    <div class="wrap">
+      <CompareTable headCols={['Geltungsbereich', 'Rücktransport']} rows={rows} />
+      <p class="muted" style="font-size:13px;text-align:center;margin-top:20px">
+        Tarifdaten sind Beispielwerte für das Mockup · Verlinkungen sind
+        Affiliate-/Partner-Links.
+      </p>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="wrap">
+      <QABlock eyebrow="Häufige Fragen" items={faqs} />
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Alle Versicherungs-Ratgeber</p>
+          <h2>Tiefer einsteigen</h2>
+        </div>
+      </div>
+      <div class="mag-grid">
+        {ratgeber.map((r) => <MagCard {...r} />)}
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Base>

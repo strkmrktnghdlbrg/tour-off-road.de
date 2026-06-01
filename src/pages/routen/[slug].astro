@@ -1,0 +1,157 @@
+---
+import { getCollection, render } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Base from '../../layouts/Base.astro';
+import Announce from '../../components/Announce.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import FactGrid from '../../components/FactGrid.astro';
+import StageList from '../../components/StageList.astro';
+import QABlock from '../../components/QABlock.astro';
+import AsideCard from '../../components/AsideCard.astro';
+import RouteCard from '../../components/RouteCard.astro';
+
+export const getStaticPaths = (async () => {
+  const routen = await getCollection('routen');
+  return routen.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+const d = entry.data;
+const { Content } = await render(entry);
+
+const difficultyBadge: Record<string, string> = {
+  leicht: 'badge easy',
+  mittel: 'badge mid',
+  schwer: 'badge hard',
+};
+const difficultyLabel: Record<string, string> = {
+  leicht: 'Leicht',
+  mittel: 'Mittel',
+  schwer: 'Schwer',
+};
+
+// Reiseziel-Titel fuer Breadcrumb/Aside.
+const ziele = await getCollection('reiseziele');
+const region = ziele.find((z) => z.data.slug === d.region);
+const regionTitle = region?.data.title.split(':')[0] ?? d.region;
+
+// Aehnliche Routen aus related-Slugs (Selbstreferenz wird gefiltert).
+const allRoutes = await getCollection('routen');
+const related = d.related
+  .filter((slug) => slug !== d.slug)
+  .map((slug) => allRoutes.find((r) => r.data.slug === slug))
+  .filter((r): r is (typeof allRoutes)[number] => Boolean(r));
+
+const facts = [
+  { k: 'Distanz', v: `${d.distanceKm.toLocaleString('de-DE')} km` },
+  { k: 'Höhenmeter', v: `${d.elevationM.toLocaleString('de-DE')} hm` },
+  { k: 'Dauer', v: `${d.days} Tage` },
+  { k: 'Beste Zeit', v: d.bestSeason },
+];
+---
+
+<Base title={`${d.title} - Route - tour-off-road.de`} description={d.excerpt} image={d.hero} path={`/routen/${d.slug}/`}>
+  <Announce />
+  <Header active="routen" />
+
+  <Breadcrumb
+    items={[
+      { label: 'Start', href: '/' },
+      { label: 'Routen', href: '/routen/' },
+      { label: regionTitle, href: `/reiseziele/${d.region}/` },
+      { label: d.title.split(':')[0] },
+    ]}
+  />
+
+  <section class="page-hero" style="padding-bottom:20px">
+    <div class="wrap">
+      <div style="display:flex;gap:8px;margin-bottom:14px">
+        <span class={difficultyBadge[d.difficulty]}>{difficultyLabel[d.difficulty]}</span>
+        <span class="badge">{d.days} Tage</span>
+        <span class="badge">{d.vehicle}</span>
+      </div>
+      <h1>{d.title}</h1>
+      <p>{d.excerpt}</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="gallery">
+      <div class="g main" style={`background-image:url('${d.hero}')`}></div>
+      {d.gallery.slice(0, 2).map((g) => <div class="g" style={`background-image:url('${g}')`}></div>)}
+    </div>
+  </div>
+
+  <section class="section" style="padding-top:40px">
+    <div class="wrap layout-aside">
+      <div>
+        <FactGrid facts={facts} />
+
+        <div class="prose">
+          <Content />
+
+          <h2>Etappen</h2>
+          <StageList stages={d.stages} />
+
+          <h2>Benötigte Ausrüstung</h2>
+          <ul>
+            {d.gearNeeded.map((g) => <li set:html={g.replace(/^([^-]+) -/, '<strong>$1</strong> -')} />)}
+          </ul>
+        </div>
+
+        {d.faqs.length > 0 && <QABlock items={d.faqs} />}
+      </div>
+
+      <aside>
+        <AsideCard title="Diese Route" subtitle="GPX-Track + Roadbook">
+          <a href="#" class="btn btn-primary">GPX herunterladen</a>
+          <a href="#" class="btn btn-ghost">Route auf Karte öffnen</a>
+          <div style="border-top:1px solid var(--stone);margin:20px 0 16px"></div>
+          <div style="display:flex;flex-direction:column;gap:12px;font-size:14px">
+            <div style="display:flex;justify-content:space-between"><span class="muted">Schwierigkeit</span><span class={difficultyBadge[d.difficulty]}>{difficultyLabel[d.difficulty]}</span></div>
+            <div style="display:flex;justify-content:space-between"><span class="muted">Terrain</span><b>{d.terrain.join(' · ')}</b></div>
+            <div style="display:flex;justify-content:space-between"><span class="muted">Fahrzeug</span><b>{d.vehicle}</b></div>
+            <div style="display:flex;justify-content:space-between"><span class="muted">Tankstellen</span><b>{d.fuelAvailability}</b></div>
+            <div style="display:flex;justify-content:space-between"><span class="muted">Reiseziel</span><a href={`/reiseziele/${d.region}/`} style="color:var(--blaze);font-weight:700">{regionTitle} →</a></div>
+          </div>
+          <div style="border-top:1px solid var(--stone);margin:16px 0"></div>
+          <div class="price-line" style="margin:0 0 10px">Passend versichern?</div>
+          <a href="/versicherungen/" class="btn btn-ghost">Versicherungs-Vergleich</a>
+        </AsideCard>
+      </aside>
+    </div>
+  </section>
+
+  {
+    related.length > 0 && (
+      <section class="section tight">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Auch interessant</p>
+              <h2>Ähnliche Routen</h2>
+            </div>
+          </div>
+          <div class="route-grid">
+            {related.map((r) => (
+              <RouteCard
+                href={`/routen/${r.data.slug}/`}
+                hero={r.data.hero}
+                title={r.data.title.split(':')[0]}
+                difficulty={r.data.difficulty}
+                meta={[`📏 ${r.data.distanceKm.toLocaleString('de-DE')} km`, `🗓️ ${r.data.bestSeason}`]}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <Footer />
+</Base>

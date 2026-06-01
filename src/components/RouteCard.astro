@@ -1,0 +1,47 @@
+---
+// Routen-Kachel. Difficulty steuert das Badge.
+interface Props {
+  href: string;
+  hero: string;
+  title: string;
+  excerpt?: string;
+  difficulty?: 'leicht' | 'mittel' | 'schwer';
+  days?: number;
+  /** freie Meta-Eintraege, z.B. ["📏 410 km", "⛰️ 2.260 hm", "🗓️ Apr–Okt"] */
+  meta?: string[];
+}
+const { href, hero, title, excerpt, difficulty, days, meta = [] } = Astro.props;
+
+const badgeClass: Record<string, string> = {
+  leicht: 'badge easy',
+  mittel: 'badge mid',
+  schwer: 'badge hard',
+};
+const badgeLabel: Record<string, string> = {
+  leicht: 'Leicht',
+  mittel: 'Mittel',
+  schwer: 'Schwer',
+};
+---
+
+<a href={href} class="route">
+  <div class="img" style={`background-image:url('${hero}')`}>
+    <div class="badges">
+      {difficulty && <span class={badgeClass[difficulty]}>{badgeLabel[difficulty]}</span>}
+      {days && <span class="badge">{days} Tage</span>}
+    </div>
+  </div>
+  <div class="body">
+    <h3>{title}</h3>
+    {excerpt && <p class="muted" style="font-size:14px">{excerpt}</p>}
+    {
+      meta.length > 0 && (
+        <div class="meta">
+          {meta.map((m) => (
+            <span>{m}</span>
+          ))}
+        </div>
+      )
+    }
+  </div>
+</a>

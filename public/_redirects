@@ -1,0 +1,36 @@
+# tour-off-road.de  WP -> Astro 301-Redirects (Netlify / Cloudflare Pages)
+# Format: <alt>  <neu>  <status>
+# Stand: 2026-06-01
+#
+# WICHTIG: Vier Legacy-URLs sind NICHT enthalten (bezahlte Gastbeitraege mit
+# kommerziellen dofollow-Backlinks). Diese muessen 1:1 unter ihrer alten URL
+# erhalten bleiben. Siehe MIGRATION.md, Abschnitt "MANUELL PRUEFEN".
+
+# --- Kategorie- / Themen-Seiten ---------------------------------------------
+/thema/ausruestung/        /ausruestung/    301
+/thema/versicherungen/     /versicherungen/ 301
+/thema/besondere-routen/   /routen/         301
+/thema/trekking/           /routen/         301
+/thema/abenteuer/          /magazin/        301
+/thema/urlaub/             /reiseziele/     301
+/thema/blog/               /magazin/        301
+
+# --- Statische Seiten -------------------------------------------------------
+/uber-uns/                 /ueber-uns/      301
+# /impressum/  und  /datenschutz/  bleiben unveraendert (kein Redirect noetig)
+
+# --- Einzel-Artikel (on-topic / unbedenklich) -------------------------------
+/suedafrikas-outdoor-abenteuer-kulturelle-schaetze/   /magazin/suedafrika-outdoor-abenteuer/   301
+/volvo-trucks-ruestet-fl-4x4-fuer-extreme-offroad-einsaetze-auf/   /magazin/volvo-fl-4x4-offroad/   301
+/was-du-ueber-offroad-trekking-wissen-musst/          /magazin/offroad-trekking-grundlagen/    301
+/offroad-trekking-mit-autos/                          /magazin/offroad-trekking-mit-autos/     301
+/wie-waehle-ich-das-richtige-auto-fuer-mich-aus/      /magazin/richtiges-offroad-fahrzeug-waehlen/   301
+
+# --- Versicherungs-Artikel -> Versicherungs-Cluster -------------------------
+/schuelerreisen-versicherung/    /versicherungen/   301
+/gruppenreisen-versicherung/     /versicherungen/   301
+/langzeitreise-versicherung/     /versicherungen/   301
+/reiseunfall-versicherung/       /versicherungen/   301
+/reisehaftpflicht-versicherung/  /versicherungen/   301
+/reisegepaeck-versicherung/      /versicherungen/   301
+/reisekrankenversicherung/       /versicherungen/   301

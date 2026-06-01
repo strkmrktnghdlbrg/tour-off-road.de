@@ -1,0 +1,24 @@
+---
+// Breadcrumb. items: Kette aus {label, href?}. Letztes Item = aktuell (ohne href).
+export interface Crumb {
+  label: string;
+  href?: string;
+}
+interface Props {
+  items: Crumb[];
+}
+const { items } = Astro.props;
+---
+
+<div class="wrap">
+  <div class="crumb">
+    {
+      items.map((c, i) => (
+        <>
+          {c.href ? <a href={c.href}>{c.label}</a> : <span>{c.label}</span>}
+          {i < items.length - 1 && <span>/</span>}
+        </>
+      ))
+    }
+  </div>
+</div>

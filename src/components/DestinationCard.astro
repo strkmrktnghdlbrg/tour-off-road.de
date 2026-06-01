@@ -1,0 +1,20 @@
+---
+// Reiseziel-Kachel (Hochformat oder 4:3 via ratio-Prop).
+interface Props {
+  href: string;
+  hero: string;
+  title: string;
+  sub?: string;
+  /** "portrait" (3:4, dunkles Band) oder "wide" (4:3, Listing) */
+  ratio?: 'portrait' | 'wide';
+}
+const { href, hero, title, sub, ratio = 'portrait' } = Astro.props;
+const style =
+  ratio === 'wide'
+    ? `aspect-ratio:4/3;background-image:url('${hero}')`
+    : `background-image:url('${hero}')`;
+---
+
+<a href={href} class="dest" style={style}>
+  <div class="label">{title}{sub && <small>{sub}</small>}</div>
+</a>

@@ -1,0 +1,45 @@
+---
+// Versicherungs-Vergleichstabelle.
+export interface CompareCol {
+  label: string;
+  /** versteckt auf Mobile (.hide) */
+  hide?: boolean;
+}
+export interface CompareRow {
+  provider: string;
+  /** Werte in Reihenfolge der "hide"-Spalten (Geltungsbereich, Rücktransport ...) */
+  cells: string[];
+  rating: string; // z.B. "4,8 ★"
+  href: string;
+}
+
+interface Props {
+  /** Kopf-Labels fuer die mittleren (ausblendbaren) Spalten */
+  headCols: string[];
+  rows: CompareRow[];
+}
+const { headCols, rows } = Astro.props;
+---
+
+<div class="compare">
+  <div class="compare-row head">
+    <span>Anbieter</span>
+    {headCols.map((c) => <span class="hide">{c}</span>)}
+    <span>Bewertung</span>
+    <span></span>
+  </div>
+  {
+    rows.map((r) => (
+      <div class="compare-row">
+        <span class="prov">{r.provider}</span>
+        {r.cells.map((cell) => (
+          <span class="hide">{cell}</span>
+        ))}
+        <span class="stars">{r.rating}</span>
+        <a href={r.href} class="btn btn-primary btn-sm">
+          Zum Tarif
+        </a>
+      </div>
+    ))
+  }
+</div>

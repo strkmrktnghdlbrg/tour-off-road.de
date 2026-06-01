@@ -1,0 +1,78 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Announce from '../../components/Announce.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import FilterBar from '../../components/FilterBar.astro';
+import RouteCard from '../../components/RouteCard.astro';
+
+const routen = await getCollection('routen');
+
+// Zusatz-Demo-Kacheln aus dem Mockup (kommen via Content-Agent als echte Eintraege nach).
+const demoRoutes = [
+  { href: '/routen/atlas-ueberquerung-marokko/', hero: 'https://images.unsplash.com/photo-1500534623283-312aade485b7?w=800&q=70', title: 'Erg Chebbi Dünen-Loop', excerpt: 'Weicher Sand, Reifendruck-Spiel und Sternenhimmel in der Sahara.', difficulty: 'mittel' as const, days: 4, meta: ['📏 280 km', '🏜️ Sand', '🗓️ Okt–Apr'] },
+  { href: '/routen/atlas-ueberquerung-marokko/', hero: 'https://images.unsplash.com/photo-1454942901704-3c44c11b2ad1?w=800&q=70', title: 'Westfjorde-Schleife, Island', excerpt: 'Einsame Schotterküsten, Steilpässe und kaum Tankstellen.', difficulty: 'schwer' as const, days: 6, meta: ['📏 520 km', '⛽ selten', '🗓️ Jul–Aug'] },
+  { href: '/routen/atlas-ueberquerung-marokko/', hero: 'https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=800&q=70', title: 'Karpaten-Forstwege, Rumänien', excerpt: 'Bären-Land, breite Schotterpisten und die Transrarău.', difficulty: 'leicht' as const, days: 2, meta: ['📏 190 km', '🌲 Wald', '🗓️ Mai–Okt'] },
+];
+
+const filterGroups = [
+  { label: 'Region', chips: [{ label: 'Alle', on: true }, { label: 'Marokko' }, { label: 'Island' }, { label: 'Alpen' }, { label: 'Balkan' }] },
+  { label: 'Schwierigkeit', chips: [{ label: 'Leicht' }, { label: 'Mittel' }, { label: 'Schwer' }] },
+];
+---
+
+<Base
+  title="Offroad-Routen - tour-off-road.de"
+  description="240 kuratierte Offroad-Strecken mit Schwierigkeit, Terrain, bester Reisezeit und GPX-Track zum Download."
+  path="/routen/"
+>
+  <Announce />
+  <Header active="routen" />
+
+  <Breadcrumb items={[{ label: 'Start', href: '/' }, { label: 'Routen' }]} />
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">240 kuratierte Strecken</p>
+      <h1>Finde die Route, die zu deinem Fahrzeug passt.</h1>
+      <p>
+        Jede Strecke wurde selbst gefahren und bewertet - mit Schwierigkeit, Terrain,
+        bester Reisezeit und GPX-Track zum Download. Filtere nach dem, was dir wichtig ist.
+      </p>
+    </div>
+  </section>
+
+  <FilterBar groups={filterGroups} resultCount="240 Routen" />
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="route-grid">
+        {
+          routen.map((r) => (
+            <RouteCard
+              href={`/routen/${r.data.slug}/`}
+              hero={r.data.hero}
+              title={r.data.title}
+              excerpt={r.data.excerpt}
+              difficulty={r.data.difficulty}
+              days={r.data.days}
+              meta={[
+                `📏 ${r.data.distanceKm.toLocaleString('de-DE')} km`,
+                `⛰️ ${r.data.elevationM.toLocaleString('de-DE')} hm`,
+                `🗓️ ${r.data.bestSeason}`,
+              ]}
+            />
+          ))
+        }
+        {demoRoutes.map((r) => <RouteCard {...r} />)}
+      </div>
+      <div style="text-align:center;margin-top:40px">
+        <a href="#" class="btn btn-ghost">Weitere Routen laden</a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Base>

@@ -1,0 +1,114 @@
+---
+import { getCollection, render } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Base from '../../layouts/Base.astro';
+import Announce from '../../components/Announce.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import FactGrid from '../../components/FactGrid.astro';
+import QABlock from '../../components/QABlock.astro';
+import AsideCard from '../../components/AsideCard.astro';
+import RouteCard from '../../components/RouteCard.astro';
+
+export const getStaticPaths = (async () => {
+  const ziele = await getCollection('reiseziele');
+  return ziele.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+const d = entry.data;
+const { Content } = await render(entry);
+
+const heroStyle = `background-image:linear-gradient(rgba(27,24,20,.55),rgba(27,24,20,.75)),url('${d.hero}');background-size:cover;background-position:center`;
+
+const allRoutes = await getCollection('routen');
+const topRoutes = d.topRoutes
+  .map((slug) => allRoutes.find((r) => r.data.slug === slug))
+  .filter((r): r is (typeof allRoutes)[number] => Boolean(r));
+---
+
+<Base title={`${d.title.split(':')[0]} offroad - Reiseziel - tour-off-road.de`} description={d.excerpt} image={d.hero} path={`/reiseziele/${d.slug}/`}>
+  <Announce />
+  <Header active="reiseziele" />
+
+  <Breadcrumb
+    items={[
+      { label: 'Start', href: '/' },
+      { label: 'Reiseziele', href: '/reiseziele/' },
+      { label: d.title.split(':')[0] },
+    ]}
+  />
+
+  <div class="wrap">
+    <div class="page-hero on-dark" style={heroStyle}>
+      <p class="eyebrow" style="color:var(--blaze)">{d.continent} · {d.routesCount} Routen</p>
+      <h1>{d.title}</h1>
+      <p>{d.excerpt}</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <FactGrid facts={d.facts} />
+
+      <div class="layout-aside">
+        <div class="prose">
+          <Content />
+        </div>
+
+        <aside>
+          <AsideCard title={`${d.title.split(':')[0]}-Tour planen`} subtitle="In 3 Schritten startklar">
+            <a href="/routen/" class="btn btn-primary">{d.routesCount} Routen ansehen</a>
+            <a href="/ausruestung/" class="btn btn-ghost">Packliste & Gear</a>
+            <a href="/versicherungen/" class="btn btn-ghost">Versicherung wählen</a>
+          </AsideCard>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  {
+    topRoutes.length > 0 && (
+      <section class="section tight">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Top-Routen in {d.title.split(':')[0]}</p>
+              <h2>Wo du starten solltest</h2>
+            </div>
+            <p>Von der einsteigerfreundlichen Wüstenrunde bis zur fordernden Gebirgsdurchquerung.</p>
+          </div>
+          <div class="route-grid">
+            {topRoutes.map((r) => (
+              <RouteCard
+                href={`/routen/${r.data.slug}/`}
+                hero={r.data.hero}
+                title={r.data.title.split(':')[0]}
+                excerpt={r.data.excerpt}
+                difficulty={r.data.difficulty}
+                days={r.data.days}
+                meta={[`📏 ${r.data.distanceKm.toLocaleString('de-DE')} km`, `🗓️ ${r.data.bestSeason}`]}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    d.faqs.length > 0 && (
+      <section class="section tight">
+        <div class="wrap">
+          <QABlock eyebrow={`${d.title.split(':')[0]} in Kürze`} items={d.faqs} />
+        </div>
+      </section>
+    )
+  }
+
+  <Footer />
+</Base>

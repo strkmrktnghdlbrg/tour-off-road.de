@@ -1,0 +1,108 @@
+---
+import { getCollection, render } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Base from '../../layouts/Base.astro';
+import Announce from '../../components/Announce.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import MagCard from '../../components/MagCard.astro';
+
+export const getStaticPaths = (async () => {
+  const posts = await getCollection('magazin');
+  return posts.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+const d = entry.data;
+const { Content } = await render(entry);
+
+const dateStr = d.date.toLocaleDateString('de-DE', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+
+// Weiterlesen: andere Posts (Demo-Fallback aus dem Mockup, falls nur 1 Seed vorhanden).
+const others = (await getCollection('magazin')).filter((p) => p.data.slug !== d.slug);
+const more = [
+  ...others.map((p) => ({
+    href: `/magazin/${p.data.slug}/`,
+    hero: p.data.hero,
+    category: p.data.category,
+    title: p.data.title,
+  })),
+  { href: '/magazin/suedafrika-outdoor-abenteuer/', hero: 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=700&q=70', category: 'Fahrzeuge', title: 'Volvo FL 4×4 für extreme Offroad-Einsätze' },
+  { href: '/magazin/suedafrika-outdoor-abenteuer/', hero: 'https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?w=700&q=70', category: 'Ratgeber', title: 'Reifendruck im Gelände: die Faustregeln' },
+  { href: '/reiseziele/marokko/', hero: 'https://images.unsplash.com/photo-1489493887464-892be6d1daae?w=700&q=70', category: 'Reiseziel', title: 'Marokko: das Offroad-Paradies vor der Haustür' },
+].slice(0, 3);
+---
+
+<Base title={`${d.title} - Magazin - tour-off-road.de`} description={d.excerpt} image={d.hero} path={`/magazin/${d.slug}/`}>
+  <Announce />
+  <Header active="magazin" />
+
+  <Breadcrumb
+    items={[
+      { label: 'Start', href: '/' },
+      { label: 'Magazin', href: '/magazin/' },
+      { label: d.category },
+    ]}
+  />
+
+  <article>
+    <section class="page-hero" style="padding-bottom:16px">
+      <div class="wrap" style="max-width:760px;margin:0 auto">
+        <span class="eyebrow" style="color:var(--blaze)">{d.category} · {d.cluster}</span>
+        <h1 style="margin-top:10px">{d.title}</h1>
+        <div class="byline">
+          <div class="av"></div>
+          <div>Von <b>{d.author}</b> · {dateStr} · {d.readMinutes} Min. Lesezeit</div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="g" style={`height:440px;border-radius:var(--radius);background-image:url('${d.hero}');background-size:cover;background-position:center`}></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:40px">
+      <div class="wrap">
+        <div class="prose" style="margin:0 auto">
+          <Content />
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <section class="section tight">
+    <div class="wrap">
+      <div class="card-blaze" style="text-align:center">
+        <h3 style="max-width:20ch;margin:0 auto 10px">Planst du selbst eine Fernreise?</h3>
+        <p style="max-width:48ch;margin:0 auto 20px">
+          Vergleich der Auslandskrankenversicherungen mit Rücktransport - speziell für lange
+          Overland-Touren.
+        </p>
+        <a href="/versicherungen/" class="btn btn-ghost">Zum Versicherungs-Vergleich</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Weiterlesen</p>
+          <h2>Mehr aus dem Magazin</h2>
+        </div>
+      </div>
+      <div class="mag-grid">
+        {more.map((m) => <MagCard {...m} />)}
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Base>

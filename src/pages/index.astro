@@ -1,0 +1,211 @@
+---
+import Base from '../layouts/Base.astro';
+import Announce from '../components/Announce.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import RouteCard from '../components/RouteCard.astro';
+import DestinationCard from '../components/DestinationCard.astro';
+import MagCard from '../components/MagCard.astro';
+import CompareTable from '../components/CompareTable.astro';
+import CtaBand from '../components/CtaBand.astro';
+
+const heroRoutes = [
+  {
+    href: '/routen/atlas-ueberquerung-marokko/',
+    hero: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=70',
+    title: 'Atlas-Überquerung, Marokko',
+    excerpt: 'Hochgebirgspisten, Berber-Dörfer und der Tizi-n-Tichka-Pass.',
+    difficulty: 'schwer' as const,
+    days: 5,
+    meta: ['📏 410 km', '⛰️ 2.260 hm', '🗓️ Apr–Okt'],
+  },
+  {
+    href: '/routen/atlas-ueberquerung-marokko/',
+    hero: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=70',
+    title: 'Highland-Piste F26, Island',
+    excerpt: 'Furten, Lavafelder und die Sprengisandur-Hochebene.',
+    difficulty: 'mittel' as const,
+    days: 3,
+    meta: ['📏 230 km', '🌊 7 Furten', '🗓️ Jul–Sep'],
+  },
+  {
+    href: '/routen/atlas-ueberquerung-marokko/',
+    hero: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800&q=70',
+    title: 'Transalp-Schotter, Westalpen',
+    excerpt: 'Einsteiger-freundliche Militärstraßen mit Panorama-Garantie.',
+    difficulty: 'leicht' as const,
+    days: 2,
+    meta: ['📏 165 km', '⛰️ 1.900 hm', '🗓️ Jun–Sep'],
+  },
+];
+
+const destinations = [
+  { href: '/reiseziele/marokko/', hero: 'https://images.unsplash.com/photo-1489493887464-892be6d1daae?w=600&q=70', title: 'Marokko', sub: '38 Routen' },
+  { href: '/reiseziele/', hero: 'https://images.unsplash.com/photo-1504218817471-3a4dd4758fc0?w=600&q=70', title: 'Island', sub: '21 Routen' },
+  { href: '/reiseziele/', hero: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=70', title: 'Balkan', sub: '29 Routen' },
+  { href: '/reiseziele/', hero: 'https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=600&q=70', title: 'Südafrika', sub: '17 Routen' },
+];
+
+const insuranceRows = [
+  { provider: 'HanseMerkur', cells: ['Langzeit', 'bis 5 Jahre'], rating: '4,8 ★', href: '/versicherungen/' },
+  { provider: 'ADAC Ambulant', cells: ['Welt', 'inkl. Rücktransport'], rating: '4,6 ★', href: '/versicherungen/' },
+  { provider: 'Hep Young Travel', cells: ['Gruppen', 'bis 364 Tage'], rating: '4,5 ★', href: '/versicherungen/' },
+];
+
+const magPosts = [
+  { href: '/magazin/suedafrika-outdoor-abenteuer/', hero: 'https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=700&q=70', category: 'Reise', title: 'Südafrikas Outdoor-Abenteuer & kulturelle Schätze', excerpt: 'Von der Garden Route bis in die Karoo - vier Wochen im Allrad.' },
+  { href: '/magazin/suedafrika-outdoor-abenteuer/', hero: 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=700&q=70', category: 'Fahrzeuge', title: 'Volvo FL 4×4 für extreme Offroad-Einsätze', excerpt: 'Was der Truck-Umbau für Expeditionen taugt.' },
+  { href: '/magazin/suedafrika-outdoor-abenteuer/', hero: 'https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?w=700&q=70', category: 'Ratgeber', title: 'Reifendruck im Gelände: die Faustregeln', excerpt: 'Sand, Schlamm, Fels - wann du Luft ablässt und wie viel.' },
+];
+---
+
+<Base
+  title="tour-off-road.de - Offroad-Routen, Reiseziele & Ausrüstung"
+  path="/"
+>
+  <Announce />
+  <Header active={null} />
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Offroad · Overland · Abenteuer-Reisen</p>
+      <h1 style="margin-top:18px">Wo die <em>Straße</em> aufhört, fängt deine Tour an.</h1>
+      <p class="lead">
+        Kuratierte Offroad-Routen mit GPX-Track, Schwierigkeit und beste Reisezeit. Plus
+        ehrliche Ausrüstungs-Tests und der passende Versicherungs-Vergleich für jede
+        Expedition.
+      </p>
+      <div class="hero-cta">
+        <a href="/routen/" class="btn btn-primary">Routen entdecken</a>
+        <a href="/ausruestung/" class="btn btn-ghost">Ausrüstungs-Guide</a>
+      </div>
+      <div class="searchbar">
+        <div class="field"><div class="lbl">Region</div><div class="val">Marokko</div></div>
+        <div class="field"><div class="lbl">Terrain</div><div class="val">Wüste & Piste</div></div>
+        <div class="field"><div class="lbl">Schwierigkeit</div><div class="val">Mittel</div></div>
+        <a href="/routen/" class="btn btn-primary">Suchen</a>
+      </div>
+      <div class="hero-chips">
+        <div class="chip"><b>240+</b> Routen</div>
+        <div class="chip"><b>32</b> Länder</div>
+        <div class="chip"><b>180</b> Gear-Tests</div>
+        <div class="chip"><b>GPX</b> zum Download</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="logos">
+    <div class="wrap logos-row">
+      <span>OVERLAND JOURNAL</span><span>4×4 ABENTEUER</span><span>EXPEDITION PORTAL</span><span>CAMPER WEEKLY</span><span>ALLRAD MAGAZIN</span>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div><p class="eyebrow">Beliebte Routen</p><h2>Strecken, die sich lohnen</h2></div>
+        <p>
+          Jede Route mit Distanz, Fahrzeit, Terrain-Profil und bester Saison.
+          Difficulty-Badge zeigt auf einen Blick, was dich erwartet.
+        </p>
+      </div>
+      <div class="route-grid">
+        {heroRoutes.map((r) => <RouteCard {...r} />)}
+      </div>
+      <div style="text-align:center;margin-top:32px">
+        <a href="/routen/" class="btn btn-ghost">Alle 240 Routen ansehen</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" style="color:var(--blaze)">Reiseziele</p>
+          <h2>Such dir dein Terrain</h2>
+        </div>
+        <p>
+          Länder-Hubs mit Routen, Einreise-Infos, Tankstellen-Dichte und der Frage, die
+          wirklich zählt: Wann ist die beste Reisezeit?
+        </p>
+      </div>
+      <div class="dest-grid">
+        {destinations.map((d) => <DestinationCard {...d} ratio="portrait" />)}
+      </div>
+      <div style="text-align:center;margin-top:32px">
+        <a href="/reiseziele/" class="btn btn-ghost-light">Alle 32 Reiseziele</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div><p class="eyebrow">Ausrüstung</p><h2>Getestet, nicht nur verlinkt</h2></div>
+        <p>
+          Wir fahren das Gear selbst. Affiliate-Empfehlungen nur, wenn sie den Härtetest
+          bestehen.
+        </p>
+      </div>
+      <div class="split">
+        <a href="/ausruestung/" class="card-blaze" style="display:block">
+          <h3>Recovery-Set des Jahres</h3>
+          <p>
+            Bergegurt, Schäkel, Sandbleche und Kompressor - das Setup, das uns aus jedem
+            Loch geholt hat.
+          </p>
+          <div class="gear-list">
+            <div class="gear-item"><span>Maxtrax MKII Sandbleche</span><span class="price">ab 249 €</span></div>
+            <div class="gear-item"><span>ARB Bergegurt 8t</span><span class="price">ab 79 €</span></div>
+            <div class="gear-item"><span>VIAIR 88P Kompressor</span><span class="price">ab 119 €</span></div>
+          </div>
+        </a>
+        <a href="/ausruestung/" class="card-dark" style="display:block">
+          <h3>Camp & Schlafen</h3>
+          <p>
+            Vom Dachzelt bis zur Camp-Küche - was den Trip komfortabel macht, ohne den
+            Kofferraum zu sprengen.
+          </p>
+          <div class="gear-list">
+            <div class="gear-item"><span>iKamper Skycamp Dachzelt</span><span class="price">ab 3.499 €</span></div>
+            <div class="gear-item"><span>Petromax Feuertopf ft6</span><span class="price">ab 89 €</span></div>
+            <div class="gear-item"><span>Dometic CFX3 Kühlbox</span><span class="price">ab 829 €</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--parchment)">
+    <div class="wrap">
+      <div class="section-head">
+        <div><p class="eyebrow">Versicherungen</p><h2>Abgesichert auf jeder Piste</h2></div>
+        <p>
+          Reise- und Auslandskrankenversicherungen im Vergleich - für Langzeit-Overlander
+          und das Wochenend-Abenteuer.
+        </p>
+      </div>
+      <CompareTable headCols={['Tarif', 'Auslandsschutz']} rows={insuranceRows} />
+      <div style="text-align:center;margin-top:32px">
+        <a href="/versicherungen/" class="btn btn-ghost">Alle Versicherungen vergleichen</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div><p class="eyebrow">Magazin</p><h2>Geschichten von der Strecke</h2></div>
+        <p>Trip-Reports, Fahrzeug-News und Wissen aus der Community.</p>
+      </div>
+      <div class="mag-grid">
+        {magPosts.map((m) => <MagCard {...m} />)}
+      </div>
+    </div>
+  </section>
+
+  <CtaBand />
+
+  <Footer />
+</Base>

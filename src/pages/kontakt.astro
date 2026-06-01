@@ -1,0 +1,199 @@
+---
+import Base from '../layouts/Base.astro';
+import Announce from '../components/Announce.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+
+const reasons = [
+  { k: 'Trip-Report einreichen', v: 'Du warst auf einer Tour, die hier fehlt? Schick uns Strecke, GPX und Fotos.' },
+  { k: 'Korrektur melden', v: 'Daten veraltet oder eine Piste gesperrt? Sag Bescheid, wir aktualisieren.' },
+  { k: 'Kooperation & Presse', v: 'Marken, Veranstalter und Medien erreichen uns über das Formular.' },
+];
+---
+
+<Base
+  title="Kontakt - tour-off-road.de"
+  description="Schreib dem Team von tour-off-road.de: für Trip-Reports, Korrekturen, Kooperationen oder einfach Feedback aus der Community."
+  path="/kontakt/"
+>
+  <Announce />
+  <Header active={null} />
+
+  <Breadcrumb items={[{ label: 'Start', href: '/' }, { label: 'Kontakt' }]} />
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Kontakt</p>
+      <h1>Melde dich. Wir antworten.</h1>
+      <p>
+        Ob Trip-Report, Korrektur oder Kooperationsanfrage: Schreib uns über das Formular.
+        In der Regel hörst du innerhalb von zwei Werktagen von uns.
+      </p>
+    </div>
+  </section>
+
+  <section class="section tight" style="padding-top:8px">
+    <div class="wrap">
+      <div class="contact-layout">
+        <div class="contact-form-card">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="b65f4e95-6ac7-4003-a46a-fe4e08b120e2" />
+            <input type="hidden" name="subject" value="Neue Nachricht über tour-off-road.de" />
+            <input type="hidden" name="from_name" value="tour-off-road.de Kontaktformular" />
+
+            <!-- Honeypot: fuer Bots sichtbar, fuer Menschen versteckt -->
+            <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" />
+
+            <div class="field-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Dein Name" />
+            </div>
+
+            <div class="field-group">
+              <label for="email">E-Mail</label>
+              <input type="email" id="email" name="email" required placeholder="du@beispiel.de" />
+            </div>
+
+            <div class="field-group">
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Worum geht es?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+              Nachricht senden
+            </button>
+            <p class="form-note muted">
+              Mit dem Absenden stimmst du der Verarbeitung deiner Angaben zur Bearbeitung
+              der Anfrage zu.
+            </p>
+          </form>
+        </div>
+
+        <aside class="contact-aside">
+          <h3>Wofür schreibst du uns?</h3>
+          <ul class="reason-list">
+            {
+              reasons.map((r) => (
+                <li>
+                  <b>{r.k}</b>
+                  <span>{r.v}</span>
+                </li>
+              ))
+            }
+          </ul>
+          <p class="muted aside-foot">
+            Für eine Tour-Planung musst du nicht schreiben: Starte direkt mit unserem
+            <a href="/reiseplanung/" style="color:var(--blaze);font-weight:700">Planungs-Guide</a>.
+          </p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Base>
+
+<style>
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 32px;
+    align-items: start;
+  }
+  @media (max-width: 900px) {
+    .contact-layout {
+      grid-template-columns: 1fr;
+    }
+  }
+  .contact-form-card {
+    background: var(--white);
+    border: 1px solid var(--stone);
+    border-radius: var(--radius);
+    padding: 32px;
+  }
+  .field-group {
+    margin-bottom: 20px;
+  }
+  .field-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--graphite);
+    margin-bottom: 8px;
+  }
+  .field-group input,
+  .field-group textarea {
+    width: 100%;
+    font-family: var(--font);
+    font-size: 16px;
+    color: var(--basalt);
+    background: var(--parchment);
+    border: 1px solid var(--stone);
+    border-radius: var(--radius-sm);
+    padding: 13px 16px;
+    transition: border-color 0.15s;
+  }
+  .field-group input:focus,
+  .field-group textarea:focus {
+    outline: none;
+    border-color: var(--blaze);
+  }
+  .field-group textarea {
+    resize: vertical;
+    line-height: 1.5;
+  }
+  .botcheck {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+  }
+  .form-note {
+    font-size: 13px;
+    margin-top: 14px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .contact-aside {
+    background: var(--parchment);
+    border: 1px solid var(--stone);
+    border-radius: var(--radius);
+    padding: 28px;
+    position: sticky;
+    top: 96px;
+  }
+  .contact-aside h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .reason-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .reason-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .reason-list b {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .reason-list span {
+    font-size: 14px;
+    color: var(--graphite);
+    line-height: 1.5;
+  }
+  .aside-foot {
+    font-size: 14px;
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid var(--stone);
+    line-height: 1.5;
+  }
+</style>

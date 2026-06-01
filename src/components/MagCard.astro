@@ -1,0 +1,20 @@
+---
+// Magazin-Kachel.
+interface Props {
+  href: string;
+  hero: string;
+  category: string;
+  title: string;
+  excerpt?: string;
+}
+const { href, hero, category, title, excerpt } = Astro.props;
+---
+
+<a href={href} class="mag">
+  <div class="img" style={`background-image:url('${hero}')`}></div>
+  <div class="body">
+    <span class="cat">{category}</span>
+    <h3>{title}</h3>
+    {excerpt && <p>{excerpt}</p>}
+  </div>
+</a>

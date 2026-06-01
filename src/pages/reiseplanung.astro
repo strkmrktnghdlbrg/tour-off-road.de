@@ -1,0 +1,241 @@
+---
+import Base from '../layouts/Base.astro';
+import Announce from '../components/Announce.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import QABlock from '../components/QABlock.astro';
+import CtaBand from '../components/CtaBand.astro';
+
+// Drei-Schritte-Hub: Route -> Ausruestung -> Versicherung.
+const steps = [
+  {
+    n: 1,
+    eyebrow: 'Schritt 1',
+    title: 'Route wählen',
+    text: 'Such dir die Tour, die zu deinem Fahrzeug und deinem Erfahrungslevel passt. Jede Route bei uns hat Distanz, Höhenprofil, Terrain und die beste Reisezeit, plus einen GPX-Track zum Download.',
+    label: 'Zu den Routen',
+    href: '/routen/',
+    style: 'card-blaze',
+  },
+  {
+    n: 2,
+    eyebrow: 'Schritt 2',
+    title: 'Ausrüstung packen',
+    text: 'Recovery, Camp und Navigation, abgestimmt auf das Terrain deiner Route. Wir fahren das Gear selbst und empfehlen nur, was den Härtetest besteht.',
+    label: 'Zur Ausrüstung',
+    href: '/ausruestung/',
+    style: 'card-dark',
+  },
+  {
+    n: 3,
+    eyebrow: 'Schritt 3',
+    title: 'Absichern',
+    text: 'Die nächste Klinik ist oft hunderte Kilometer weit weg. Mit dem passenden Langzeit- oder Weltreise-Tarif fährst du ruhiger. Wir vergleichen die Anbieter für Overlander.',
+    label: 'Zu den Versicherungen',
+    href: '/versicherungen/',
+    style: 'card-cream',
+  },
+];
+
+const checklist = [
+  { k: 'Fahrzeug & Technik', items: ['Service & Ölwechsel frisch', 'Reservereifen + Reparaturset', 'Bordwerkzeug & Sicherungen', 'Kompressor + Reifendruckmesser'] },
+  { k: 'Recovery & Sicherheit', items: ['Sandbleche', 'Bergegurt + Schäkel', 'Erste-Hilfe-Set', 'Warndreieck & Feuerlöscher'] },
+  { k: 'Navigation & Kommunikation', items: ['GPS mit Offline-Karten', 'GPX-Tracks geladen', 'Papierkarte als Backup', 'Satelliten-Messenger (abgelegen)'] },
+  { k: 'Dokumente', items: ['Reisepass + Visa', 'Internationaler Führerschein', 'Fahrzeugpapiere & Grüne Karte', 'Carnet de Passages (falls nötig)'] },
+];
+
+const faqs = [
+  {
+    q: 'Wie lange sollte ich eine Offroad-Tour im Voraus planen?',
+    a: 'Für ein Wochenende reichen ein paar Tage. Für eine mehrwöchige Overland-Reise plane sechs bis zwölf Wochen ein: Fahrzeug-Service, Visa, Carnet und Versicherung brauchen Vorlauf. Die beste Reisezeit der Region bestimmt am Ende das Startdatum.',
+  },
+  {
+    q: 'In welcher Reihenfolge plane ich am besten?',
+    a: 'Erst die Route, denn Terrain und Saison legen alles andere fest. Daraus ergibt sich die nötige Ausrüstung, und zuletzt sicherst du Person und Fahrzeug passend zur Reisedauer und Region ab.',
+  },
+  {
+    q: 'Brauche ich für jede Tour ein Untersetzungsgetriebe?',
+    a: 'Nein. Viele leichte Schotter- und Militärstraßen fährst du mit einem normalen Allrad oder sogar einem robusten Kombi. Erst bei Sand, Schlamm und steilen Felspassagen wird eine Geländeuntersetzung mit gutem Profil wirklich wichtig. Die Difficulty-Angabe jeder Route sagt dir, was nötig ist.',
+  },
+];
+---
+
+<Base
+  title="Tour planen in 3 Schritten - tour-off-road.de"
+  description="Offroad-Tour planen leicht gemacht: Route wählen, Ausrüstung packen, absichern. Plus Pack-Checkliste und Antworten auf die häufigsten Fragen."
+  path="/reiseplanung/"
+>
+  <Announce />
+  <Header active={null} />
+
+  <Breadcrumb items={[{ label: 'Start', href: '/' }, { label: 'Reiseplanung' }]} />
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Tour-Planung</p>
+      <h1>In 3 Schritten von der Idee zur Tour.</h1>
+      <p>
+        Eine gute Offroad-Reise plant sich nicht zufällig. Route, Ausrüstung und
+        Absicherung greifen ineinander. Hier ist der Weg, den wir bei jeder eigenen
+        Expedition gehen.
+      </p>
+    </div>
+  </section>
+
+  <section class="section tight" style="padding-top:0">
+    <div class="wrap">
+      <div class="step-grid">
+        {
+          steps.map((s) => (
+            <a href={s.href} class={s.style} style="display:block">
+              <div class="step-num">{s.n}</div>
+              <p class="eyebrow" style="margin-bottom:8px">{s.eyebrow}</p>
+              <h3>{s.title}</h3>
+              <p>{s.text}</p>
+              <span class="step-link">{s.label} &rarr;</span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Vor dem Start</p>
+          <h2>Die Pack- &amp; Planungs-Checkliste</h2>
+        </div>
+        <p>
+          Der Grundstock, den wir bei keiner Tour vergessen. Passe ihn an Terrain und
+          Reisedauer deiner gewählten Route an.
+        </p>
+      </div>
+      <div class="check-grid">
+        {
+          checklist.map((c) => (
+            <div class="check-col">
+              <h4>{c.k}</h4>
+              <ul>
+                {c.items.map((i) => <li>{i}</li>)}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="wrap">
+      <QABlock eyebrow="Häufige Fragen zur Planung" items={faqs} />
+    </div>
+  </section>
+
+  <CtaBand
+    titleBefore="Bereit, die "
+    emphasis="erste"
+    titleAfter=" Etappe zu planen?"
+    text="Stöbere durch die kuratierten Routen und lade dir den GPX-Track samt Packliste herunter."
+    primaryLabel="Routen entdecken"
+    primaryHref="/routen/"
+    ghostLabel="Ausrüstungs-Guide"
+    ghostHref="/ausruestung/"
+  />
+
+  <Footer />
+</Base>
+
+<style>
+  .step-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  @media (max-width: 820px) {
+    .step-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .step-grid a {
+    transition: transform 0.18s ease;
+  }
+  .step-grid a:hover {
+    transform: translateY(-4px);
+  }
+  .step-num {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--basalt);
+    color: var(--white);
+    font-weight: 800;
+    font-size: 22px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 18px;
+  }
+  .card-blaze .step-num {
+    background: var(--basalt);
+    color: var(--blaze);
+  }
+  .step-link {
+    display: inline-block;
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .check-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  @media (max-width: 900px) {
+    .check-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 560px) {
+    .check-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .check-col {
+    background: var(--white);
+    border: 1px solid var(--stone);
+    border-radius: var(--radius);
+    padding: 24px;
+  }
+  .check-col h4 {
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--graphite);
+    margin-bottom: 14px;
+  }
+  .check-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .check-col li {
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 26px;
+    position: relative;
+    line-height: 1.4;
+  }
+  .check-col li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 2px solid var(--blaze);
+  }
+</style>

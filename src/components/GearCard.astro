@@ -1,0 +1,53 @@
+---
+// Ausruestungs-Kachel. Nutzt das .route-Markup (wie im Mockup).
+interface Props {
+  href: string;
+  image: string;
+  title: string;
+  category: string; // Anzeige-Label, z.B. "Recovery"
+  excerpt?: string;
+  price: string;
+  rating: number;
+  badge?: string | null;
+  /** optionale Badge-Hintergrundfarbe (CSS-Wert) */
+  badgeColor?: string;
+  badgeTextColor?: string;
+}
+const {
+  href,
+  image,
+  title,
+  category,
+  excerpt,
+  price,
+  rating,
+  badge = null,
+  badgeColor = 'var(--blaze)',
+  badgeTextColor = 'var(--basalt)',
+} = Astro.props;
+
+const ratingStr = String(rating).replace('.', ',');
+---
+
+<a href={href} class="route">
+  <div class="img" style={`background-image:url('${image}')`}>
+    <div class="badges">
+      {
+        badge && (
+          <span class="badge" style={`background:${badgeColor};color:${badgeTextColor}`}>
+            {badge}
+          </span>
+        )
+      }
+    </div>
+  </div>
+  <div class="body">
+    <span class="eyebrow" style="color:var(--blaze)">{category}</span>
+    <h3 style="margin-top:6px">{title}</h3>
+    {excerpt && <p class="muted" style="font-size:14px">{excerpt}</p>}
+    <div class="meta" style="justify-content:space-between">
+      <span style="font-size:16px;font-weight:700;color:var(--basalt)">{price}</span>
+      <span class="badge">★ {ratingStr}</span>
+    </div>
+  </div>
+</a>

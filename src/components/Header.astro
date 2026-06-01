@@ -1,0 +1,52 @@
+---
+// Sticky-Navigation. active-Prop steuert den hervorgehobenen Menuepunkt.
+type NavKey =
+  | 'routen'
+  | 'reiseziele'
+  | 'fahrzeuge'
+  | 'ausruestung'
+  | 'ratgeber'
+  | 'versicherungen'
+  | 'magazin'
+  | 'reiseplanung'
+  | null;
+
+interface Props {
+  active?: NavKey;
+}
+const { active = null } = Astro.props;
+
+const links: { key: NavKey; label: string; href: string }[] = [
+  { key: 'routen', label: 'Routen', href: '/routen/' },
+  { key: 'reiseplanung', label: 'Reiseplanung', href: '/reiseplanung/' },
+  { key: 'reiseziele', label: 'Reiseziele', href: '/reiseziele/' },
+  { key: 'fahrzeuge', label: 'Fahrzeuge', href: '#' },
+  { key: 'ausruestung', label: 'Ausrüstung', href: '/ausruestung/' },
+  { key: 'ratgeber', label: 'Ratgeber', href: '#' },
+  { key: 'versicherungen', label: 'Versicherungen', href: '/versicherungen/' },
+  { key: 'magazin', label: 'Magazin', href: '/magazin/' },
+];
+---
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="/" class="logo"
+      ><span class="mark"><span></span></span> tour<span style="color:var(--blaze)"
+        >off</span
+      >road</a
+    >
+    <nav class="nav-links">
+      {
+        links.map((l) => (
+          <a href={l.href} class={active === l.key ? 'active' : undefined}>
+            {l.label}
+          </a>
+        ))
+      }
+    </nav>
+    <div class="nav-right">
+      <a href="/ueber-uns/" class="btn btn-ghost">Über uns</a>
+      <a href="/routen/" class="btn btn-primary">Route finden</a>
+    </div>
+  </div>
+</header>

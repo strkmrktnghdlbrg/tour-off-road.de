@@ -1,0 +1,20 @@
+---
+// Q&A-Block (GEO/AI-Layer). eyebrow + Frage/Antwort-Paare.
+interface Props {
+  eyebrow?: string;
+  items: { q: string; a: string }[];
+}
+const { eyebrow = 'Schnelle Antworten', items } = Astro.props;
+---
+
+<div class="qa">
+  <p class="eyebrow">{eyebrow}</p>
+  {
+    items.map((it) => (
+      <>
+        <h3>{it.q}</h3>
+        <p>{it.a}</p>
+      </>
+    ))
+  }
+</div>

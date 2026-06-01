@@ -1,0 +1,35 @@
+---
+// Etappenliste mit nummerierten Schritten.
+export interface Stage {
+  title: string;
+  desc: string;
+  km: number;
+  hours: number;
+  stay: string;
+}
+interface Props {
+  stages: Stage[];
+}
+const { stages } = Astro.props;
+
+const km = (n: number) => n.toLocaleString('de-DE');
+---
+
+<div class="stages">
+  {
+    stages.map((s, i) => (
+      <div class="stage">
+        <div class="num">{i + 1}</div>
+        <div>
+          <h4>{s.title}</h4>
+          <p>{s.desc}</p>
+          <div class="smeta">
+            <span>📏 {km(s.km)} km</span>
+            <span>⏱️ {s.hours} h</span>
+            <span>🏕️ {s.stay}</span>
+          </div>
+        </div>
+      </div>
+    ))
+  }
+</div>

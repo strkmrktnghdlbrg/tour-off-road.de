@@ -1,0 +1,186 @@
+---
+import Base from '../layouts/Base.astro';
+import Announce from '../components/Announce.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { getCollection } from 'astro:content';
+
+// Alle Collections zur Build-Zeit in ein flaches Such-Array serialisieren.
+const [routen, reiseziele, ausruestung, magazin] = await Promise.all([
+  getCollection('routen'),
+  getCollection('reiseziele'),
+  getCollection('ausruestung'),
+  getCollection('magazin'),
+]);
+
+type SearchItem = {
+  title: string;
+  excerpt: string;
+  href: string;
+  image: string;
+  kind: string;
+};
+
+const index: SearchItem[] = [
+  ...routen.map((e) => ({
+    title: e.data.title,
+    excerpt: e.data.excerpt ?? '',
+    href: `/routen/${e.data.slug}/`,
+    image: e.data.hero,
+    kind: 'Route',
+  })),
+  ...reiseziele.map((e) => ({
+    title: e.data.title,
+    excerpt: e.data.excerpt ?? '',
+    href: `/reiseziele/${e.data.slug}/`,
+    image: e.data.hero,
+    kind: 'Reiseziel',
+  })),
+  ...ausruestung.map((e) => ({
+    title: e.data.title,
+    excerpt: e.data.excerpt ?? '',
+    href: `/ausruestung/${e.data.category}/`,
+    image: e.data.image,
+    kind: 'Ausrüstung',
+  })),
+  ...magazin.map((e) => ({
+    title: e.data.title,
+    excerpt: e.data.excerpt ?? '',
+    href: `/magazin/${e.data.slug}/`,
+    image: e.data.hero,
+    kind: 'Magazin',
+  })),
+];
+---
+
+<Base
+  title="Suche - tour-off-road.de"
+  description="Durchsuche alle Routen, Reiseziele, Ausrüstung und Magazin-Artikel auf tour-off-road.de."
+  path="/suche/"
+>
+  <Announce />
+  <Header active={null} />
+
+  <Breadcrumb items={[{ label: 'Start', href: '/' }, { label: 'Suche' }]} />
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Suche</p>
+      <h1>Finde deine nächste Tour.</h1>
+      <p>
+        Durchsuche Routen, Reiseziele, Ausrüstung und Magazin in einem Feld. Tipp einfach
+        los, die Ergebnisse erscheinen sofort.
+      </p>
+
+      <div class="searchbar" style="max-width:680px;margin:32px auto 0">
+        <div class="field" style="border-right:none;flex:1">
+          <label class="lbl" for="q">Suchbegriff</label>
+          <input
+            id="q"
+            type="search"
+            class="val search-input"
+            placeholder="z.B. Marokko, Dachzelt, Sand ..."
+            autocomplete="off"
+            autofocus
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight" style="padding-top:8px">
+    <div class="wrap">
+      <p id="search-status" class="muted" style="margin-bottom:24px;font-weight:600"></p>
+      <div id="results" class="route-grid"></div>
+    </div>
+  </section>
+
+  <Footer />
+</Base>
+
+<script define:vars={{ index }}>
+  const input = document.getElementById('q');
+  const results = document.getElementById('results');
+  const status = document.getElementById('search-status');
+
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function render(items) {
+    results.innerHTML = items
+      .map(
+        (it) => `
+        <a href="${escapeHtml(it.href)}" class="route">
+          <div class="img" style="background-image:url('${escapeHtml(it.image)}')">
+            <div class="badges"><span class="badge">${escapeHtml(it.kind)}</span></div>
+          </div>
+          <div class="body">
+            <h3>${escapeHtml(it.title)}</h3>
+            <p class="muted" style="font-size:14px;margin-top:6px">${escapeHtml(it.excerpt)}</p>
+          </div>
+        </a>`
+      )
+      .join('');
+  }
+
+  function search(term) {
+    const q = term.trim().toLowerCase();
+    if (!q) {
+      results.innerHTML = '';
+      status.textContent = 'Tippe einen Begriff ein, um zu suchen.';
+      return;
+    }
+    const tokens = q.split(/\s+/);
+    const hits = index.filter((it) => {
+      const hay = (it.title + ' ' + it.excerpt + ' ' + it.kind).toLowerCase();
+      return tokens.every((t) => hay.includes(t));
+    });
+    status.textContent =
+      hits.length === 0
+        ? `Keine Treffer für „${term}". Versuch einen anderen Begriff.`
+        : `${hits.length} ${hits.length === 1 ? 'Treffer' : 'Treffer'} für „${term}".`;
+    render(hits);
+  }
+
+  // Initialer Zustand + optionaler ?q=-Parameter
+  const params = new URLSearchParams(window.location.search);
+  const initial = params.get('q') || '';
+  if (initial) {
+    input.value = initial;
+    search(initial);
+  } else {
+    status.textContent = 'Tippe einen Begriff ein, um zu suchen.';
+  }
+
+  input.addEventListener('input', (e) => search(e.target.value));
+</script>
+
+<style>
+  .search-input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--basalt);
+    padding: 0;
+  }
+  .search-input:focus {
+    outline: none;
+  }
+  .search-input::placeholder {
+    color: var(--graphite);
+    font-weight: 500;
+  }
+  #results:empty {
+    min-height: 0;
+  }
+</style>

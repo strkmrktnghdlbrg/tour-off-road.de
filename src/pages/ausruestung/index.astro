@@ -1,0 +1,92 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Announce from '../../components/Announce.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import Pills from '../../components/Pills.astro';
+import GearCard from '../../components/GearCard.astro';
+
+const gear = await getCollection('ausruestung');
+
+const categoryLabel: Record<string, string> = {
+  recovery: 'Recovery',
+  camping: 'Camping',
+  navigation: 'Navigation',
+  campkueche: 'Camp-Küche',
+  reifen: 'Reifen',
+};
+
+// Demo-Kacheln aus dem Mockup (kommen via Content-Agent als echte Eintraege nach).
+const demoGear = [
+  { href: '/ausruestung/camping/', image: 'https://images.unsplash.com/photo-1571687949921-1306bfb24b72?w=800&q=70', title: 'iKamper Skycamp 3.0 Dachzelt', category: 'Camping', excerpt: 'In 60 Sekunden aufgebaut, schläft zwei bis drei Personen.', price: 'ab 3.499 €', rating: 4.7, badge: 'Preis-Tipp', badgeColor: 'var(--olive)', badgeTextColor: '#fff' },
+  { href: '/ausruestung/campkueche/', image: 'https://images.unsplash.com/photo-1606044466411-207a9a49eea3?w=800&q=70', title: 'Dometic CFX3 45 Kühlbox', category: 'Camp-Küche', excerpt: 'Kompressor-Kühlung bis -22 °C, app-gesteuert, robust.', price: 'ab 829 €', rating: 4.8, badge: null },
+  { href: '/ausruestung/recovery/', image: 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800&q=70', title: 'VIAIR 88P Kompressor', category: 'Recovery', excerpt: 'Reifen nach der Sandpiste in Minuten wieder auf Druck.', price: 'ab 119 €', rating: 4.6, badge: null },
+  { href: '/ausruestung/navigation/', image: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&q=70', title: 'Garmin Tread XL Overland', category: 'Navigation', excerpt: 'Offline-Topo, Tracks, Gruppen-Tracking ohne Netz.', price: 'ab 699 €', rating: 4.5, badge: null },
+  { href: '/ausruestung/campkueche/', image: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=70', title: 'Petromax Feuertopf ft6', category: 'Camp-Küche', excerpt: 'Gusseiserner Dutch Oven für das Lagerfeuer-Dinner.', price: 'ab 89 €', rating: 4.9, badge: null },
+];
+
+const pills = [
+  { label: 'Alle', href: '/ausruestung/', on: true },
+  { label: 'Recovery', href: '/ausruestung/recovery/' },
+  { label: 'Camping', href: '/ausruestung/camping/' },
+  { label: 'Navigation', href: '/ausruestung/navigation/' },
+  { label: 'Camp-Küche', href: '/ausruestung/campkueche/' },
+  { label: 'Reifen', href: '/ausruestung/reifen/' },
+];
+---
+
+<Base
+  title="Offroad-Ausrüstung im Test - tour-off-road.de"
+  description="180 getestete Offroad-Produkte aus echtem Einsatz: Sand, Schlamm, Fels, Furt. Empfehlungen, die den Härtetest bestehen."
+  path="/ausruestung/"
+>
+  <Announce />
+  <Header active="ausruestung" />
+
+  <Breadcrumb items={[{ label: 'Start', href: '/' }, { label: 'Ausrüstung' }]} />
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">180 getestete Produkte</p>
+      <h1>Ausrüstung, die wir selbst gefahren haben.</h1>
+      <p>
+        Keine Listen-Affiliate-Abzocke. Jede Empfehlung kommt aus dem echten Einsatz -
+        Sand, Schlamm, Fels, Furt. Was nicht hält, fliegt raus.
+      </p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <Pills items={pills} />
+  </div>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="route-grid">
+        {
+          gear.map((g) => (
+            <GearCard
+              href={g.data.affiliateUrl}
+              image={g.data.image}
+              title={g.data.title}
+              category={categoryLabel[g.data.category]}
+              excerpt={g.data.excerpt}
+              price={g.data.price}
+              rating={g.data.rating}
+              badge={g.data.badge}
+            />
+          ))
+        }
+        {demoGear.map((g) => <GearCard {...g} />)}
+      </div>
+      <p class="muted" style="font-size:13px;text-align:center;margin-top:32px">
+        Preise sind Beispielwerte · Produktlinks sind Amazon-Affiliate-Links. Du zahlst
+        nicht mehr, wir bekommen eine kleine Provision.
+      </p>
+    </div>
+  </section>
+
+  <Footer />
+</Base>

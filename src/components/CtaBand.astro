@@ -1,0 +1,35 @@
+---
+// Dunkles CTA-Band (Startseite). Titel mit optionalem <em>-Akzent-Wort.
+interface Props {
+  /** Titel; {em} markiert das Blaze-Akzentwort: "Bereit für die {em}nächste{/em} Tour?" */
+  titleBefore?: string;
+  emphasis?: string;
+  titleAfter?: string;
+  text?: string;
+  primaryLabel?: string;
+  primaryHref?: string;
+  ghostLabel?: string;
+  ghostHref?: string;
+}
+const {
+  titleBefore = 'Bereit für die ',
+  emphasis = 'nächste',
+  titleAfter = ' Tour?',
+  text = 'Hol dir die kuratierten GPX-Tracks und unsere Packliste als kostenlosen Download.',
+  primaryLabel = 'Kostenlos starten',
+  primaryHref = '#',
+  ghostLabel = 'Newsletter abonnieren',
+  ghostHref = '#',
+} = Astro.props;
+---
+
+<div class="wrap">
+  <div class="cta-band">
+    <h2>{titleBefore}<em>{emphasis}</em>{titleAfter}</h2>
+    <p>{text}</p>
+    <div class="hero-cta">
+      <a href={primaryHref} class="btn btn-primary">{primaryLabel}</a>
+      <a href={ghostHref} class="btn btn-ghost-light">{ghostLabel}</a>
+    </div>
+  </div>
+</div>

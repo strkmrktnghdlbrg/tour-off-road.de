@@ -1,0 +1,74 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Announce from '../../components/Announce.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import FilterBar from '../../components/FilterBar.astro';
+import DestinationCard from '../../components/DestinationCard.astro';
+
+const ziele = await getCollection('reiseziele');
+
+// Demo-Kacheln aus dem Mockup (kommen via Content-Agent als echte Eintraege nach).
+const demoZiele = [
+  { href: '/reiseziele/marokko/', hero: 'https://images.unsplash.com/photo-1504218817471-3a4dd4758fc0?w=600&q=70', title: 'Island', sub: '21 Routen · Jul–Sep' },
+  { href: '/reiseziele/marokko/', hero: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=70', title: 'Balkan', sub: '29 Routen · Mai–Okt' },
+  { href: '/reiseziele/marokko/', hero: 'https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=600&q=70', title: 'Südafrika', sub: '17 Routen · Apr–Okt' },
+  { href: '/reiseziele/marokko/', hero: 'https://images.unsplash.com/photo-1454942901704-3c44c11b2ad1?w=600&q=70', title: 'Norwegen', sub: '24 Routen · Jun–Sep' },
+  { href: '/reiseziele/marokko/', hero: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=70', title: 'Westalpen', sub: '33 Routen · Jun–Sep' },
+  { href: '/reiseziele/marokko/', hero: 'https://images.unsplash.com/photo-1500534623283-312aade485b7?w=600&q=70', title: 'Tunesien', sub: '14 Routen · Okt–Apr' },
+  { href: '/reiseziele/marokko/', hero: 'https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=600&q=70', title: 'Rumänien', sub: '19 Routen · Mai–Okt' },
+  { href: '/reiseziele/marokko/', hero: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&q=70', title: 'Georgien', sub: '16 Routen · Mai–Okt' },
+];
+
+const filterGroups = [
+  { label: 'Kontinent', chips: [{ label: 'Alle', on: true }, { label: 'Europa' }, { label: 'Afrika' }, { label: 'Asien' }, { label: 'Amerika' }] },
+];
+---
+
+<Base
+  title="Reiseziele für Offroad & Overland - tour-off-road.de"
+  description="32 Länder als kompletter Hub: passende Routen, Einreise- und Carnet-Infos, Tankstellen-Dichte, Klima und beste Reisezeit."
+  path="/reiseziele/"
+>
+  <Announce />
+  <Header active="reiseziele" />
+
+  <Breadcrumb items={[{ label: 'Start', href: '/' }, { label: 'Reiseziele' }]} />
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">32 Länder · 4 Kontinente</p>
+      <h1>Such dir dein Terrain.</h1>
+      <p>
+        Jedes Reiseziel als kompletter Hub: passende Routen, Einreise- und Carnet-Infos,
+        Tankstellen-Dichte, Klima und die wichtigste Frage überhaupt - wann ist die beste
+        Reisezeit?
+      </p>
+    </div>
+  </section>
+
+  <FilterBar groups={filterGroups} resultCount="32 Reiseziele" />
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="dest-grid" style="grid-template-columns:repeat(3,1fr)">
+        {
+          ziele.map((z) => (
+            <DestinationCard
+              href={`/reiseziele/${z.data.slug}/`}
+              hero={z.data.hero}
+              title={z.data.title.split(':')[0]}
+              sub={`${z.data.routesCount} Routen · ${z.data.bestSeason}`}
+              ratio="wide"
+            />
+          ))
+        }
+        {demoZiele.map((z) => <DestinationCard {...z} ratio="wide" />)}
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Base>

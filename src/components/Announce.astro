@@ -1,0 +1,15 @@
+---
+// Ankuendigungs-Band ganz oben. Text + Link konfigurierbar.
+interface Props {
+  text?: string;
+  linkLabel?: string;
+  href?: string;
+}
+const {
+  text = '🏜️ Neu: 24 GPX-Routen für die Marokko-Saison 2026 - ',
+  linkLabel = 'jetzt ansehen',
+  href = '/reiseziele/marokko/',
+} = Astro.props;
+---
+
+<div class="announce">{text}<a href={href}>{linkLabel}</a></div>

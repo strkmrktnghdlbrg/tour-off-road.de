@@ -1,0 +1,42 @@
+# tour-off-road.de  WP -> Astro 301-Redirects (Apache / All-Inkl / Hostinger)
+# Stand: 2026-06-01
+#
+# WICHTIG: Vier Legacy-URLs sind bewusst NICHT umgeleitet (bezahlte Gastbeitraege
+# mit kommerziellen dofollow-Backlinks). Diese muessen 1:1 unter ihrer alten URL
+# erhalten bleiben. Siehe MIGRATION.md, Abschnitt "MANUELL PRUEFEN".
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Trailing-Slash-Varianten mit und ohne Slash abfangen: die Regeln matchen
+  # optional ohne abschliessenden Slash. Ziel-URLs haben immer Trailing-Slash.
+
+  # --- Kategorie- / Themen-Seiten -------------------------------------------
+  RewriteRule ^thema/ausruestung/?$        /ausruestung/    [R=301,L]
+  RewriteRule ^thema/versicherungen/?$     /versicherungen/ [R=301,L]
+  RewriteRule ^thema/besondere-routen/?$   /routen/         [R=301,L]
+  RewriteRule ^thema/trekking/?$           /routen/         [R=301,L]
+  RewriteRule ^thema/abenteuer/?$          /magazin/        [R=301,L]
+  RewriteRule ^thema/urlaub/?$             /reiseziele/     [R=301,L]
+  RewriteRule ^thema/blog/?$               /magazin/        [R=301,L]
+
+  # --- Statische Seiten -----------------------------------------------------
+  RewriteRule ^uber-uns/?$                 /ueber-uns/      [R=301,L]
+  # /impressum/ und /datenschutz/ bleiben unveraendert (kein Redirect)
+
+  # --- Einzel-Artikel (on-topic / unbedenklich) -----------------------------
+  RewriteRule ^suedafrikas-outdoor-abenteuer-kulturelle-schaetze/?$        /magazin/suedafrika-outdoor-abenteuer/        [R=301,L]
+  RewriteRule ^volvo-trucks-ruestet-fl-4x4-fuer-extreme-offroad-einsaetze-auf/?$   /magazin/volvo-fl-4x4-offroad/        [R=301,L]
+  RewriteRule ^was-du-ueber-offroad-trekking-wissen-musst/?$               /magazin/offroad-trekking-grundlagen/         [R=301,L]
+  RewriteRule ^offroad-trekking-mit-autos/?$                               /magazin/offroad-trekking-mit-autos/          [R=301,L]
+  RewriteRule ^wie-waehle-ich-das-richtige-auto-fuer-mich-aus/?$           /magazin/richtiges-offroad-fahrzeug-waehlen/  [R=301,L]
+
+  # --- Versicherungs-Artikel -> Versicherungs-Cluster -----------------------
+  RewriteRule ^schuelerreisen-versicherung/?$    /versicherungen/   [R=301,L]
+  RewriteRule ^gruppenreisen-versicherung/?$     /versicherungen/   [R=301,L]
+  RewriteRule ^langzeitreise-versicherung/?$     /versicherungen/   [R=301,L]
+  RewriteRule ^reiseunfall-versicherung/?$       /versicherungen/   [R=301,L]
+  RewriteRule ^reisehaftpflicht-versicherung/?$  /versicherungen/   [R=301,L]
+  RewriteRule ^reisegepaeck-versicherung/?$      /versicherungen/   [R=301,L]
+  RewriteRule ^reisekrankenversicherung/?$       /versicherungen/   [R=301,L]
+</IfModule>

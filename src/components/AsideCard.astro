@@ -1,0 +1,14 @@
+---
+// Sticky-Sidebar-Karte. Titel + Untertitel + frei befuellbarer Slot.
+interface Props {
+  title: string;
+  subtitle?: string;
+}
+const { title, subtitle } = Astro.props;
+---
+
+<div class="aside-card">
+  <h3>{title}</h3>
+  {subtitle && <div class="price-line">{subtitle}</div>}
+  <slot />
+</div>

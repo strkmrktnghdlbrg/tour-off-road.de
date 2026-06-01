@@ -1,0 +1,265 @@
+---
+import Base from '../layouts/Base.astro';
+import Announce from '../components/Announce.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import CtaBand from '../components/CtaBand.astro';
+
+const values = [
+  {
+    title: 'Wir fahren selbst',
+    text: 'Jede Route, die wir empfehlen, ist gefahren oder von Fahrern aus unserem Netzwerk verifiziert. Kein Schreibtisch-Tourismus, keine kopierten GPX-Dateien.',
+  },
+  {
+    title: 'Ehrlich statt geschönt',
+    text: 'Ausrüstung empfehlen wir nur, wenn sie den Härtetest besteht. Affiliate-Links sind transparent gekennzeichnet und ändern nie unsere Bewertung.',
+  },
+  {
+    title: 'Sicherheit zuerst',
+    text: 'Wir nennen Schwierigkeit, Tankstellen-Dichte und nötige Absicherung offen. Lieber eine Warnung zu viel als eine Tour, die schiefgeht.',
+  },
+];
+
+const facts = [
+  { k: 'Gefahrene Länder', v: '32' },
+  { k: 'Kuratierte Routen', v: '240+' },
+  { k: 'Gear-Tests', v: '180' },
+  { k: 'Jahre Overland', v: '12' },
+];
+---
+
+<Base
+  title="Über uns - das Team hinter tour-off-road.de"
+  description="Wer hinter tour-off-road.de steht: erfahrene Overlander, die jede Route selbst fahren und nur ehrlich getestete Ausrüstung empfehlen."
+  path="/ueber-uns/"
+>
+  <Announce />
+  <Header active={null} />
+
+  <Breadcrumb items={[{ label: 'Start', href: '/' }, { label: 'Über uns' }]} />
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Über uns</p>
+      <h1>Wir leben abseits der Straße.</h1>
+      <p>
+        tour-off-road.de ist aus einer einfachen Frustration entstanden: Es gab kein
+        Portal, das Offroad-Routen ehrlich bewertet, Ausrüstung wirklich testet und die
+        Absicherung gleich mitdenkt. Also haben wir es selbst gebaut, aus dem Fahrersitz
+        heraus.
+      </p>
+    </div>
+  </section>
+
+  <section class="section tight" style="padding-top:8px">
+    <div class="wrap">
+      <div class="split">
+        <div class="card-cream">
+          <p class="eyebrow" style="margin-bottom:10px">Unsere Mission</p>
+          <h3>Mehr Menschen sicher abseits der Straße bringen.</h3>
+          <p>
+            Wir wollen, dass du deine Tour mit der richtigen Vorbereitung antrittst: die
+            passende Route für dein Können, das Gear, das wirklich hält, und der
+            Versicherungsschutz, der im Ernstfall greift. Wissen, das wir uns über Jahre
+            auf Pisten von Marokko bis Island erarbeitet haben, an einem Ort.
+          </p>
+        </div>
+        <div class="card-dark">
+          <p class="eyebrow" style="margin-bottom:10px;color:var(--blaze)">In Zahlen</p>
+          <h3>Erfahrung, nicht Behauptung.</h3>
+          <p>
+            Diese Zahlen sind unser Anspruch an uns selbst. Jede Empfehlung trägt die
+            Handschrift von echten Kilometern im Gelände.
+          </p>
+          <div class="about-facts">
+            {
+              facts.map((f) => (
+                <div class="af">
+                  <div class="afv">{f.v}</div>
+                  <div class="afk">{f.k}</div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Wofür wir stehen</p>
+          <h2>Drei Prinzipien, keine Kompromisse</h2>
+        </div>
+      </div>
+      <div class="value-grid">
+        {
+          values.map((v) => (
+            <div class="value-card">
+              <h3>{v.title}</h3>
+              <p>{v.text}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Das Team</p>
+          <h2>Wer hier schreibt</h2>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-av"></div>
+        <div class="team-body">
+          <h3>Joshua Stark</h3>
+          <p class="team-role">Gründer & Redaktion</p>
+          <p>
+            Joshua fährt seit über einem Jahrzehnt Overland-Touren auf drei Kontinenten,
+            von den Atlas-Pässen Marokkos bis zu den Hochland-Furten Islands. Er testet
+            Recovery- und Camp-Ausrüstung im realen Einsatz und schreibt die Routen- und
+            Ratgeber-Inhalte auf tour-off-road.de.
+          </p>
+          <ul class="eeat">
+            <li>12 Jahre Overland-Erfahrung auf 3 Kontinenten</li>
+            <li>32 selbst gefahrene Länder, 240+ kuratierte Routen</li>
+            <li>180 im Feld getestete Ausrüstungs-Teile</li>
+            <li>Transparente Affiliate-Kennzeichnung, redaktionell unabhängig</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    titleBefore="Fragen, Feedback oder eine "
+    emphasis="eigene"
+    titleAfter=" Route?"
+    text="Schreib uns. Wir freuen uns über Trip-Reports, Korrekturen und Tipps aus der Community."
+    primaryLabel="Kontakt aufnehmen"
+    primaryHref="/kontakt/"
+    ghostLabel="Tour planen"
+    ghostHref="/reiseplanung/"
+  />
+
+  <Footer />
+</Base>
+
+<style>
+  .about-facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 24px;
+  }
+  .af {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: var(--radius-sm);
+    padding: 16px;
+  }
+  .afv {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--blaze);
+  }
+  .afk {
+    font-size: 13px;
+    font-weight: 600;
+    color: #c4bcb0;
+    margin-top: 2px;
+  }
+  .value-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  @media (max-width: 820px) {
+    .value-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .value-card {
+    background: var(--white);
+    border: 1px solid var(--stone);
+    border-radius: var(--radius);
+    padding: 32px;
+  }
+  .value-card h3 {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    margin-bottom: 10px;
+  }
+  .value-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #33302a;
+  }
+  .team-card {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 28px;
+    background: var(--white);
+    border: 1px solid var(--stone);
+    border-radius: var(--radius);
+    padding: 32px;
+    align-items: start;
+  }
+  @media (max-width: 640px) {
+    .team-card {
+      grid-template-columns: 1fr;
+    }
+  }
+  .team-av {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: var(--olive);
+  }
+  .team-body h3 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  .team-role {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--blaze);
+    margin: 4px 0 14px;
+  }
+  .team-body > p {
+    font-size: 16px;
+    line-height: 1.65;
+    color: #33302a;
+  }
+  .eeat {
+    list-style: none;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .eeat li {
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 24px;
+    position: relative;
+  }
+  .eeat li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    color: var(--blaze);
+    font-weight: 800;
+  }
+</style>

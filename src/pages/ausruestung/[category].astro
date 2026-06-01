@@ -1,0 +1,94 @@
+---
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Base from '../../layouts/Base.astro';
+import Announce from '../../components/Announce.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import Pills from '../../components/Pills.astro';
+import GearCard from '../../components/GearCard.astro';
+
+export const getStaticPaths = (async () => {
+  const cats = ['recovery', 'camping', 'navigation', 'campkueche', 'reifen'];
+  return cats.map((category) => ({ params: { category } }));
+}) satisfies GetStaticPaths;
+
+const categoryLabel: Record<string, string> = {
+  recovery: 'Recovery',
+  camping: 'Camping',
+  navigation: 'Navigation',
+  campkueche: 'Camp-Küche',
+  reifen: 'Reifen',
+};
+
+const { category } = Astro.params;
+const label = categoryLabel[category] ?? category;
+
+const gear = (await getCollection('ausruestung')).filter((g) => g.data.category === category);
+
+const pills = [
+  { label: 'Alle', href: '/ausruestung/' },
+  ...Object.entries(categoryLabel).map(([key, l]) => ({
+    label: l,
+    href: `/ausruestung/${key}/`,
+    on: key === category,
+  })),
+];
+---
+
+<Base
+  title={`${label} - Ausrüstung im Test - tour-off-road.de`}
+  description={`Getestete ${label}-Ausrüstung für Offroad und Overland.`}
+  path={`/ausruestung/${category}/`}
+>
+  <Announce />
+  <Header active="ausruestung" />
+
+  <Breadcrumb
+    items={[
+      { label: 'Start', href: '/' },
+      { label: 'Ausrüstung', href: '/ausruestung/' },
+      { label },
+    ]}
+  />
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Kategorie</p>
+      <h1>{label}</h1>
+      <p>Getestete {label}-Ausrüstung aus echtem Offroad-Einsatz.</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <Pills items={pills} />
+  </div>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      {
+        gear.length > 0 ? (
+          <div class="route-grid">
+            {gear.map((g) => (
+              <GearCard
+                href={g.data.affiliateUrl}
+                image={g.data.image}
+                title={g.data.title}
+                category={categoryLabel[g.data.category]}
+                excerpt={g.data.excerpt}
+                price={g.data.price}
+                rating={g.data.rating}
+                badge={g.data.badge}
+              />
+            ))}
+          </div>
+        ) : (
+          <p class="muted">In dieser Kategorie sind noch keine getesteten Produkte hinterlegt.</p>
+        )
+      }
+    </div>
+  </section>
+
+  <Footer />
+</Base>
