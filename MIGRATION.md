@@ -41,7 +41,7 @@ Beide Dateien enthalten dieselben Regeln. Es wird ausschliesslich **301**
 | Alt (WP) | Neu (Astro) | Begruendung |
 |----------|-------------|-------------|
 | `/suedafrikas-outdoor-abenteuer-kulturelle-schaetze/` | `/magazin/suedafrika-outdoor-abenteuer/` | Reise-/Abenteuer-Artikel, deckt sich mit Magazin-Beispiel im CONTRACT. Keine externen kommerziellen Backlinks. |
-| `/volvo-trucks-ruestet-fl-4x4-fuer-extreme-offroad-einsaetze-auf/` | `/magazin/volvo-fl-4x4-offroad/` | On-topic Offroad-Fahrzeug-News. Einziger externer Link ist eine Quellen-Zitation (defence-industry.eu), kein bezahlter Werbe-Backlink -> Redirect vertretbar. |
+| `/volvo-trucks-ruestet-fl-4x4-fuer-extreme-offroad-einsaetze-auf/` | `/magazin/volvo-fl-4x4-extreme-offroad/` | On-topic Offroad-Fahrzeug-News. Einziger externer Link ist eine Quellen-Zitation (defence-industry.eu), kein bezahlter Werbe-Backlink -> Redirect vertretbar. |
 | `/was-du-ueber-offroad-trekking-wissen-musst/` | `/magazin/offroad-trekking-grundlagen/` | Kern-Thema (Offroad-Trekking-Ratgeber), keine externen kommerziellen Links. |
 | `/offroad-trekking-mit-autos/` | `/magazin/offroad-trekking-mit-autos/` | Kern-Thema, on-topic, keine externen kommerziellen Links. |
 | `/wie-waehle-ich-das-richtige-auto-fuer-mich-aus/` | `/magazin/richtiges-offroad-fahrzeug-waehlen/` | Fahrzeug-Auswahl-Ratgeber, on-topic, KEINE externen kommerziellen Backlinks verifiziert. |
@@ -87,7 +87,10 @@ oder die WP-Seite fuer diese Pfade weiter ausliefern. KEIN Eintrag in
 | `/wie-sie-den-perfekten-veranstaltungsort-auswaehlen/` | `schlossneuhaus.com` ("Schloss Neuhaus bei Sinsheim") | Off-topic (Event-Location), klassischer bezahlter Gastbeitrag. ERHALTEN. |
 | `/was-ist-mein-auto-wert/` | `kfz-sachverstaendigenbuero-rhein-neckar.de` ("KFZ Gutachten Frankfurt") | Kommerzieller Backlink zu KFZ-Gutachter, bezahlter Gastbeitrag. ERHALTEN. |
 | `/last-minute-reisen/` | `reisefein.de` ("Last-Minute Reisen am Flughafen") | Kommerzieller Backlink zu Reise-Buchungsseite, bezahlter Gastbeitrag. ERHALTEN. |
-| `/smartphone-urlaub-reparieren-lassen/` | (kein externer Link verifiziert) | Stark off-topic (Smartphone-Reparatur). Kein externer Link gefunden, aber Muster eines Gastbeitrags. Vorsichtshalber ERHALTEN, bis manuell geklaert. |
+| `/smartphone-urlaub-reparieren-lassen/` | (kein externer Link) | Stark off-topic, KEIN Backlink verifiziert. **GELÖSCHT (2026-06-03)** auf Freigabe: Seite entfernt, 301 auf `/` in `_redirects` + `.htaccess`. |
+| `/fahrradtraeger-mieten-online-vorteile-und-tipps/` | `traveltraeger.de/pages/koeln` ("Fahrradträger mieten", dofollow) | Bezahlter Gastbeitrag, beim Auto-Scraping UEBERSEHEN, am 2026-06-02 nachgetragen. **UMGESETZT**: 1:1 als `src/pages/fahrradtraeger-mieten-online-vorteile-und-tipps.astro`, exakte URL, Outbound-Link dofollow erhalten, kein Redirect. |
+
+> ACHTUNG: Der Auto-Scraper hat mindestens diesen Gastbeitrag uebersehen. Vor Go-Live ALLE Bestands-URLs vollstaendig enumerieren (WP-Sitemap / DB-Export), um weitere bezahlte Backlinks nicht zu verlieren.
 
 **To-do manuell:**
 1. Pro URL pruefen, ob ein aktiver bezahlter Backlink-Vertrag besteht.

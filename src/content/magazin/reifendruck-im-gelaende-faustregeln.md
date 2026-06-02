@@ -22,7 +22,7 @@ Die folgenden Werte sind grobe Orientierung für leichte Geländewagen, keine fe
 
 - **Straße und feste Piste:** Herstellervorgabe vom Türrahmen, keine Absenkung nötig.
 - **Schotter und Waldwege:** moderate Absenkung um etwa 15 bis 20 Prozent für mehr Komfort und Grip.
-- **Sand und Dünen:** deutliche Absenkung, oft auf die Hälfte des Straßendrucks oder weniger, um Aufschwimmen zu erreichen.
+- **Sand und Dünen:** deutliche Absenkung, oft auf die Hälfte des Straßendrucks oder weniger, um Aufschwimmen zu erreichen. Wer das Sandfahren üben will, findet im [Erg Chebbi Dünen-Loop](/routen/erg-chebbi-duenen-loop-marokko/) ein kalkulierbares Übungsrevier.
 - **Schlamm und Fels:** moderate Absenkung für Anpassung der Lauffläche, aber mit Blick auf Durchschlag- und Felgenschäden.
 
 ## Tempo anpassen, nicht nur den Druck
@@ -31,7 +31,7 @@ Mit abgesenktem Reifen sinkt die zulässige Geschwindigkeit. Hohe Walkarbeit erz
 
 ## Wieder aufpumpen nicht vergessen
 
-Vor der Rückkehr auf befestigte Straßen muss der Druck zurück auf Straßenniveau. Zu niedriger Druck bei hoher Geschwindigkeit überhitzt den Reifen und ist gefährlich. Ein Kompressor und ein verlässliches Manometer gehören deshalb zur Grundausstattung jeder Geländetour.
+Vor der Rückkehr auf befestigte Straßen muss der Druck zurück auf Straßenniveau. Zu niedriger Druck bei hoher Geschwindigkeit überhitzt den Reifen und ist gefährlich. Ein [Kompressor](/ausruestung/recovery/) und ein verlässliches Manometer gehören deshalb zur Grundausstattung jeder Geländetour, ebenso wie ein passender Satz [Geländereifen](/ausruestung/reifen/).
 
 ## Häufige Fragen
 

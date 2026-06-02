@@ -22,11 +22,11 @@ Der vielleicht wichtigste Baustein ist der Rücktransport bei schwerer Erkrankun
 
 ## Kurzreise oder Langzeit
 
-Für gelegentliche Reisen gibt es Jahresverträge, die einzelne Reisen bis zu einer bestimmten Dauer abdecken. Wer länger am Stück unterwegs ist, braucht einen Langzeittarif, da der Schutz sonst mitten in der Reise endet. Achten Sie auf die maximale Reisedauer pro Reise.
+Für gelegentliche Reisen gibt es Jahresverträge, die einzelne Reisen bis zu einer bestimmten Dauer abdecken. Wer länger am Stück unterwegs ist, braucht einen [Langzeittarif](/magazin/langzeitreiseversicherung-ratgeber/), da der Schutz sonst mitten in der Reise endet. Achten Sie auf die maximale Reisedauer pro Reise.
 
 ## Worauf zu achten ist
 
-Prüfen Sie die Geltungsregionen, die maximale Reisedauer, den Umgang mit Vorerkrankungen und mögliche Selbstbehalte. Lesen Sie, ob chronische Erkrankungen und deren akute Verschlechterung gedeckt sind. Bei aktiven Reisen lohnt der Blick auf Ausschlüsse für bestimmte Aktivitäten.
+Prüfen Sie die Geltungsregionen, die maximale Reisedauer, den Umgang mit Vorerkrankungen und mögliche Selbstbehalte. Lesen Sie, ob chronische Erkrankungen und deren akute Verschlechterung gedeckt sind. Bei aktiven Reisen lohnt der Blick auf Ausschlüsse für bestimmte Aktivitäten. Eine Übersicht passender Tarife finden Sie auf unserer Seite zu [Reiseversicherungen](/versicherungen/).
 
 ## Häufige Fragen
 

@@ -59,6 +59,6 @@ related:
 
 ## Was dich erwartet
 
-Die Route startet in **Marrakesch** und führt über den Tizi-n-Tichka-Pass tief in den Hohen Atlas. Asphalt weicht schnell groben Schotterpisten, die sich in engen Serpentinen die Bergflanken hochziehen. Auf 2.260 Höhenmetern wechselt die Landschaft von grünen Tälern zu kargem Fels - und am letzten Tag öffnet sich der Blick auf die ersten Dünen der Sahara.
+Die Route startet in **Marrakesch** und führt über den Tizi-n-Tichka-Pass tief in den Hohen Atlas. Asphalt weicht schnell groben Schotterpisten, die sich in engen Serpentinen die Bergflanken hochziehen. Auf 2.260 Höhenmetern wechselt die Landschaft von grünen Tälern zu kargem Fels - und am letzten Tag öffnet sich der Blick auf die ersten Dünen der Sahara. Mehr Hintergrund zum Land liefert unser Reiseziel-Porträt [Marokko](/reiseziele/marokko/).
 
-Technisch ist die Strecke kein Anfänger-Terrain: lose Steine, ausgewaschene Rinnen und schmale Abschnitte mit Abgrund verlangen ein hochbeiniges 4×4 mit Geländereifen und einen Fahrer, der Linienwahl beherrscht. Untersetzung ist Pflicht, Bergeausrüstung dringend empfohlen.
+Technisch ist die Strecke kein Anfänger-Terrain: lose Steine, ausgewaschene Rinnen und schmale Abschnitte mit Abgrund verlangen ein hochbeiniges 4×4 mit Geländereifen und einen Fahrer, der Linienwahl beherrscht. Untersetzung ist Pflicht, [Bergeausrüstung](/ausruestung/recovery/) dringend empfohlen. Für die Sandetappe vor Erg Chebbi lohnt vorab ein Blick in unsere [Faustregeln zum Reifendruck](/magazin/reifendruck-im-gelaende-faustregeln/).

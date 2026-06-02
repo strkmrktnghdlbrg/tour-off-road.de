@@ -33,7 +33,7 @@ topRoutes:
 
 Rumänien ist ein Traum für alle, die Pisten und ursprüngliche Natur lieben. Die Karpaten ziehen sich als grüner, dünn besiedelter Gebirgsbogen durch das Land und sind von einem dichten Netz an Forst- und Schotterwegen durchzogen. Dazwischen liegen Bergdörfer, in denen noch mit Pferdefuhrwerk gearbeitet wird, und Wälder, die zu den letzten großen Rückzugsgebieten für Bären, Wölfe und Luchse in Europa gehören.
 
-Die beiden Hochstraßen Transfăgărășan und Transalpina sind asphaltierte Klassiker mit spektakulären Serpentinen, doch der eigentliche Reiz liegt abseits davon. Wer von den Hauptachsen in die Seitentäler abbiegt, findet stundenlange einsame Schotterstrecken und Wildcamp-Plätze mit Bergblick. Das Preisniveau ist niedrig, die Menschen sind herzlich, und echtes Abenteuer beginnt oft schon hinter dem nächsten Dorf.
+Die beiden Hochstraßen Transfăgărășan und Transalpina sind asphaltierte Klassiker mit spektakulären Serpentinen, doch der eigentliche Reiz liegt abseits davon. Wer von den Hauptachsen in die Seitentäler abbiegt, findet stundenlange einsame Schotterstrecken und Wildcamp-Plätze mit Bergblick, etwa auf unserer entspannten Route über die [Karpaten-Forstwege](/routen/karpaten-forstwege-rumaenien/). Das Preisniveau ist niedrig, die Menschen sind herzlich, und echtes Abenteuer beginnt oft schon hinter dem nächsten Dorf.
 
 ## Gut zu wissen
 
@@ -41,3 +41,5 @@ Die beiden Hochstraßen Transfăgărășan und Transalpina sind asphaltierte Kla
 - **Bären:** In den Karpaten real präsent. Essensreste sicher verstauen, Müll nie liegen lassen, Abstand halten.
 - **Straßenzustand:** Schlaglöcher und Tiere auf der Fahrbahn sind normal, auch nachts. Vorausschauend fahren.
 - **Tanken:** In Tälern und Städten gut, in den Bergen dünn. Vor langen Forstetappen volltanken.
+
+Nach Regen werden die Waldwege schmierig, daher gehört ein Bergegurt aus der [Recovery-Ausrüstung](/ausruestung/recovery/) ins Gepäck. Ein ähnlich entspanntes Höhen-Offroad bieten die [Westalpen](/reiseziele/westalpen/).

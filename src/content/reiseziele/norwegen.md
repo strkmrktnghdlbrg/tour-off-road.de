@@ -31,7 +31,7 @@ topRoutes:
 
 ## Warum Norwegen
 
-Norwegen belohnt nicht mit technischem Extrem-Offroad, sondern mit einer Kulisse, die man so kein zweites Mal findet. Du fährst auf schmalen Schotterstraßen an Wasserfällen vorbei, schraubst dich über Serpentinen wie die Trollstigen auf Hochebenen und stehst plötzlich allein auf der baumlosen Hardangervidda, dem größten Hochplateau Nordeuropas. Die Mitternachtssonne im Norden verlängert jeden Fahrtag ins Endlose.
+Norwegen belohnt nicht mit technischem Extrem-Offroad, sondern mit einer Kulisse, die man so kein zweites Mal findet. Du fährst auf schmalen Schotterstraßen an Wasserfällen vorbei, schraubst dich über Serpentinen wie die Trollstigen auf Hochebenen und stehst plötzlich allein auf der baumlosen Hardangervidda, dem größten Hochplateau Nordeuropas. Die Mitternachtssonne im Norden verlängert jeden Fahrtag ins Endlose. Wie weit das gehen kann, zeigt die [Nordkapp-Schotterroute](/routen/nordkapp-schotter-norwegen/), die über die Finnmarksvidda bis ans Ende Europas führt.
 
 Das Land ist ideal für entspannte Overland-Touren mit Dachzelt oder Camper. Das norwegische Jedermannsrecht erlaubt freies Zelten in der Natur unter klaren Regeln, und Rastplätze mit Traumblick gibt es im Überfluss. Wer Ruhe, Weite und sauber organisierte Wildnis sucht, wird hier glücklich, auch wenn das Preisniveau spürbar höher liegt.
 
@@ -40,4 +40,6 @@ Das Land ist ideal für entspannte Overland-Touren mit Dachzelt oder Camper. Das
 - **Maut:** Viele Straßen, Tunnel und Fähren sind kostenpflichtig, oft per AutoPASS automatisch. Vorab registrieren spart Aufschläge.
 - **Tanken:** Im Süden dicht, im hohen Norden und Hochland deutlich dünner. Reserve einplanen.
 - **Wildwechsel:** Elche und Rentiere sind eine reale Gefahr, vor allem in der Dämmerung. Tempo anpassen.
-- **Wetter:** Auch im Sommer wechselhaft und kühl. Wasserdichte Ausrüstung und warme Schichten gehören dazu.
+- **Wetter:** Auch im Sommer wechselhaft und kühl. Wasserdichte [Ausrüstung](/ausruestung/) und warme Schichten gehören dazu.
+
+Wer das Pistenfahren in der Arktis mag, findet im benachbarten [Island](/reiseziele/island/) mit seinen F-Roads das nächste Hochland-Abenteuer.

@@ -33,7 +33,7 @@ topRoutes:
 
 Südafrika ist ein Kontinent im Kleinformat. An einem Tag fährst du durch die fruchtbaren Weinberge des Westkaps, am nächsten über staubige Schotterpässe der Drakensberge, und kurz darauf stehst du in der kargen Weite der Karoo, wo der Horizont scheinbar nie endet. Diese Vielfalt auf überschaubaren Distanzen macht das Land zu einem der besten Offroad-Ziele überhaupt.
 
-Die Infrastruktur ist für afrikanische Verhältnisse hervorragend ausgebaut: gut sortierte Geschäfte, zahlreiche Campsites und eine lebendige Overlanding-Kultur mit Dachzelt-Vermietern an jeder Ecke. Wildreservate erlauben das Selbstfahren auf eigenen Tracks, sodass du den Big Five im eigenen Tempo begegnest. Wer Natur und Abenteuer ohne große Sprachbarriere sucht, ist hier richtig.
+Die Infrastruktur ist für afrikanische Verhältnisse hervorragend ausgebaut: gut sortierte Geschäfte, zahlreiche Campsites und eine lebendige Overlanding-Kultur mit Dachzelt-Vermietern an jeder Ecke. Wildreservate erlauben das Selbstfahren auf eigenen Tracks, sodass du den Big Five im eigenen Tempo begegnest. Wer Natur und Abenteuer ohne große Sprachbarriere sucht, ist hier richtig. Einen ausführlichen Reisebericht liefert unser Magazin-Beitrag zu [Südafrikas Outdoor-Abenteuern](/magazin/suedafrika-outdoor-abenteuer/).
 
 ## Gut zu wissen
 
@@ -41,3 +41,5 @@ Die Infrastruktur ist für afrikanische Verhältnisse hervorragend ausgebaut: gu
 - **Sicherheit:** In Städten vorsichtig parken, nachts Überlandfahrten meiden. Auf dem Land ist es entspannt.
 - **Wild:** In Reservaten im Fahrzeug bleiben, Abstand halten, ausgewiesene Tracks nicht verlassen.
 - **Sprit & Versorgung:** Dicht im Süden, dünner Richtung Kalahari. Bei langen Etappen voll tanken und Wasser bunkern.
+
+Für die harten Gravel Roads lohnt ein Satz robuster [Geländereifen](/ausruestung/reifen/), und eine [Auslandskrankenversicherung mit Rücktransport](/versicherungen/) gehört außerhalb Europas zur Grundausstattung. Die nötige Logistik plant unsere [Reiseplanung](/reiseplanung/).

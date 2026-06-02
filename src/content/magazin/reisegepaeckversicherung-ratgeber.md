@@ -22,11 +22,11 @@ Reisegepäckversicherungen sind für ihre Einschränkungen bekannt. Häufig gibt
 
 ## Für wen sie sich lohnt
 
-Wer hochwertige Ausrüstung mitführt, etwa Kamera- oder Outdoor-Equipment, kann von einem gezielten Schutz profitieren. Bei einfachem Gepäck mit geringem Wert steht der Nutzen dagegen oft in keinem guten Verhältnis zu den Einschränkungen. Prüfen Sie auch, ob bestehende Versicherungen, etwa die Hausratversicherung, bereits einen Teil abdecken.
+Wer hochwertige [Ausrüstung](/ausruestung/) mitführt, etwa Kamera- oder Outdoor-Equipment, kann von einem gezielten Schutz profitieren. Bei einfachem Gepäck mit geringem Wert steht der Nutzen dagegen oft in keinem guten Verhältnis zu den Einschränkungen. Prüfen Sie auch, ob bestehende Versicherungen, etwa die Hausratversicherung, bereits einen Teil abdecken.
 
 ## Worauf zu achten ist
 
-Lesen Sie die Entschädigungsgrenzen, die Obliegenheiten zur Aufbewahrung und die Ausschlüsse genau. Wichtig ist, im Schadenfall die nötigen Nachweise zu haben, etwa eine Diebstahlanzeige oder eine Schadensmeldung des Transportunternehmens. Ohne diese Belege kann die Leistung entfallen.
+Als Ergänzung sichert eine [Reisehaftpflichtversicherung](/magazin/reisehaftpflichtversicherung-ratgeber/) Schäden ab, die Sie selbst verursachen. Einen Überblick aller Bausteine bietet unsere Seite zu [Reiseversicherungen](/versicherungen/). Lesen Sie die Entschädigungsgrenzen, die Obliegenheiten zur Aufbewahrung und die Ausschlüsse genau. Wichtig ist, im Schadenfall die nötigen Nachweise zu haben, etwa eine Diebstahlanzeige oder eine Schadensmeldung des Transportunternehmens. Ohne diese Belege kann die Leistung entfallen.
 
 ## Häufige Fragen
 

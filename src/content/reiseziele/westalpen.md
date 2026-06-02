@@ -31,7 +31,7 @@ topRoutes:
 
 ## Warum Westalpen
 
-Die Westalpen sind das wohl zugänglichste echte Hochgebirgs-Offroad in Europa. Ein dichtes Netz alter Militärstraßen, einst für den Nachschub in den Bergkriegen angelegt, zieht sich heute über Kämme und Pässe jenseits der 2000-Meter-Marke. Routen wie die Assietta-Kammstraße oder die Ligurische Grenzkammstraße bieten stundenlange Schotterfahrten mit Panoramablick auf Gletscher und tief eingeschnittene Täler.
+Die Westalpen sind das wohl zugänglichste echte Hochgebirgs-Offroad in Europa. Ein dichtes Netz alter Militärstraßen, einst für den Nachschub in den Bergkriegen angelegt, zieht sich heute über Kämme und Pässe jenseits der 2000-Meter-Marke. Routen wie die Assietta-Kammstraße oder die Ligurische Grenzkammstraße bieten stundenlange Schotterfahrten mit Panoramablick auf Gletscher und tief eingeschnittene Täler. Unsere [Transalp-Schotter-Route](/routen/transalp-schotter-westalpen/) reiht die schönsten dieser Militärstraßen zu einer entspannten Mehrtagestour aneinander.
 
 Der große Vorteil: Du musst nicht um die halbe Welt reisen. Aus Deutschland, Österreich oder der Schweiz bist du in ein bis zwei Tagen mittendrin und kannst auch ein verlängertes Wochenende sinnvoll nutzen. Die Mischung aus alpiner Kulisse, historischem Hintergrund und ehrlichem Pistenfahren macht den Reiz aus, ohne dass extreme Geländegängigkeit nötig wäre.
 
@@ -41,3 +41,5 @@ Der große Vorteil: Du musst nicht um die halbe Welt reisen. Aus Deutschland, Ö
 - **Höhe:** Wetter schlägt schnell um, Gewitter am Nachmittag sind typisch. Früh starten, Höhenwetter beobachten.
 - **Fahrzeug:** Gute Bodenfreiheit und solide Bremsen wichtig, lange Schotterabfahrten fordern das Material.
 - **Rücksicht:** Schmale Pisten teilst du mit Wanderern und Bikern. Langsam fahren, Staub und Lärm minimieren.
+
+Wer ein vergleichbar entspanntes Pistenerlebnis sucht, wird auch auf den [Forstwegen der rumänischen Karpaten](/reiseziele/rumaenien/) fündig.

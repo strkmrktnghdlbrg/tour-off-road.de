@@ -33,11 +33,11 @@ topRoutes:
 
 Island ist kein Land für gemütliches Asphalt-Cruisen, sondern für alle, die echtes Pistenfahren suchen. Sobald du die Ringstraße verlässt und auf eine F-Road abbiegst, beginnt eine andere Welt: schwarze Lavafelder bis zum Horizont, dampfende Geothermalquellen und Gletscherflüsse, die quer über die Piste laufen und durchfahren werden wollen. Das Hochland ist eine der letzten echten Wildnisse Europas.
 
-Die Furten sind das prägende Erlebnis. Manche sind harmlos, andere führen reißendes Schmelzwasser und ändern ihren Pegel im Tagesverlauf. Hier zahlt sich Erfahrung aus: Wassertiefe einschätzen, im ersten Gang mit konstanter Drehzahl durch, niemals allein. Ein zweites Fahrzeug als Absicherung ist im Hochland kein Luxus, sondern Vernunft.
+Die Furten sind das prägende Erlebnis. Manche sind harmlos, andere führen reißendes Schmelzwasser und ändern ihren Pegel im Tagesverlauf. Hier zahlt sich Erfahrung aus: Wassertiefe einschätzen, im ersten Gang mit konstanter Drehzahl durch, niemals allein. Ein zweites Fahrzeug als Absicherung ist im Hochland kein Luxus, sondern Vernunft. Wer einsteigen will, beginnt mit der [Highland-Piste F26](/routen/highland-piste-f26-island/); erfahrenere Fahrer wagen sich an die komplette [Sprengisandur-Durchquerung](/routen/sprengisandur-island/) oder die abgelegene [Westfjorde-Schleife](/routen/westfjorde-schleife-island/).
 
 ## Gut zu wissen
 
 - **F-Roads:** Nur mit echtem Allrad befahrbar, Mietverträge normaler Pkw schließen sie aus. Hochlandstraßen sind keine Empfehlung, sondern Vorschrift.
-- **Furten:** Tiefe und Strömung vor jeder Durchfahrt prüfen, im Zweifel warten. Schäden durch Wassereinbruch sind nie versichert.
+- **Furten:** Tiefe und Strömung vor jeder Durchfahrt prüfen, im Zweifel warten. Schäden durch Wassereinbruch sind nie versichert. Ein Blick in unsere [Reiseversicherungen](/versicherungen/) klärt, was im Ausland abgesichert ist.
 - **Wetter:** Schlägt innerhalb von Stunden um, auch im Juli. Warme Kleidung und Reserveproviant gehören ins Auto.
 - **Tanken:** Im Hochland gibt es keine Tankstellen. Voll auffüllen, bevor du die Ringstraße verlässt, plus Reservekanister.

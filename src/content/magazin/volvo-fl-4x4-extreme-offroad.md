@@ -18,11 +18,11 @@ Der FL 4x4 verbindet einen permanenten oder zuschaltbaren Allradantrieb mit eine
 
 ## Geländetauglichkeit realistisch eingeordnet
 
-Mit Untersetzung, Differenzialsperren und großer Bodenfreiheit bewältigt der FL 4x4 anspruchsvolle Pisten, Wasserdurchfahrten und steile Auffahrten. Wichtig ist die ehrliche Einordnung: Ein schwerer Expeditions-Lkw ist kein wendiges Trial-Fahrzeug. Auf engen, verblockten Trails stoßen Länge, Gewicht und Wendekreis an Grenzen. Seine Stärke liegt im Langstrecken-Overlanding über Schotter, Sand und schlechte Straßen, nicht im extremen Felskletter-Einsatz.
+Mit Untersetzung, Differenzialsperren und großer Bodenfreiheit bewältigt der FL 4x4 anspruchsvolle Pisten, Wasserdurchfahrten und steile Auffahrten. Wichtig ist die ehrliche Einordnung: Ein schwerer Expeditions-Lkw ist kein wendiges Trial-Fahrzeug. Auf engen, verblockten Trails stoßen Länge, Gewicht und Wendekreis an Grenzen. Seine Stärke liegt im Langstrecken-Overlanding über Schotter, Sand und schlechte Straßen, nicht im extremen Felskletter-Einsatz. Genau für solche Etappen sind weite Pisten wie die [Nordkapp-Schotterroute durch die Finnmark](/routen/nordkapp-schotter-norwegen/) gemacht.
 
 ## Aufbau zum Reisemobil
 
-Viele Exemplare werden mit einer Absetz- oder Festkabine zum autarken Reisemobil umgebaut. Entscheidend sind ein verwindungsfähiger Hilfsrahmen (Drei-Punkt- oder Vier-Punkt-Lagerung), durchdachtes Energiemanagement und ausreichende Wasser- und Kraftstoffreserven. Wer den Umbau plant, sollte Gewicht und Achslasten von Anfang an seriös kalkulieren, statt sie nachträglich zu korrigieren.
+Viele Exemplare werden mit einer Absetz- oder Festkabine zum autarken Reisemobil umgebaut. Entscheidend sind ein verwindungsfähiger Hilfsrahmen (Drei-Punkt- oder Vier-Punkt-Lagerung), durchdachtes Energiemanagement und ausreichende Wasser- und Kraftstoffreserven. Wer den Umbau plant, sollte Gewicht und Achslasten von Anfang an seriös kalkulieren, statt sie nachträglich zu korrigieren. Für die Reiselogistik dahinter hilft unsere [Reiseplanung](/reiseplanung/), und die nötige autarke [Ausrüstung](/ausruestung/) lässt sich entlang der Kategorien zusammenstellen.
 
 ## Kosten und Unterhalt
 

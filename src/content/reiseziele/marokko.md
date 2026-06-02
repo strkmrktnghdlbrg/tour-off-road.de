@@ -28,7 +28,7 @@ topRoutes:
 
 ## Warum Marokko
 
-Kaum ein Land bietet auf so kleinem Raum so viel Vielfalt: Innerhalb weniger Tage fährst du von schneebedeckten Atlas-Pässen über grüne Oasentäler bis in die Dünen von Erg Chebbi. Die Pistenqualität reicht von gemütlichem Schotter bis zu echtem 4×4-Terrain - für jedes Level ist etwas dabei.
+Kaum ein Land bietet auf so kleinem Raum so viel Vielfalt: Innerhalb weniger Tage fährst du von schneebedeckten Atlas-Pässen über grüne Oasentäler bis in die Dünen von Erg Chebbi. Die Pistenqualität reicht von gemütlichem Schotter bis zu echtem 4×4-Terrain - für jedes Level ist etwas dabei. Vom entspannten [Anti-Atlas-Panorama](/routen/anti-atlas-panorama-marokko/) über das Sandfahren im [Erg Chebbi Dünen-Loop](/routen/erg-chebbi-duenen-loop-marokko/) bis zur anspruchsvollen [Atlas-Überquerung](/routen/atlas-ueberquerung-marokko/) deckt unsere Routenauswahl die ganze Bandbreite ab.
 
 Die Infrastruktur ist überraschend gut: Diesel ist günstig und fast überall verfügbar, einfache Unterkünfte und Camps gibt es reichlich. Wildcampen wird in vielen Regionen toleriert. Wer Englisch oder Französisch spricht, kommt gut durch.
 
@@ -38,3 +38,5 @@ Die Infrastruktur ist überraschend gut: Diesel ist günstig und fast überall v
 - **Fahrzeug:** Grüne Karte prüfen - Marokko ist oft nicht abgedeckt, lokale Versicherung an der Grenze.
 - **Geld:** Dirham ist eine geschlossene Währung, vor Ort abheben.
 - **Respekt:** In Dörfern angemessen kleiden, vor Fotos fragen.
+
+Für die Sandabschnitte gehören [Recovery-Ausrüstung](/ausruestung/recovery/) wie Sandbleche und Kompressor ins Gepäck. Wer noch tiefer in die Sahara will, findet im Nachbarland [Tunesien](/reiseziele/tunesien/) weitere Dünenziele.

@@ -22,11 +22,11 @@ Viele private Haftpflichtversicherungen bieten weltweiten Schutz, oft jedoch zei
 
 ## Wann ein eigener Reisebaustein sinnvoll ist
 
-Für sehr lange Reisen, längere Auslandsaufenthalte oder spezielle Risiken kann ein eigener Reisehaftpflichtbaustein oder ein Langzeittarif sinnvoll sein. Auch wer keine private Haftpflicht besitzt, sollte vor einer Reise prüfen, ob ein Grundschutz vorhanden ist, denn Haftpflichtschäden können hohe Summen erreichen.
+Für sehr lange Reisen, längere Auslandsaufenthalte oder spezielle Risiken kann ein eigener Reisehaftpflichtbaustein oder ein [Langzeittarif](/magazin/langzeitreiseversicherung-ratgeber/) sinnvoll sein. Auch wer keine private Haftpflicht besitzt, sollte vor einer Reise prüfen, ob ein Grundschutz vorhanden ist, denn Haftpflichtschäden können hohe Summen erreichen.
 
 ## Worauf zu achten ist
 
-Achten Sie auf die Höhe der Deckungssumme, die Geltungsregionen und die maximale Dauer des Auslandsschutzes. Lesen Sie die Ausschlüsse, etwa für vertraglich übernommene Haftung oder bestimmte Tätigkeiten. Bei Mietfahrzeugen und Mietunterkünften lohnt der Blick auf Mietsachschäden.
+Gemeinsam mit der [Reisekrankenversicherung](/magazin/reisekrankenversicherung-ratgeber/) bildet der Haftpflichtschutz die Basis fürs Ausland, eine Übersicht aller Bausteine finden Sie unter [Reiseversicherungen](/versicherungen/). Achten Sie auf die Höhe der Deckungssumme, die Geltungsregionen und die maximale Dauer des Auslandsschutzes. Lesen Sie die Ausschlüsse, etwa für vertraglich übernommene Haftung oder bestimmte Tätigkeiten. Bei Mietfahrzeugen und Mietunterkünften lohnt der Blick auf Mietsachschäden.
 
 ## Häufige Fragen
 

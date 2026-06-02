@@ -33,7 +33,7 @@ topRoutes:
 
 Albanien ist für viele noch ein weißer Fleck auf der Offroad-Landkarte, und genau das macht den Reiz aus. Die Albanischen Alpen im Norden gehören zu den wildesten Gebirgen Europas: schroffe Kalkgipfel, abgeschiedene Dörfer wie Theth und Valbona, in denen die Zeit stehen geblieben scheint, und Pisten, die sich in endlosen Kehren die Hänge hinaufschrauben.
 
-Die Gastfreundschaft ist legendär und oft überwältigend ehrlich. Wer mit Respekt und etwas Geduld unterwegs ist, wird in kleinen Bergcafés oder von Hirten am Wegesrand mit Kaffee und Raki empfangen. Touristisch ist vieles noch nicht durchorganisiert, was Eigeninitiative verlangt, aber dafür echte Begegnungen schenkt.
+Die Gastfreundschaft ist legendär und oft überwältigend ehrlich. Wer mit Respekt und etwas Geduld unterwegs ist, wird in kleinen Bergcafés oder von Hirten am Wegesrand mit Kaffee und Raki empfangen. Touristisch ist vieles noch nicht durchorganisiert, was Eigeninitiative verlangt, aber dafür echte Begegnungen schenkt. Eine sorgfältige [Reiseplanung](/reiseplanung/) mit Offline-Karten und Pufferzeit zahlt sich hier besonders aus.
 
 ## Gut zu wissen
 
@@ -41,3 +41,5 @@ Die Gastfreundschaft ist legendär und oft überwältigend ehrlich. Wer mit Resp
 - **Tanken:** In der Fläche ausreichend, in entlegenen Bergregionen aber dünn. Reserve mitnehmen.
 - **Fahrweise:** Lokaler Verkehr ist offensiv, defensiv fahren lohnt sich. Tiere auf der Fahrbahn sind häufig.
 - **Bargeld:** Lek ist König, Kartenzahlung außerhalb der Städte selten. Genug Bares dabei haben.
+
+Für die rauen Bergpisten lohnt etwas [Recovery-Ausrüstung](/ausruestung/recovery/) im Gepäck. Wer den Balkan-Pisten den Geschmack abgewinnt, findet in den [rumänischen Karpaten](/reiseziele/rumaenien/) das nächste weitläufige Forstwege-Revier.

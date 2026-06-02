@@ -52,6 +52,68 @@ const index: SearchItem[] = [
     kind: 'Magazin',
   })),
 ];
+
+// Statische Hub- und Info-Seiten, damit auch sie auffindbar sind.
+const staticPages: SearchItem[] = [
+  {
+    title: 'Routen-Atlas',
+    excerpt: 'Alle Offroad- und Overland-Routen im Überblick, nach Region und Schwierigkeit.',
+    href: '/routen/',
+    image: 'https://images.unsplash.com/photo-1489493887464-892be6d1daae?w=900&q=70',
+    kind: 'Seite',
+  },
+  {
+    title: 'Reiseziele',
+    excerpt: 'Länder und Regionen für deine nächste Allrad-Tour, mit Anreise und bester Reisezeit.',
+    href: '/reiseziele/',
+    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=900&q=70',
+    kind: 'Seite',
+  },
+  {
+    title: 'Ausrüstung',
+    excerpt: 'Bergung, Camping, Navigation, Campküche und Reifen für unterwegs.',
+    href: '/ausruestung/',
+    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=900&q=70',
+    kind: 'Seite',
+  },
+  {
+    title: 'Magazin',
+    excerpt: 'Reiseberichte, Ratgeber und Tipps rund um Offroad und Overlanding.',
+    href: '/magazin/',
+    image: 'https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=900&q=70',
+    kind: 'Seite',
+  },
+  {
+    title: 'Reiseplanung',
+    excerpt: 'Schritt für Schritt zur eigenen Offroad-Tour: Vorbereitung, Route und Checklisten.',
+    href: '/reiseplanung/',
+    image: 'https://images.unsplash.com/photo-1500534623283-312aade485b7?w=900&q=70',
+    kind: 'Seite',
+  },
+  {
+    title: 'Versicherungen',
+    excerpt: 'Reise- und Fahrzeugversicherungen für lange Touren im Vergleich.',
+    href: '/versicherungen/',
+    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&q=70',
+    kind: 'Seite',
+  },
+  {
+    title: 'Über uns',
+    excerpt: 'Wer hinter tour-off-road.de steckt und wofür wir stehen.',
+    href: '/ueber-uns/',
+    image: 'https://images.unsplash.com/photo-1532974297617-c0f05fe48bff?w=900&q=70',
+    kind: 'Seite',
+  },
+  {
+    title: 'Kontakt',
+    excerpt: 'Fragen, Feedback oder Kooperationsanfragen? So erreichst du uns.',
+    href: '/kontakt/',
+    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&q=70',
+    kind: 'Seite',
+  },
+];
+
+const fullIndex: SearchItem[] = [...index, ...staticPages];
 ---
 
 <Base
@@ -99,7 +161,7 @@ const index: SearchItem[] = [
   <Footer />
 </Base>
 
-<script define:vars={{ index }}>
+<script define:vars={{ index: fullIndex }}>
   const input = document.getElementById('q');
   const results = document.getElementById('results');
   const status = document.getElementById('search-status');

@@ -50,6 +50,6 @@ related:
 
 ## Was dich erwartet
 
-Die **F26**, auch Sprengisandur-Route genannt, ist eine der klassischen Hochland-Durchquerungen Islands. Sie verbindet den Süden mit dem Norden auf einer kargen Schotterachse zwischen den großen Gletschern Hofsjökull und Vatnajökull. Wer hier fährt, lässt Bäume, Häuser und Mobilnetz hinter sich.
+Die **F26**, auch Sprengisandur-Route genannt, ist eine der klassischen Hochland-Durchquerungen Islands. Sie verbindet den Süden mit dem Norden auf einer kargen Schotterachse zwischen den großen Gletschern Hofsjökull und Vatnajökull. Wer hier fährt, lässt Bäume, Häuser und Mobilnetz hinter sich. Als Einstieg ins isländische Hochland ist sie der ideale Vorlauf zur kompletten [Sprengisandur-Durchquerung](/routen/sprengisandur-island/); den Landeskontext liefert das Reiseziel-Porträt [Island](/reiseziele/island/).
 
-Technisch ist die Piste weniger anspruchsvoll als ihre Länge vermuten lässt: viel grobes Waschbrett, einige Lavafelder und mehrere Gletscherbach-Furten ohne Brücke. Entscheidend ist nicht Fahrkönnen im engen Geröll, sondern Vorbereitung - Wasserstand der Furten, Wetterfenster und genug Reserven, falls eine Etappe länger dauert.
+Technisch ist die Piste weniger anspruchsvoll als ihre Länge vermuten lässt: viel grobes Waschbrett, einige Lavafelder und mehrere Gletscherbach-Furten ohne Brücke. Entscheidend ist nicht Fahrkönnen im engen Geröll, sondern Vorbereitung - Wasserstand der Furten, Wetterfenster und genug Reserven, falls eine Etappe länger dauert. Eine strukturierte [Reiseplanung](/reiseplanung/) hilft, das Wetterfenster und die Logistik im Griff zu behalten.

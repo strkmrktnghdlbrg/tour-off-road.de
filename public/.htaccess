@@ -26,7 +26,7 @@
 
   # --- Einzel-Artikel (on-topic / unbedenklich) -----------------------------
   RewriteRule ^suedafrikas-outdoor-abenteuer-kulturelle-schaetze/?$        /magazin/suedafrika-outdoor-abenteuer/        [R=301,L]
-  RewriteRule ^volvo-trucks-ruestet-fl-4x4-fuer-extreme-offroad-einsaetze-auf/?$   /magazin/volvo-fl-4x4-offroad/        [R=301,L]
+  RewriteRule ^volvo-trucks-ruestet-fl-4x4-fuer-extreme-offroad-einsaetze-auf/?$   /magazin/volvo-fl-4x4-extreme-offroad/        [R=301,L]
   RewriteRule ^was-du-ueber-offroad-trekking-wissen-musst/?$               /magazin/offroad-trekking-grundlagen/         [R=301,L]
   RewriteRule ^offroad-trekking-mit-autos/?$                               /magazin/offroad-trekking-mit-autos/          [R=301,L]
   RewriteRule ^wie-waehle-ich-das-richtige-auto-fuer-mich-aus/?$           /magazin/richtiges-offroad-fahrzeug-waehlen/  [R=301,L]
@@ -39,4 +39,7 @@
   RewriteRule ^reisehaftpflicht-versicherung/?$  /versicherungen/   [R=301,L]
   RewriteRule ^reisegepaeck-versicherung/?$      /versicherungen/   [R=301,L]
   RewriteRule ^reisekrankenversicherung/?$       /versicherungen/   [R=301,L]
+
+  # Geloeschter Off-Topic-Gastbeitrag ohne Backlink (2026-06-03)
+  RewriteRule ^smartphone-urlaub-reparieren-lassen/?$  /   [R=301,L]
 </IfModule>

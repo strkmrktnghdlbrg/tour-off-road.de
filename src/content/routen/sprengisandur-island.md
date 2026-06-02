@@ -56,6 +56,6 @@ related:
 
 ## Was dich erwartet
 
-Der **Sprengisandur** ist die längste und einsamste Hochland-Durchquerung Islands - eine vulkanische Steinwüste zwischen den beiden größten Gletschern der Insel, Vatnajökull und Hofsjökull. Auf weiten Strecken gibt es nichts als schwarze Asche, Schotter und den Horizont. Während die F26 nur einen Teil davon streift, fährt diese Route die komplette Querung.
+Der **Sprengisandur** ist die längste und einsamste Hochland-Durchquerung Islands - eine vulkanische Steinwüste zwischen den beiden größten Gletschern der Insel, Vatnajökull und Hofsjökull. Auf weiten Strecken gibt es nichts als schwarze Asche, Schotter und den Horizont. Während die [F26](/routen/highland-piste-f26-island/) nur einen Teil davon streift, fährt diese Route die komplette Querung. Wie das Hochland insgesamt tickt, beschreibt unser Reiseziel-Porträt [Island](/reiseziele/island/).
 
-Technisch sind einzelne Abschnitte machbar, doch die Summe macht den Sprengisandur schwer: mehrere tiefe, unbrückte Gletscherbach-Furten, weicher Sand, kein Treibstoff über die gesamte Strecke und absolute Abgeschiedenheit ohne Netz. Schnorchel, Untersetzung, Reservekanister und ein zweites Fahrzeug im Konvoi gehören hier zur Grundausstattung.
+Technisch sind einzelne Abschnitte machbar, doch die Summe macht den Sprengisandur schwer: mehrere tiefe, unbrückte Gletscherbach-Furten, weicher Sand, kein Treibstoff über die gesamte Strecke und absolute Abgeschiedenheit ohne Netz. Schnorchel, Untersetzung, Reservekanister und ein zweites Fahrzeug im Konvoi gehören hier zur Grundausstattung. Die passende [Recovery-Ausrüstung](/ausruestung/recovery/) für Sand und Furten sollte vollständig an Bord sein.

@@ -10,7 +10,7 @@ readMinutes: 8
 cluster: "reiseziele"
 ---
 
-Vier Wochen, ein Allrad und ein Land, das auf jeder Etappe die Kulisse wechselt: Südafrika gehört zu den lohnendsten Overland-Zielen überhaupt. Von der Garden Route entlang der Küste bis in die karge Weite der Karoo reiht sich ein Naturhighlight ans nächste - unterbrochen von Townships, Weingütern und Begegnungen, die hängen bleiben.
+Vier Wochen, ein Allrad und ein Land, das auf jeder Etappe die Kulisse wechselt: [Südafrika](/reiseziele/suedafrika/) gehört zu den lohnendsten Overland-Zielen überhaupt. Von der Garden Route entlang der Küste bis in die karge Weite der Karoo reiht sich ein Naturhighlight ans nächste - unterbrochen von Townships, Weingütern und Begegnungen, die hängen bleiben.
 
 ## Die Garden Route als Auftakt
 
@@ -23,7 +23,7 @@ Landeinwärts wird es weit und still. Die Halbwüste Karoo ist Offroad-Land par 
 ## Was du mitbringen solltest
 
 - **Reservekraftstoff & Wasser** - Etappen zwischen Versorgung können lang sein.
-- **Auslandskrankenversicherung mit Rücktransport** - medizinische Versorgung ist in Ballungsräumen gut, auf dem Land dünn.
-- **Robuste Reifen** - Gravel Roads sind hart zu Seitenwänden.
+- **[Auslandskrankenversicherung mit Rücktransport](/versicherungen/)** - medizinische Versorgung ist in Ballungsräumen gut, auf dem Land dünn.
+- **[Robuste Reifen](/ausruestung/reifen/)** - Gravel Roads sind hart zu Seitenwänden.
 
 Südafrika ist kein Hardcore-4×4-Ziel - vieles geht auch mit einem soliden AWD. Aber gerade die Mischung aus machbarem Gelände, Wildlife und Kultur macht das Land zum perfekten Einstieg in das Overlanding außerhalb Europas.

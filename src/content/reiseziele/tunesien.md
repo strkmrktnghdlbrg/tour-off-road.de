@@ -31,13 +31,13 @@ topRoutes:
 
 ## Warum Tunesien
 
-Tunesien ist für viele das Tor zur Sahara, das ohne große Bürokratie und mit kurzer Anreise erreichbar ist. Schon wenige Stunden hinter Tunis beginnt der Süden, wo Palmenoasen wie Tozeur und Douz in die endlose Weite übergehen. Der riesige Salzsee Chott el Djerid schimmert je nach Licht rosa und weiß, und dahinter rollen die ersten Dünen des Grand Erg Oriental.
+Tunesien ist für viele das Tor zur Sahara, das ohne große Bürokratie und mit kurzer Anreise erreichbar ist. Schon wenige Stunden hinter Tunis beginnt der Süden, wo Palmenoasen wie Tozeur und Douz in die endlose Weite übergehen. Der riesige Salzsee Chott el Djerid schimmert je nach Licht rosa und weiß, und dahinter rollen die ersten Dünen des Grand Erg Oriental. Wer das Sandfahren vorher in kalkulierbarem Rahmen üben möchte, ist im marokkanischen [Erg Chebbi Dünen-Loop](/routen/erg-chebbi-duenen-loop-marokko/) gut aufgehoben.
 
 Das Land verbindet Wüstenabenteuer mit greifbarer Kultur: alte Ksour-Speicherburgen, Höhlenwohnungen rund um Matmata und freundliche Begegnungen am Rande der Pisten. Die Distanzen sind überschaubar, die Versorgung im bewohnten Norden gut. Sobald du tiefer in den Erg vordringst, beginnt aber echte Wüste mit allem, was dazugehört: Eigenverantwortung, Wasser, Reserve und Respekt.
 
 ## Gut zu wissen
 
-- **Sandfahren:** Reifendruck deutlich absenken, Sandbleche und Bergegurt griffbereit. Niemals solo in tiefen Erg.
+- **Sandfahren:** Reifendruck deutlich absenken, [Sandbleche und Bergegurt](/ausruestung/recovery/) griffbereit. Niemals solo in tiefen Erg. Die passenden [Faustregeln zum Reifendruck im Gelände](/magazin/reifendruck-im-gelaende-faustregeln/) helfen beim Absenken.
 - **Wasser & Sprit:** Vor jeder Wüstenetappe großzügig bunkern. Im Süden sind die Distanzen zwischen Tankstellen groß.
 - **Navigation:** GPS plus Offline-Karten, Pisten verwehen und ändern sich. Track-Logging hilft beim Rückweg.
 - **Respekt:** In Dörfern angemessen kleiden, vor Fotos fragen, lokale Guides für Erg-Touren einplanen.

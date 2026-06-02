@@ -7,6 +7,8 @@ interface Props {
   image?: string;
   /** Pfad relativ zur Site, z.B. "/routen/" - fuer Canonical/OG */
   path?: string;
+  /** Wenn true: Seite via Meta-Robots von Index/Folgen ausschliessen (z.B. Rechtsseiten) */
+  noindex?: boolean;
 }
 
 const {
@@ -14,6 +16,7 @@ const {
   description = 'Kuratierte Offroad-Routen mit GPX-Track, ehrliche Ausruestungs-Tests und der passende Versicherungs-Vergleich fuer jede Expedition.',
   image = 'https://images.unsplash.com/photo-1489493887464-892be6d1daae?w=1200&q=75',
   path,
+  noindex = false,
 } = Astro.props;
 
 const canonical = new URL(path ?? Astro.url.pathname, Astro.site).href;
@@ -26,6 +29,7 @@ const canonical = new URL(path ?? Astro.url.pathname, Astro.site).href;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
 
     <meta property="og:type" content="website" />

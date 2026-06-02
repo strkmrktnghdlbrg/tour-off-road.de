@@ -21,7 +21,7 @@
 
 # --- Einzel-Artikel (on-topic / unbedenklich) -------------------------------
 /suedafrikas-outdoor-abenteuer-kulturelle-schaetze/   /magazin/suedafrika-outdoor-abenteuer/   301
-/volvo-trucks-ruestet-fl-4x4-fuer-extreme-offroad-einsaetze-auf/   /magazin/volvo-fl-4x4-offroad/   301
+/volvo-trucks-ruestet-fl-4x4-fuer-extreme-offroad-einsaetze-auf/   /magazin/volvo-fl-4x4-extreme-offroad/   301
 /was-du-ueber-offroad-trekking-wissen-musst/          /magazin/offroad-trekking-grundlagen/    301
 /offroad-trekking-mit-autos/                          /magazin/offroad-trekking-mit-autos/     301
 /wie-waehle-ich-das-richtige-auto-fuer-mich-aus/      /magazin/richtiges-offroad-fahrzeug-waehlen/   301
@@ -34,3 +34,6 @@
 /reisehaftpflicht-versicherung/  /versicherungen/   301
 /reisegepaeck-versicherung/      /versicherungen/   301
 /reisekrankenversicherung/       /versicherungen/   301
+
+# Geloeschter Off-Topic-Gastbeitrag ohne Backlink (2026-06-03) -> Startseite
+/smartphone-urlaub-reparieren-lassen/    /    301

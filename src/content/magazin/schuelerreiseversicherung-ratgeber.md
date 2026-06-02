@@ -14,7 +14,7 @@ Klassenfahrten, Schüleraustausch und Sprachreisen sind feste Bestandteile der S
 
 ## Welche Bausteine üblich sind
 
-Schülerreiseversicherungen kombinieren meist mehrere Module. Häufig enthalten sind eine Reiserücktrittsversicherung, eine Auslandskrankenversicherung sowie ein Reiseabbruch-Schutz. Je nach Anbieter kommen Bausteine wie Reisegepäck oder Reisehaftpflicht hinzu. Welche Module sinnvoll sind, hängt vom Reiseziel und der Dauer ab.
+Schülerreiseversicherungen kombinieren meist mehrere Module. Häufig enthalten sind eine Reiserücktrittsversicherung, eine Auslandskrankenversicherung sowie ein Reiseabbruch-Schutz. Je nach Anbieter kommen Bausteine wie [Reisegepäck](/magazin/reisegepaeckversicherung-ratgeber/) oder [Reisehaftpflicht](/magazin/reisehaftpflichtversicherung-ratgeber/) hinzu. Welche Module sinnvoll sind, hängt vom Reiseziel und der Dauer ab. Reist eine ganze Klasse gemeinsam, kann statt Einzelverträgen eine [Gruppenreiseversicherung](/magazin/gruppenreiseversicherung-ratgeber/) günstiger sein.
 
 ## Reiserücktritt und Reiseabbruch
 
@@ -26,7 +26,7 @@ Bei längeren Auslandsaufenthalten ist der Auslandskrankenschutz zentral. Die ge
 
 ## Worauf Eltern achten sollten
 
-Prüfen Sie die Altersgrenzen, die Geltungsdauer und ob Gruppen- oder Einzelverträge günstiger sind. Bei längeren Austauschprogrammen sind spezielle Langzeit-Tarife meist passender als kurze Reisetarife. Lesen Sie die versicherten Rücktrittsgründe und Ausschlüsse vor Abschluss.
+Prüfen Sie die Altersgrenzen, die Geltungsdauer und ob Gruppen- oder Einzelverträge günstiger sind. Bei längeren Austauschprogrammen sind spezielle [Langzeit-Tarife](/magazin/langzeitreiseversicherung-ratgeber/) meist passender als kurze Reisetarife. Lesen Sie die versicherten Rücktrittsgründe und Ausschlüsse vor Abschluss.
 
 ## Häufige Fragen
 

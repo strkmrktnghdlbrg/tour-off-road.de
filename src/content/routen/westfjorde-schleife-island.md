@@ -61,6 +61,6 @@ related:
 
 ## Was dich erwartet
 
-Die **Westfjorde** im Nordwesten Islands sind der abgelegenste Teil der Insel - eine zerklüftete Halbinsel aus tief eingeschnittenen Fjorden, Steilküsten und Bergpisten, die kaum jemand befährt. Genau das macht den Reiz und die Schwierigkeit dieser Schleife aus.
+Die **Westfjorde** im Nordwesten Islands sind der abgelegenste Teil der Insel - eine zerklüftete Halbinsel aus tief eingeschnittenen Fjorden, Steilküsten und Bergpisten, die kaum jemand befährt. Genau das macht den Reiz und die Schwierigkeit dieser Schleife aus. Einen Überblick über Land, Saison und Furtenregeln gibt unser Reiseziel-Porträt [Island](/reiseziele/island/).
 
-Technisch ist das die anspruchsvollste Island-Route in unserer Auswahl. Steile, ausgewaschene Schotterpässe mit losem Geröll, unbrückte Furten und ein Wetter, das auch im Juli innerhalb einer Stunde von Sonne auf Sturm umschlagen kann. Untersetzung, Bergeausrüstung und ein zweites Fahrzeug im Konvoi sind hier keine Empfehlung, sondern dringend ratsam.
+Technisch ist das die anspruchsvollste Island-Route in unserer Auswahl. Steile, ausgewaschene Schotterpässe mit losem Geröll, unbrückte Furten und ein Wetter, das auch im Juli innerhalb einer Stunde von Sonne auf Sturm umschlagen kann. Untersetzung, [Bergeausrüstung](/ausruestung/recovery/) und ein zweites Fahrzeug im Konvoi sind hier keine Empfehlung, sondern dringend ratsam. Wer zuvor Hochland-Erfahrung sammeln will, fährt sich auf der [F26-Hochlandpiste](/routen/highland-piste-f26-island/) warm.

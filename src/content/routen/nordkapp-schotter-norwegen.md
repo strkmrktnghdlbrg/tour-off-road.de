@@ -65,6 +65,6 @@ related:
 
 ## Was dich erwartet
 
-Diese Route führt durch die **Finnmark**, Norwegens hohen Norden, bis zum Nordkapp - dem symbolischen Ende Europas. Statt nur die Asphaltstraße zu fahren, nimmt die Tour die Schotterpisten über die Finnmarksvidda, die größte Hochebene des Landes: endlose Tundra, einsame Seen, Rentierherden und im Sommer die Mitternachtssonne.
+Diese Route führt durch die **Finnmark**, Norwegens hohen Norden, bis zum Nordkapp - dem symbolischen Ende Europas. Statt nur die Asphaltstraße zu fahren, nimmt die Tour die Schotterpisten über die Finnmarksvidda, die größte Hochebene des Landes: endlose Tundra, einsame Seen, Rentierherden und im Sommer die Mitternachtssonne. Mehr zum Land und seinen Befahrungsregeln steht im Reiseziel-Porträt [Norwegen](/reiseziele/norwegen/).
 
-Technisch liegt die Route im mittleren Bereich. Die Pisten sind meist gut fahrbar, doch die großen Distanzen, der oft heftige Wind auf den Hochebenen und die weit auseinanderliegenden Tankstellen verlangen Planung und Reserven. Ein Allrad-SUV oder Pickup mit Reservekanister und windfester Ausrüstung bringt dich entspannt bis ans Nordkap.
+Technisch liegt die Route im mittleren Bereich. Die Pisten sind meist gut fahrbar, doch die großen Distanzen, der oft heftige Wind auf den Hochebenen und die weit auseinanderliegenden Tankstellen verlangen Planung und Reserven. Ein Allrad-SUV oder Pickup mit Reservekanister und windfester [Ausrüstung](/ausruestung/) bringt dich entspannt bis ans Nordkap. Bei den weiten Distanzen lohnt eine durchdachte [Reiseplanung](/reiseplanung/) mit Tankstopps und Wetterfenster.

@@ -7,6 +7,7 @@ import Footer from '../../components/Footer.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import Pills from '../../components/Pills.astro';
 import GearCard from '../../components/GearCard.astro';
+import { gearAffiliateHref } from '../../products';
 
 const gear = await getCollection('ausruestung');
 
@@ -68,7 +69,7 @@ const pills = [
         {
           gear.map((g) => (
             <GearCard
-              href={g.data.affiliateUrl}
+              href={gearAffiliateHref(g.data, `gear-${g.data.slug}`)}
               image={g.data.image}
               title={g.data.title}
               category={categoryLabel[g.data.category]}

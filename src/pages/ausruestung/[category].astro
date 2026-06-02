@@ -8,6 +8,7 @@ import Footer from '../../components/Footer.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import Pills from '../../components/Pills.astro';
 import GearCard from '../../components/GearCard.astro';
+import { gearAffiliateHref } from '../../products';
 
 export const getStaticPaths = (async () => {
   const cats = ['recovery', 'camping', 'navigation', 'campkueche', 'reifen'];
@@ -72,7 +73,7 @@ const pills = [
           <div class="route-grid">
             {gear.map((g) => (
               <GearCard
-                href={g.data.affiliateUrl}
+                href={gearAffiliateHref(g.data, `gear-${g.data.slug}`)}
                 image={g.data.image}
                 title={g.data.title}
                 category={categoryLabel[g.data.category]}

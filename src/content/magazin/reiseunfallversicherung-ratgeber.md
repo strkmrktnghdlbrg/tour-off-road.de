@@ -18,11 +18,11 @@ Im Mittelpunkt steht die Absicherung gegen die Folgen eines Unfalls, insbesonder
 
 ## Abgrenzung zur Krankenversicherung
 
-Die Auslandskrankenversicherung übernimmt die Kosten der medizinischen Behandlung und oft den Rücktransport. Die Reiseunfallversicherung springt dagegen bei den langfristigen finanziellen Folgen ein, etwa wenn ein Unfall zu einer dauerhaften Einschränkung führt. Beide Bausteine ergänzen sich, ersetzen sich aber nicht.
+Die [Auslandskrankenversicherung](/magazin/reisekrankenversicherung-ratgeber/) übernimmt die Kosten der medizinischen Behandlung und oft den Rücktransport. Die Reiseunfallversicherung springt dagegen bei den langfristigen finanziellen Folgen ein, etwa wenn ein Unfall zu einer dauerhaften Einschränkung führt. Beide Bausteine ergänzen sich, ersetzen sich aber nicht.
 
 ## Für wen sie sinnvoll sein kann
 
-Wer bereits eine umfassende private Unfallversicherung mit weltweitem Schutz besitzt, ist häufig auch auf Reisen abgesichert. Für alle anderen kann ein Reisebaustein sinnvoll sein, besonders bei aktiven Reisen mit erhöhtem Verletzungsrisiko. Prüfen Sie, ob riskantere Aktivitäten mitversichert sind oder ausgeschlossen werden.
+Wer bereits eine umfassende private Unfallversicherung mit weltweitem Schutz besitzt, ist häufig auch auf Reisen abgesichert. Für alle anderen kann ein Reisebaustein sinnvoll sein, besonders bei aktiven Reisen mit erhöhtem Verletzungsrisiko, etwa anspruchsvollen [Hochland-Touren in Island](/reiseziele/island/). Prüfen Sie, ob riskantere Aktivitäten mitversichert sind oder ausgeschlossen werden. Einen Überblick aller Bausteine bietet unsere Seite zu [Reiseversicherungen](/versicherungen/).
 
 ## Worauf zu achten ist
 

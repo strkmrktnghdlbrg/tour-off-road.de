@@ -50,6 +50,6 @@ related:
 
 ## Was dich erwartet
 
-Der **Anti-Atlas** südlich des Hohen Atlas ist Marokkos großes Geologie-Theater: rotes und rosa schimmerndes Gestein, bizarr verfaltete Bergrücken und im Frühjahr die Mandelblüte im Ameln-Tal rund um Tafraoute. Diese Route verbindet die schönsten Pisten der Region zu einer entspannten Dreitagestour.
+Der **Anti-Atlas** südlich des Hohen Atlas ist Marokkos großes Geologie-Theater: rotes und rosa schimmerndes Gestein, bizarr verfaltete Bergrücken und im Frühjahr die Mandelblüte im Ameln-Tal rund um Tafraoute. Diese Route verbindet die schönsten Pisten der Region zu einer entspannten Dreitagestour und eignet sich gut als sanfter Einstieg, bevor es an die anspruchsvolle [Atlas-Überquerung](/routen/atlas-ueberquerung-marokko/) geht. Mehr zum Land findest du im Reiseziel-Porträt [Marokko](/reiseziele/marokko/).
 
-Technisch ist das die leichteste Marokko-Route in unserer Auswahl. Weite Geröllpisten, einfache Oasen-Schluchten und gelegentlich Asphalt - kein steiler Hochgebirgspass, keine Sanddünen. Ein Allrad-SUV mit etwas Bodenfreiheit reicht völlig. Der Reiz liegt in den Farben der Landschaft und der Stille abseits der Touristenrouten.
+Technisch ist das die leichteste Marokko-Route in unserer Auswahl. Weite Geröllpisten, einfache Oasen-Schluchten und gelegentlich Asphalt - kein steiler Hochgebirgspass, keine Sanddünen. Ein Allrad-SUV mit etwas Bodenfreiheit reicht völlig. Scharfkantiges Gestein ist allerdings hart zu den Reifenflanken, ein robuster Satz [Reifen](/ausruestung/reifen/) und ein Ersatzrad gehören dazu. Der Reiz liegt in den Farben der Landschaft und der Stille abseits der Touristenrouten.

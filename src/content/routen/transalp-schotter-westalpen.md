@@ -52,6 +52,6 @@ related:
 
 ## Was dich erwartet
 
-Die Westalpen sind durchzogen von alten **Militärstraßen**, die heute legal befahrbare Schotterpisten in spektakulärer Höhenlage bilden. Die Tour reiht die schönsten davon aneinander: Colle delle Finestre, die Assietta-Kammstraße und den Sommeiller-Pass, den höchsten mit dem Auto erreichbaren Punkt der Alpen.
+Die Westalpen sind durchzogen von alten **Militärstraßen**, die heute legal befahrbare Schotterpisten in spektakulärer Höhenlage bilden. Die Tour reiht die schönsten davon aneinander: Colle delle Finestre, die Assietta-Kammstraße und den Sommeiller-Pass, den höchsten mit dem Auto erreichbaren Punkt der Alpen. Mehr zur Region, ihren Befahrungsregeln und Saison steht im Reiseziel-Porträt [Westalpen](/reiseziele/westalpen/).
 
-Technisch ist das die entspannteste Route in unserer Auswahl. Der Schotter ist breit und meist gut verdichtet, echte Hindernisse gibt es kaum. Der Reiz liegt in der Höhe und den Ausblicken, nicht im Nervenkitzel - perfekt für den Einstieg ins mehrtägige Pistenfahren mit einem normalen Allrad-SUV.
+Technisch ist das die entspannteste Route in unserer Auswahl. Der Schotter ist breit und meist gut verdichtet, echte Hindernisse gibt es kaum. Der Reiz liegt in der Höhe und den Ausblicken, nicht im Nervenkitzel - perfekt für den Einstieg ins mehrtägige Pistenfahren mit einem normalen Allrad-SUV. Auf nassem Schotter geben [Geländereifen](/ausruestung/reifen/) spürbar mehr Sicherheit. Ein ähnlich entspanntes Pisten-Revier sind die [Karpaten-Forstwege in Rumänien](/routen/karpaten-forstwege-rumaenien/).

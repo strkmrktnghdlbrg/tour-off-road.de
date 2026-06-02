@@ -33,11 +33,11 @@ topRoutes:
 
 Georgien ist eines der lohnendsten und zugleich anspruchsvollsten Offroad-Ziele am Rand Europas. Der Große Kaukasus türmt sich mit über 5000 Meter hohen Gipfeln auf, dazwischen liegen abgeschiedene Bergrepubliken wie Swanetien mit seinen mittelalterlichen Wehrtürmen und Tuschetien, das nur über einen einzigen, berüchtigten Pass erreichbar ist. Wer hier fährt, sammelt Erlebnisse, die sich tief einprägen.
 
-Das Land verbindet dramatische Hochgebirgskulisse mit einer Gastfreundschaft, die fast schon legendär ist. Eine spontane Einladung zum Essen mit reichlich Wein und der traditionellen Supra-Tafel gehört für viele Reisende zu den schönsten Erinnerungen. Gleichzeitig verlangen die Pisten echten Respekt: schmale Bergstraßen ohne Leitplanke, Furten und Wetterstürze fordern Erfahrung und ein zuverlässiges Fahrzeug.
+Das Land verbindet dramatische Hochgebirgskulisse mit einer Gastfreundschaft, die fast schon legendär ist. Eine spontane Einladung zum Essen mit reichlich Wein und der traditionellen Supra-Tafel gehört für viele Reisende zu den schönsten Erinnerungen. Gleichzeitig verlangen die Pisten echten Respekt: schmale Bergstraßen ohne Leitplanke, Furten und Wetterstürze fordern Erfahrung und ein zuverlässiges Fahrzeug. Wer Furten-Erfahrung sammeln will, findet sie auch im [isländischen Hochland](/reiseziele/island/).
 
 ## Gut zu wissen
 
 - **Hochpässe:** Abano- und vergleichbare Pässe nur bei stabilem Wetter, mit gutem Allrad und nüchterner Selbsteinschätzung fahren.
 - **Furten:** Pegel ändert sich im Tagesverlauf, Schmelzwasser steigt nachmittags. Früh durchqueren.
-- **Versorgung:** In den Tälern gut, in den Hochlandregionen sehr dünn. Sprit, Wasser und Ersatzteile bunkern.
+- **Versorgung:** In den Tälern gut, in den Hochlandregionen sehr dünn. Sprit, Wasser und Ersatzteile bunkern. Solide [Recovery-Ausrüstung](/ausruestung/recovery/) und eine [Reiseversicherung](/versicherungen/) mit Rücktransport sind in dieser Abgeschiedenheit Pflicht.
 - **Politik:** Grenzregionen zu Abchasien und Südossetien meiden, dort gelten Sperrzonen. Aktuelle Lage prüfen.

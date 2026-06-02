@@ -18,11 +18,11 @@ Gruppentarife sind dann interessant, wenn viele Personen denselben Reisezeitraum
 
 ## Typische Bausteine
 
-Häufig kombiniert werden Reiserücktritt, Reiseabbruch und Auslandskrankenschutz. Je nach Anbieter lassen sich Reisegepäck oder Reisehaftpflicht ergänzen. Bei aktiven Reisen, etwa von Sportgruppen, lohnt der Blick darauf, ob bestimmte Aktivitäten ausgeschlossen sind.
+Häufig kombiniert werden Reiserücktritt, Reiseabbruch und [Auslandskrankenschutz](/magazin/reisekrankenversicherung-ratgeber/). Je nach Anbieter lassen sich [Reisegepäck](/magazin/reisegepaeckversicherung-ratgeber/) oder [Reisehaftpflicht](/magazin/reisehaftpflichtversicherung-ratgeber/) ergänzen. Bei aktiven Reisen, etwa von Sportgruppen, lohnt der Blick darauf, ob bestimmte Aktivitäten ausgeschlossen sind.
 
 ## Namentliche oder anonyme Versicherung
 
-Gruppenverträge unterscheiden sich darin, ob die Teilnehmenden namentlich genannt sein müssen oder ob auch wechselnde Personen abgedeckt sind. Für Vereine mit fester Mitgliederliste passt oft die namentliche Variante, für offene Gruppen kann eine flexible Lösung sinnvoller sein.
+Gruppenverträge unterscheiden sich darin, ob die Teilnehmenden namentlich genannt sein müssen oder ob auch wechselnde Personen abgedeckt sind. Für Vereine mit fester Mitgliederliste passt oft die namentliche Variante, für offene Gruppen kann eine flexible Lösung sinnvoller sein. Für Klassenfahrten und Schüleraustausch lohnt zusätzlich der Blick in den [Ratgeber zur Schülerreiseversicherung](/magazin/schuelerreiseversicherung-ratgeber/).
 
 ## Worauf Organisatoren achten sollten
 

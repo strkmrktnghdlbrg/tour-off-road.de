@@ -55,6 +55,6 @@ related:
 
 ## Was dich erwartet
 
-Die **Karpaten** sind eines der letzten großen Wildnisgebiete Europas, durchzogen von einem dichten Netz an Forststraßen. Diese Tour folgt den ruhigen Schotterpisten abseits der berühmten Transfăgărășan und führt durch endlose Buchen- und Nadelwälder, Hirtenwiesen und entlang des Retezat-Nationalparks.
+Die **Karpaten** sind eines der letzten großen Wildnisgebiete Europas, durchzogen von einem dichten Netz an Forststraßen. Diese Tour folgt den ruhigen Schotterpisten abseits der berühmten Transfăgărășan und führt durch endlose Buchen- und Nadelwälder, Hirtenwiesen und entlang des Retezat-Nationalparks. Hintergründe zu Land, Saison und Vignette liefert das Reiseziel-Porträt [Rumänien](/reiseziele/rumaenien/).
 
-Technisch ist das eine entspannte Route: breite, meist gut fahrbare Forstwege ohne echte Hindernisse. Der Reiz liegt in der Wildnis und der Stille, nicht im Geländesport. Nach Regen werden die Wege allerdings schmierig - dann hilft etwas Reifenprofil und ein Bergegurt im Gepäck. Ein Allrad-SUV reicht für die ganze Strecke.
+Technisch ist das eine entspannte Route: breite, meist gut fahrbare Forstwege ohne echte Hindernisse. Der Reiz liegt in der Wildnis und der Stille, nicht im Geländesport. Nach Regen werden die Wege allerdings schmierig - dann hilft etwas Reifenprofil und ein [Bergegurt](/ausruestung/recovery/) im Gepäck. Ein Allrad-SUV reicht für die ganze Strecke.

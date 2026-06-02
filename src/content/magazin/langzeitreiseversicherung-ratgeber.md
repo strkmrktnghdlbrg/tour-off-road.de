@@ -18,11 +18,11 @@ Viele günstige Jahres-Reisetarife begrenzen die einzelne Reisedauer, häufig au
 
 ## Auslandskrankenschutz als Kern
 
-Der wichtigste Baustein auf langen Reisen ist der Auslandskrankenschutz mit medizinisch sinnvollem Rücktransport. Achten Sie darauf, ob auch ambulante und stationäre Behandlung, Zahnbehandlungen im Notfall und der Rücktransport bei schwerer Erkrankung enthalten sind. Bei sehr langen Aufenthalten sind die Geltungsdauer und mögliche Verlängerungsoptionen entscheidend.
+Der wichtigste Baustein auf langen Reisen ist der Auslandskrankenschutz mit medizinisch sinnvollem Rücktransport, wie ihn der [Ratgeber zur Reisekrankenversicherung](/magazin/reisekrankenversicherung-ratgeber/) im Detail beschreibt. Achten Sie darauf, ob auch ambulante und stationäre Behandlung, Zahnbehandlungen im Notfall und der Rücktransport bei schwerer Erkrankung enthalten sind. Bei sehr langen Aufenthalten sind die Geltungsdauer und mögliche Verlängerungsoptionen entscheidend.
 
 ## Aktivitäten und Risiken prüfen
 
-Overlanding, Trekking oder andere aktive Reiseformen können in manchen Tarifen ausgeschlossen oder nur eingeschränkt versichert sein. Wer abseits befestigter Wege unterwegs ist, sollte gezielt prüfen, ob die geplanten Aktivitäten gedeckt sind und ob es Ausschlüsse für bestimmte Länder oder Regionen gibt.
+Overlanding, Trekking oder andere aktive Reiseformen können in manchen Tarifen ausgeschlossen oder nur eingeschränkt versichert sein. Wer abseits befestigter Wege unterwegs ist, etwa auf einer mehrwöchigen [Allradreise durch Südafrika](/reiseziele/suedafrika/), sollte gezielt prüfen, ob die geplanten Aktivitäten gedeckt sind und ob es Ausschlüsse für bestimmte Länder oder Regionen gibt. Eine Übersicht der Tarife bündelt unsere Seite zu [Reiseversicherungen](/versicherungen/).
 
 ## Wohnsitz und Rückkehr
 

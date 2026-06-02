@@ -8,6 +8,7 @@ import Pills from '../../components/Pills.astro';
 import CompareTable from '../../components/CompareTable.astro';
 import QABlock from '../../components/QABlock.astro';
 import MagCard from '../../components/MagCard.astro';
+import { merchantLink } from '../../products';
 
 // Seed-Daten inline (Versicherungen sind keine Content-Collection).
 const pills = [
@@ -19,7 +20,7 @@ const pills = [
 ];
 
 const rows = [
-  { provider: 'HanseMerkur Langzeit', cells: ['weltweit, bis 5 J.', 'medizinisch sinnvoll'], rating: '4,8 ★', href: '#' },
+  { provider: 'HanseMerkur Langzeit', cells: ['weltweit, bis 5 J.', 'medizinisch sinnvoll'], rating: '4,8 ★', href: merchantLink('hansemerkur', { clickref: 'versich-hansemerkur' }) },
   { provider: 'ADAC Ambulant Welt', cells: ['weltweit, 1 J.', 'inklusive'], rating: '4,6 ★', href: '#' },
   { provider: 'Hep Young Travel', cells: ['weltweit, 364 Tage', 'inklusive'], rating: '4,5 ★', href: '#' },
   { provider: 'Würzburger Reise', cells: ['Europa + Nordafrika', 'optional'], rating: '4,3 ★', href: '#' },

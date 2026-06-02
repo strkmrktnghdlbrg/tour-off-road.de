@@ -50,6 +50,6 @@ related:
 
 ## Was dich erwartet
 
-Der **Erg Chebbi** bei Merzouga ist das bekannteste Dünenmeer Marokkos und der perfekte Ort, um echtes Sandfahren zu lernen. Diese kompakte Zweitagesschleife bleibt am befahrbaren Rand des Ergs, statt sich tief ins Dünenfeld zu wagen - landschaftlich überwältigend, aber kalkulierbar.
+Der **Erg Chebbi** bei Merzouga ist das bekannteste Dünenmeer Marokkos und der perfekte Ort, um echtes Sandfahren zu lernen. Diese kompakte Zweitagesschleife bleibt am befahrbaren Rand des Ergs, statt sich tief ins Dünenfeld zu wagen - landschaftlich überwältigend, aber kalkulierbar. Wer das ganze Land kennenlernen will, findet im Reiseziel-Porträt [Marokko](/reiseziele/marokko/) den Überblick.
 
-Im Mittelpunkt steht die Fahrtechnik: Reifendruck absenken, Schwung halten, weiche Stellen lesen und ohne Panik freikommen, wenn man doch steckt. Wer das hier in Ruhe übt, hat für die größeren Sahara-Touren das nötige Handwerkszeug. Die steinige Hamada auf dem Rückweg erinnert daran, den Reifendruck rechtzeitig wieder anzuheben.
+Im Mittelpunkt steht die Fahrtechnik: Reifendruck absenken, Schwung halten, weiche Stellen lesen und ohne Panik freikommen, wenn man doch steckt. Die [Faustregeln zum Reifendruck im Gelände](/magazin/reifendruck-im-gelaende-faustregeln/) liefern dazu die Grundlagen, [Sandbleche und Kompressor](/ausruestung/recovery/) das nötige Werkzeug. Wer das hier in Ruhe übt, hat für die größeren Sahara-Touren das nötige Handwerkszeug. Die steinige Hamada auf dem Rückweg erinnert daran, den Reifendruck rechtzeitig wieder anzuheben.

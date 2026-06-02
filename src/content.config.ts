@@ -78,6 +78,8 @@ const ausruestung = defineCollection({
     badge: z.string().nullable().default(null),
     excerpt: z.string(),
     affiliateUrl: z.string(),
+    // optionaler AWIN-Merchant-Key (siehe src/products.ts). Leer = Kategorie-Default.
+    merchant: z.string().optional(),
   }),
 });
 

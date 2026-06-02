@@ -1,0 +1,96 @@
+---
+// ============================================================================
+// ERHALTENER GASTBEITRAG / BEZAHLTER BACKLINK - NICHT loeschen, NICHT umleiten,
+// URL und Outbound-Link MUESSEN exakt erhalten bleiben.
+// Quelle: https://www.tour-off-road.de/was-ist-mein-auto-wert/
+// Kommerzieller dofollow-Link: https://www.kfz-sachverstaendigenbuero-rhein-neckar.de/kfz-gutachter-frankfurt/ ("KFZ Gutachten Frankfurt")
+// Zusaetzlicher dofollow-Link: https://de.wikipedia.org/wiki/Kilometerz%C3%A4hler ("Kilometerzähler")
+// Off-topic kommerziell (Auto-Bewertung/Lead), rankt laut Semrush mit 2 Keywords. 1:1 erhalten.
+// ============================================================================
+import Base from '../layouts/Base.astro';
+import Announce from '../components/Announce.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+
+const title = 'Was ist mein Auto wert?';
+---
+
+<Base
+  title={`${title} - tour-off-road.de`}
+  description="Was ist mein Auto wert? Faktoren wie Nutzung, Kilometerstand, Standort und Wartung, die eine Fahrzeugbewertung beeinflussen."
+  path="/was-ist-mein-auto-wert/"
+>
+  <Announce />
+  <Header />
+
+  <Breadcrumb
+    items={[
+      { label: 'Start', href: '/' },
+      { label: 'Ratgeber' },
+      { label: 'Was ist mein Auto wert?' },
+    ]}
+  />
+
+  <article>
+    <section class="page-hero" style="padding-bottom:8px">
+      <div class="wrap" style="max-width:760px;margin:0 auto">
+        <span class="eyebrow" style="color:var(--blaze)">Ratgeber</span>
+        <h1 style="margin-top:10px">{title}</h1>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:32px">
+      <div class="wrap">
+        <div class="prose" style="margin:0 auto">
+          <p>
+            Viele Faktoren können den Wert eines Autos beeinflussen, darunter Marke, Modell, Alter,
+            Verschleiß, Karosserieschäden und Sonderausstattungen. Hier sind einige weitere Faktoren,
+            die sich auf eine Fahrzeugbewertung auswirken können.
+          </p>
+
+          <h2>1. Wie der Käufer Ihr Auto zu nutzen gedenkt</h2>
+          <p>
+            „Die Pläne des Käufers für Ihr Auto können eine große Rolle bei der Bestimmung des
+            Autowertes spielen“, sagt Matt DeLorenzo, Senior Managing Editor bei Kelley Blue Book.
+            „Es gibt verschiedene Wertstufen, je nachdem, was Sie mit dem Auto machen wollen.“ „Ein
+            Händler, der Ihre Inzahlungnahme aufpolieren und auf seinem Gelände verkaufen kann, wird
+            wahrscheinlich mehr bezahlen als derjenige, der es bei der nächsten Autoauktion loswerden
+            will“, sagt Mel Yu, Automobilanalyst bei Consumer Reports.
+          </p>
+          <p>
+            Und bei einem Verkauf an private Käufer können die höchsten Angebote erzielt werden, da
+            diese in der Regel nicht vorhaben, den Wagen mit Gewinn weiterzuverkaufen. Aus diesem Grund
+            werden in Bewertungshandbüchern unterschiedliche Werte für verschiedene Arten von Verkäufen
+            angegeben. „Der Inzahlungnahmewert ist etwas völlig anderes als der Verkaufswert“, sagt
+            Matt Jones, leitender Redakteur für Verbraucherberatung bei Edmunds.com.
+          </p>
+
+          <h2>2. Kilometerstand</h2>
+          <p>
+            Der durchschnittliche Fahrer legt pro Jahr 12.000 bis 15.000 Meilen mit dem Fahrzeug zurück.
+            Wenn Ihr <a href="https://de.wikipedia.org/wiki/Kilometerz%C3%A4hler">Kilometerzähler</a> viel
+            mehr anzeigt, könnte der Wert Ihres Autos sinken.
+          </p>
+
+          <h2>3. Ihr Standort</h2>
+          <p>
+            Wie bei Immobilien kommt es auch hier auf den Standort an. Ihr Cabrio könnte zum Beispiel in
+            Miami einen höheren Wert haben als in Montpelier, Vermont.
+          </p>
+
+          <h2>4. Wartung</h2>
+          <p>
+            „Ein Händler wird häufig Ihre Wartungsunterlagen prüfen, um sicherzustellen, dass das
+            Fahrzeug gewartet wurde“, sagt DeLorenzo. Auch private Käufer könnten nach Wartungsunterlagen
+            fragen, um nachzuweisen, dass Sie alle geplanten Wartungsarbeiten durchgeführt haben. Ein
+            <a href="https://www.kfz-sachverstaendigenbuero-rhein-neckar.de/kfz-gutachter-frankfurt/">KFZ Gutachten Frankfurt</a>
+            gibt Aufschluss über all die genannten Punkte.
+          </p>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <Footer />
+</Base>
