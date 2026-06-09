@@ -4,7 +4,7 @@ slug: "offroad-routen-usa"
 category: "Reiseziele"
 hero: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=75"
 excerpt: "Sanddünen in Utah, Wüstenpisten in Arizona, bewaldete Trails in Maine: ein Überblick über die abwechslungsreichsten Offroad-Reviere der USA und worauf du bei Genehmigungen und Planung achtest."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 9
 cluster: "reiseziele"

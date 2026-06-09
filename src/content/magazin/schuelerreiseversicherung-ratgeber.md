@@ -4,7 +4,7 @@ slug: "schuelerreiseversicherung-ratgeber"
 category: "Versicherungen"
 hero: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=75"
 excerpt: "Welcher Schutz bei Klassenfahrten und Schüleraustausch sinnvoll ist und worauf Eltern achten sollten."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-04-10
 readMinutes: 6
 cluster: "versicherungen"

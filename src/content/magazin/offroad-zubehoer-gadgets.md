@@ -4,7 +4,7 @@ slug: "offroad-zubehoer-gadgets"
 category: "Ausrüstung"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Von Bergungsboard über Seilwinde bis Kompressor: nützliches Zubehör für Offroad-Touren, sinnvoll priorisiert und ohne Marketing-Versprechen."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 9
 cluster: "ausruestung"

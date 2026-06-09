@@ -4,7 +4,7 @@ slug: "offroad-fahren-schnee-tipps"
 category: "Fahrtechnik"
 hero: "https://images.unsplash.com/photo-1517299321609-52687d1bc55a?w=1200&q=75"
 excerpt: "Wintertaugliche Ausrüstung, ruhige Fahrtechnik und ehrliche Routenplanung: So gehst du Schnee und Eis im Gelände kontrolliert an."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-01-15
 readMinutes: 9
 cluster: "ratgeber"

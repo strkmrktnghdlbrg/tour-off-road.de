@@ -4,7 +4,7 @@ slug: "offroad-ausruestung-must-haves"
 category: "Ausrüstung"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Die Grundausstattung für Touren abseits befestigter Wege: Bergetechnik, Werkzeug, Wasser und Navigation. Worauf es ankommt, ohne den Kofferraum zu überladen."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-03
 readMinutes: 9
 cluster: "ausruestung"

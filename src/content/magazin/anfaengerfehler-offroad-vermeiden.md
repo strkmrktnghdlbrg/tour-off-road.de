@@ -4,7 +4,7 @@ slug: "anfaengerfehler-offroad-vermeiden"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Die häufigsten Fehler von Offroad-Einsteigern - von der Reifenwahl über das Bremsen bis zur richtigen Geschwindigkeit - und wie du sie mit ruhiger Technik umgehst."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-30
 readMinutes: 8
 cluster: "ratgeber"

@@ -4,7 +4,7 @@ slug: "offroad-navigation-geraete"
 category: "Ausrüstung"
 hero: "https://images.unsplash.com/photo-1581553680321-4fffae59fccd?w=1200&q=75"
 excerpt: "Worauf es bei einem robusten GPS-Gerät fürs Gelände ankommt, welche Funktionen wirklich zählen und warum ein dediziertes Navi das Smartphone auf langen Touren sinnvoll ergänzt."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-03
 readMinutes: 9
 cluster: "ausruestung"

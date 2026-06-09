@@ -4,7 +4,7 @@ slug: "offroad-routen-kanada"
 category: "Reise"
 hero: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=1200&q=75"
 excerpt: "Kanadas Westen ist ein Forststraßen-Paradies. Wo du fährst, wann die Saison passt und worauf es bei der Planung wirklich ankommt."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-02
 readMinutes: 9
 cluster: "reiseziele"

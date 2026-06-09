@@ -4,7 +4,7 @@ slug: "volvo-fl-4x4-extreme-offroad"
 category: "Fahrzeuge"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Warum der Volvo FL 4x4 als Expeditions-Basis taugt und wo seine Grenzen liegen."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-12
 readMinutes: 9
 cluster: "fahrzeuge"

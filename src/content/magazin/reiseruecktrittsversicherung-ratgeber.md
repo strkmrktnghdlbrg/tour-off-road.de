@@ -4,7 +4,7 @@ slug: "reiseruecktrittsversicherung-ratgeber"
 category: "Versicherungen"
 hero: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=75"
 excerpt: "Wann eine Reiserücktrittsversicherung Stornogebühren erstattet, welche Gründe greifen und worauf du beim Abschluss achten solltest."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-04-22
 readMinutes: 7
 cluster: "versicherungen"

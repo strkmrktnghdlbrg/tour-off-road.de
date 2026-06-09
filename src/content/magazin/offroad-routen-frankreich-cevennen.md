@@ -4,7 +4,7 @@ slug: "offroad-routen-frankreich-cevennen"
 category: "Reise"
 hero: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=75"
 excerpt: "Schotterpisten, Kastanienwälder und Hochebenen im Süden Frankreichs - was du für eine Offroad-Tour in den Cevennen wissen solltest."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-02
 readMinutes: 7
 cluster: "reiseziele"

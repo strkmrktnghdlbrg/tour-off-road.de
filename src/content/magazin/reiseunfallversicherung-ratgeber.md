@@ -4,7 +4,7 @@ slug: "reiseunfallversicherung-ratgeber"
 category: "Versicherungen"
 hero: "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1200&q=75"
 excerpt: "Was eine Reiseunfallversicherung abdeckt, wo sie sich von der Krankenversicherung unterscheidet und für wen sie passt."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-04-22
 readMinutes: 6
 cluster: "versicherungen"

@@ -4,7 +4,7 @@ slug: "offroad-wueste-vorbereitung"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1200&q=75"
 excerpt: "Sand, Hitze und große Distanzen verzeihen wenig. Dieser Leitfaden zeigt, wie du Fahrzeug, Ausrüstung, Navigation und Sicherheit für eine Wüstentour vorbereitest - defensiv und praxisnah."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-03
 readMinutes: 9
 cluster: "ratgeber"

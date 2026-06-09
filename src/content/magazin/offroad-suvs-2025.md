@@ -4,7 +4,7 @@ slug: "offroad-suvs-2025"
 category: "Fahrzeuge"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Jeep Wrangler Rubicon, Land Rover Defender und Toyota 4Runner stehen 2025 für drei sehr unterschiedliche Offroad-Philosophien. Wir ordnen Bauart, Geländetechnik und Preisrahmen nüchtern ein - ohne Sieger zu küren."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 9
 cluster: "fahrzeuge"

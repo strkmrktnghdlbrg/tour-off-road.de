@@ -4,7 +4,7 @@ slug: "offroad-alpen-routen"
 category: "Reise"
 hero: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=75"
 excerpt: "Welche Schotterpisten und alten Militärstraßen in den Alpen legal befahrbar sind, was du an Vorbereitung brauchst und wie du dich an die strengen Regeln hältst."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 9
 cluster: "reiseziele"

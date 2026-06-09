@@ -4,7 +4,7 @@ slug: "campingausruestung-must-haves"
 category: "Ausrüstung"
 hero: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&q=75"
 excerpt: "Vom Schlafsack bis zur Stirnlampe: die Camping-Essentials, die auf einer Offroad- oder Overland-Tour wirklich zählen - und worauf du beim Kauf achtest."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 9
 cluster: "ausruestung"

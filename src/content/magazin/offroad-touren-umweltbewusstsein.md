@@ -4,7 +4,7 @@ slug: "offroad-touren-umweltbewusstsein"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=75"
 excerpt: "Wie sich Abenteuer im Gelände und Respekt vor der Natur verbinden lassen: ruhige Fahrweise, das Bleiben auf bestehenden Pisten und eine durchdachte Ausrüstung machen den Unterschied."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-02
 readMinutes: 7
 cluster: "ratgeber"

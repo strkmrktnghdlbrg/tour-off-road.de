@@ -4,7 +4,7 @@ slug: "offroad-gesellschaften-clubs-weltweit"
 category: "Szene"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Clubs, Vereine, Foren und internationale Communities verbinden Allradfahrer und Overlander. Ein Überblick, welche Arten von Gemeinschaften es gibt und worauf du bei der Suche nach Anschluss achten solltest."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-03
 readMinutes: 7
 cluster: "magazin"

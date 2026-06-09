@@ -4,7 +4,7 @@ slug: "reisekrankenversicherung-ratgeber"
 category: "Versicherungen"
 hero: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=75"
 excerpt: "Warum die Auslandskrankenversicherung mit Rücktransport auf jeder Auslandsreise an erster Stelle steht."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-04
 readMinutes: 7
 cluster: "versicherungen"

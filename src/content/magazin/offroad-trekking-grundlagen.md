@@ -4,7 +4,7 @@ slug: "offroad-trekking-grundlagen"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200&q=75"
 excerpt: "Was Offroad-Trekking ausmacht, welche Voraussetzungen du brauchst und wie du als Einsteiger sicher in dein erstes Abenteuer startest - ohne Mythen, ohne Übertreibung."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-02
 readMinutes: 7
 cluster: "ratgeber"

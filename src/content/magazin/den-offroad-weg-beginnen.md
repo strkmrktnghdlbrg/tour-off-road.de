@@ -4,7 +4,7 @@ slug: "den-offroad-weg-beginnen"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Vom ersten Schotterweg zur großen Tour: worauf Einsteiger beim Fahrzeug, der Ausrüstung und der Routenwahl achten sollten."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 9
 cluster: "ratgeber"

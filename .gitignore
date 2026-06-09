@@ -16,3 +16,4 @@ pnpm-debug.log*
 .DS_Store
 # releases
 releases/
+.claude/settings.local.json

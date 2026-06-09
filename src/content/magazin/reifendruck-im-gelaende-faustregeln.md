@@ -4,7 +4,7 @@ slug: "reifendruck-im-gelaende-faustregeln"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1200&q=75"
 excerpt: "Wann absenken, wie weit und worauf du beim Reifendruck abseits der Straße achten solltest."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-20
 readMinutes: 7
 cluster: "ratgeber"

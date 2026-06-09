@@ -4,7 +4,7 @@ slug: "reiseabbruchversicherung-ratgeber"
 category: "Versicherungen"
 hero: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=75"
 excerpt: "Wann die Reiseabbruchversicherung einspringt, was sie von der Reiserücktrittsversicherung unterscheidet und worauf Overlander beim Vergleich achten sollten."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-04-22
 readMinutes: 7
 cluster: "versicherungen"

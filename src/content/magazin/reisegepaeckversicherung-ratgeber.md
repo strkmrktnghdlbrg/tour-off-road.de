@@ -4,7 +4,7 @@ slug: "reisegepaeckversicherung-ratgeber"
 category: "Versicherungen"
 hero: "https://images.unsplash.com/photo-1553531384-411a247ccd73?w=1200&q=75"
 excerpt: "Was eine Reisegepäckversicherung abdeckt, wo ihre typischen Grenzen liegen und für wen sie sich lohnt."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-04-30
 readMinutes: 6
 cluster: "versicherungen"

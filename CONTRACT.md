@@ -234,7 +234,7 @@ slug: "suedafrika-outdoor-abenteuer"
 category: "Reise"
 hero: "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=1200&q=75"
 excerpt: "Von der Garden Route bis in die Karoo - vier Wochen im Allrad."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-01
 readMinutes: 8
 cluster: "reiseziele"

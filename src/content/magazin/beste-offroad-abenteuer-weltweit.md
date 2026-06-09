@@ -4,7 +4,7 @@ slug: "beste-offroad-abenteuer-weltweit"
 category: "Reise"
 hero: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=75"
 excerpt: "Von der australischen Canning Stock Route bis nach Patagonien: eine Bucket-List der spektakulärsten Offroad-Ziele und worauf du dich auf jedem einstellen solltest."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 9
 cluster: "reiseziele"

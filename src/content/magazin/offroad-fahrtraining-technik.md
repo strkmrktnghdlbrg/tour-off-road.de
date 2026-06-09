@@ -4,7 +4,7 @@ slug: "offroad-fahrtraining-technik"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Worauf es bei der Offroad-Fahrtechnik wirklich ankommt: Grundlagen, Untergrund-Strategien und warum ein Fahrtraining vor der ersten großen Tour sinnvoll ist."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 9
 cluster: "ratgeber"

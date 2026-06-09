@@ -4,7 +4,7 @@ slug: "tipps-nachtfahrten-gelaende"
 category: "Fahrtechnik"
 hero: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=75"
 excerpt: "Wann sich eine Nachtfahrt im Gelände lohnt und wann nicht, wie du Sicht, Beleuchtung und Tempo anpasst und welche Vorbereitung dich bei Dunkelheit auf der sicheren Seite hält."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-30
 readMinutes: 9
 cluster: "ratgeber"

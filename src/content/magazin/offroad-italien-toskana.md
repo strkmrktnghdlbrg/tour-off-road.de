@@ -4,7 +4,7 @@ slug: "offroad-italien-toskana"
 category: "Reise"
 hero: "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1200&q=75"
 excerpt: "Sanfte Hügel, Zypressen-Alleen und Weinberge - was du für eine Offroad-Tour durch die Toskana wissen musst, inklusive der strengen italienischen Befahrungsregeln."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-03
 readMinutes: 8
 cluster: "reiseziele"

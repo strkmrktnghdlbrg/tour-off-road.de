@@ -4,7 +4,7 @@ slug: "survival-tipps-offroad-touren"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Notfallvorsorge und Survival im Gelände: Fahrzeugcheck, Navigation, Erste Hilfe, Fahrtechnik und die Basics fürs Überleben unterwegs - defensiv und praxisnah erklärt."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-02
 readMinutes: 9
 cluster: "ratgeber"

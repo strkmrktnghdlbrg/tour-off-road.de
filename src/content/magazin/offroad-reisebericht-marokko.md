@@ -4,7 +4,7 @@ slug: "offroad-reisebericht-marokko"
 category: "Reise"
 hero: "https://images.unsplash.com/photo-1489493887464-892be6d1daae?w=1200&q=75"
 excerpt: "Vom Grenzübertritt in Ceuta über die blaue Stadt Chefchaouen bis in die Dünen von Erg Chebbi - ein persönlicher Erfahrungsbericht einer Allrad-Tour durch Marokko, mit ehrlichen Lektionen zu Strecken, Sicherheit und Ausrüstung."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-12
 readMinutes: 11
 cluster: "reiseziele"

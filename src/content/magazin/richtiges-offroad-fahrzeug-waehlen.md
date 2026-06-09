@@ -4,7 +4,7 @@ slug: "richtiges-offroad-fahrzeug-waehlen"
 category: "Kaufberatung"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Welcher Geländewagen passt zu deinem Einsatzzweck? Kaufberatung nach Terrain, Reichweite und Budget statt nach Hubraum."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 7
 cluster: "fahrzeuge"

@@ -4,7 +4,7 @@ slug: "offroad-abenteuer-frauen"
 category: "Szene"
 hero: "https://images.unsplash.com/photo-1502230831726-fe5549140034?w=1200&q=75"
 excerpt: "Wie Frauen ins Offroad-Fahren einsteigen, welche Trainings und Netzwerke es gibt und worauf es bei Fahrzeug, Ausrüstung und Sicherheit ankommt - praxisnah und ohne Klischees."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-03
 readMinutes: 8
 cluster: "magazin"

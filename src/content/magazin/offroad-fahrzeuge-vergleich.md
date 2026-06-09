@@ -4,7 +4,7 @@ slug: "offroad-fahrzeuge-vergleich"
 category: "Fahrzeuge"
 hero: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=1200&q=75"
 excerpt: "SUV, Geländewagen oder Pickup? Wir vergleichen Bauweise, technische Eigenschaften und gängige Modelle nüchtern - damit du das richtige Fahrzeug für deinen Einsatzzweck findest."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-20
 readMinutes: 9
 cluster: "fahrzeuge"

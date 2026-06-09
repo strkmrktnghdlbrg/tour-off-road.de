@@ -4,7 +4,7 @@ slug: "offroad-routen-australien"
 category: "Reiseziele"
 hero: "https://images.unsplash.com/photo-1529108190281-9a4f620bc2d8?w=1200&q=75"
 excerpt: "Von der Canning Stock Route bis in die Simpson-Wüste: ein defensiver Überblick über Australiens bekannteste Outback-Tracks, mit Hinweisen zu Reisezeit, Fahrzeug und Vorbereitung."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-02
 readMinutes: 9
 cluster: "reiseziele"

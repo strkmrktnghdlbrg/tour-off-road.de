@@ -4,7 +4,7 @@ slug: "offroad-expeditionen-langzeit-abenteuer"
 category: "Reise"
 hero: "https://images.unsplash.com/photo-1533692328991-08159ff19fca?w=1200&q=75"
 excerpt: "Worauf es bei langen Overland-Expeditionen wirklich ankommt: Routenwahl, Fahrzeug, Ausrüstung und realistische Vorbereitung - von den Westalpen über Patagonien bis zum Nordkap."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-30
 readMinutes: 10
 cluster: "ratgeber"

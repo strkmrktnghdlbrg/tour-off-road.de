@@ -4,7 +4,7 @@ slug: "offroad-touren-afrika"
 category: "Reise"
 hero: "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1200&q=75"
 excerpt: "Von der Sahara bis ins südliche Afrika - ein Überblick über Reiseziele, Routen und die richtige Vorbereitung für Overlander."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-01
 readMinutes: 9
 cluster: "reiseziele"

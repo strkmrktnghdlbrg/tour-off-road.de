@@ -4,7 +4,7 @@ slug: "reisehaftpflichtversicherung-ratgeber"
 category: "Versicherungen"
 hero: "https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=1200&q=75"
 excerpt: "Was Haftpflichtschutz auf Reisen abdeckt und ob die private Haftpflicht im Ausland überhaupt greift."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-04-26
 readMinutes: 6
 cluster: "versicherungen"

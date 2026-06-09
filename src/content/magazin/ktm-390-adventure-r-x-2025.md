@@ -4,7 +4,7 @@ slug: "ktm-390-adventure-r-x-2025"
 category: "Fahrzeuge"
 hero: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=1200&q=75"
 excerpt: "KTM stellt mit der 390 Adventure R und X zwei Varianten vor, die den Einstieg ins Adventure-Segment leichter machen sollen. Was bekannt ist und für wen sich welche Variante eignet."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 7
 cluster: "fahrzeuge"

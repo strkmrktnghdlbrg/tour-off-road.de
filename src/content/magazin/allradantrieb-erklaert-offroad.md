@@ -4,7 +4,7 @@ slug: "allradantrieb-erklaert-offroad"
 category: "Fahrzeuge"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Permanenter, automatischer und zuschaltbarer Allrad, Differenzialsperren und Untersetzung - was die Begriffe bedeuten und worauf es im Gelände wirklich ankommt."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2025-09-18
 readMinutes: 9
 cluster: "fahrzeuge"

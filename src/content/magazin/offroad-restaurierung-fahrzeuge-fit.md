@@ -4,7 +4,7 @@ slug: "offroad-restaurierung-fahrzeuge-fit"
 category: "Fahrzeuge"
 hero: "https://images.unsplash.com/photo-1486006920555-c77dcf18193c?w=1200&q=75"
 excerpt: "Vom alten Geländewagen zum tourtauglichen Begleiter: Wie du ein Offroad-Fahrzeug planvoll restaurierst, Rost und Technik in den Griff bekommst und es langfristig fit hältst."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-12
 readMinutes: 9
 cluster: "fahrzeuge"

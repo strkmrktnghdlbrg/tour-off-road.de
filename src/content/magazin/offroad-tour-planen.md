@@ -4,7 +4,7 @@ slug: "offroad-tour-planen"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Von der Fahrzeugwahl über Ausrüstung und Navigation bis zu Training, Budget und Zielwahl: So planst du eine Offroad-Tour Schritt für Schritt, ohne dich zu überfordern."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-30
 readMinutes: 10
 cluster: "ratgeber"

@@ -4,7 +4,7 @@ slug: "gruppenreiseversicherung-ratgeber"
 category: "Versicherungen"
 hero: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=75"
 excerpt: "Wann sich ein Gruppentarif lohnt und welche Bausteine für Vereine, Schulen und Teams sinnvoll sind."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-04-14
 readMinutes: 6
 cluster: "versicherungen"

@@ -4,7 +4,7 @@ slug: "offroad-mechanik-reparaturen-unterwegs"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1200&q=75"
 excerpt: "Welche Werkzeuge, Ersatzteile und Techniken dir helfen, eine Panne im Gelände selbst zu beheben - und wann du besser eine Werkstatt ansteuerst."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 9
 cluster: "ratgeber"

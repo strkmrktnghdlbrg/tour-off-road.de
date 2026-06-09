@@ -4,7 +4,7 @@ slug: "offroad-camping-zeltplaetze"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&q=75"
 excerpt: "Wo du mit Dachzelt und Allrad legal übernachtest, was Wildcampen in Deutschland bedeutet und wie du Stell- und Zeltplätze sinnvoll kombinierst."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 9
 cluster: "ratgeber"

@@ -4,7 +4,7 @@ slug: "offroad-strecken-deutschland"
 category: "Reise"
 hero: "https://images.unsplash.com/photo-1502920514313-52581002a659?w=1200&q=75"
 excerpt: "In Deutschland ist Geländefahren stark reglementiert. Wir zeigen, wo du legal fahren kannst, welche Regeln gelten und wie du seriöse Strecken findest."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 8
 cluster: "reiseziele"

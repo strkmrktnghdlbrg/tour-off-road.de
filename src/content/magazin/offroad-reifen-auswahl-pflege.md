@@ -4,7 +4,7 @@ slug: "offroad-reifen-auswahl-pflege"
 category: "Ausrüstung"
 hero: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d4?w=1200&q=75"
 excerpt: "Welcher Profiltyp passt zu deinem Gelände, worauf es bei Zulassung und Wartung ankommt und wie du mit dem richtigen Druck mehr aus deinen Reifen holst."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 9
 cluster: "ausruestung"

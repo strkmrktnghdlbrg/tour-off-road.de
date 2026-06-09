@@ -4,7 +4,7 @@ slug: "offroad-fahrtechnik-steile-anstiege"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Wie du mit dem Geländewagen steile Anstiege sicher angehst: Linie lesen, Traktion halten, Schwung dosieren und richtig reagieren, wenn es nicht weitergeht."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-26
 readMinutes: 8
 cluster: "ratgeber"

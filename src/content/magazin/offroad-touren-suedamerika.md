@@ -4,7 +4,7 @@ slug: "offroad-touren-suedamerika"
 category: "Reise"
 hero: "https://images.unsplash.com/photo-1531794343805-c93a8de558bb?w=1200&q=75"
 excerpt: "Von der Carretera Austral bis zur Atacama-Wüste - ein Überblick über Routen, Reiseziele und die richtige Vorbereitung für Overlander in Südamerika."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-02
 readMinutes: 9
 cluster: "reiseziele"

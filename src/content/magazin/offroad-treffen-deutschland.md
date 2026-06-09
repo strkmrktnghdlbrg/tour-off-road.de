@@ -4,7 +4,7 @@ slug: "offroad-treffen-deutschland"
 category: "Szene"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Von großen Allrad-Messen über Marken-Treffen bis zum regionalen Stammtisch: ein Überblick über die deutsche Offroad-Szene und worauf Einsteiger achten sollten. Termine ändern sich jährlich, deshalb defensiv geplant."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-03
 readMinutes: 8
 cluster: "magazin"

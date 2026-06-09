@@ -4,7 +4,7 @@ slug: "offroad-radios-kommunikation"
 category: "Ausrüstung"
 hero: "https://images.unsplash.com/photo-1591370874773-6702e8f12fd8?w=1200&q=75"
 excerpt: "CB-Funk, PMR446 und Amateurfunk im Vergleich: wann sich welches System lohnt, was die Reichweite wirklich begrenzt und wie du im Konvoi und im Notfall verlässlich erreichbar bleibst."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 9
 cluster: "ausruestung"

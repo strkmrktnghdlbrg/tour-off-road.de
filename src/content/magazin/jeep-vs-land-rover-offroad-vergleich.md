@@ -4,7 +4,7 @@ slug: "jeep-vs-land-rover-offroad-vergleich"
 category: "Fahrzeuge"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Jeep Wrangler gegen Land Rover Defender: zwei Gelände-Ikonen, zwei Philosophien. Wir vergleichen Bauart, Geländetauglichkeit, Komfort und Alltagskosten - ehrlich und ohne Markenpathos."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-30
 readMinutes: 8
 cluster: "fahrzeuge"

@@ -4,7 +4,7 @@ slug: "offroad-reisen-mit-kindern"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&q=75"
 excerpt: "Wie Offroad-Reisen mit Kindern gelingen: kinderfreundliche Ziele, die richtige Fahrzeug- und Sicherheitsausstattung, sinnvolle Pausen und ein flexibler Tagesplan."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-30
 readMinutes: 8
 cluster: "ratgeber"

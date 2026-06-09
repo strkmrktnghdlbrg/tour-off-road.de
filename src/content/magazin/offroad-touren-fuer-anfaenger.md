@@ -4,7 +4,7 @@ slug: "offroad-touren-fuer-anfaenger"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Wie du als Einsteiger sicher in deine erste Offroad-Tour startest - von der Fahrzeugwahl über das passende Gelände bis zu den ersten Fahrtechniken."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 7
 cluster: "ratgeber"

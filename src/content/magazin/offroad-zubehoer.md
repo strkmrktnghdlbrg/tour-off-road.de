@@ -4,7 +4,7 @@ slug: "offroad-zubehoer"
 category: "Ausrüstung"
 hero: "https://images.unsplash.com/photo-1502161254066-6c74afbf07aa?w=1200&q=75"
 excerpt: "Welches Offroad-Zubehör wirklich sinnvoll ist - nach Kategorien sortiert von Bergung über Beleuchtung bis Navigation, mit klaren Auswahlkriterien statt Marketing-Versprechen."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-30
 readMinutes: 8
 cluster: "ausruestung"

@@ -4,7 +4,7 @@ slug: "beste-offroad-reiseberichte"
 category: "Reise"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Kuratierte Inspiration für Overlander - von den Alpen über die Sahara bis nach Patagonien. Welche Regionen sich für welchen Fahrertyp eignen und wie du echte Reiseberichte für die eigene Planung nutzt."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 9
 cluster: "magazin"

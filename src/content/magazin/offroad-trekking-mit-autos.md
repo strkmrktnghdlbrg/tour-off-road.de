@@ -4,7 +4,7 @@ slug: "offroad-trekking-mit-autos"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Was Offroad-Trekking mit dem Geländewagen ausmacht, wie du eine Tour planst und worauf es in der Praxis ankommt - vom Fahrzeug über die Ausrüstung bis zur Sicherheit."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 8
 cluster: "ratgeber"

@@ -4,7 +4,7 @@ slug: "beste-gelaendewagen-einsteiger"
 category: "Kaufberatung"
 hero: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=75"
 excerpt: "Welcher Geländewagen passt zum Start ins Offroad-Hobby? Eine ehrliche Orientierung nach Einsatzzweck, Antrieb und Unterhalt statt nach reiner Modell-Liste."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-30
 readMinutes: 8
 cluster: "fahrzeuge"

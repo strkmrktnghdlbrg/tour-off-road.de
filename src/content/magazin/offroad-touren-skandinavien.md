@@ -4,7 +4,7 @@ slug: "offroad-touren-skandinavien"
 category: "Reise"
 hero: "https://images.unsplash.com/photo-1601439678777-b2b3c56fa627?w=1200&q=75"
 excerpt: "Schotterpisten in Schweden, Fjordstraßen in Norwegen und die Stille Lapplands - ein Überblick über Reviere, Regeln und Vorbereitung für Overlander im Norden."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-01
 readMinutes: 9
 cluster: "reiseziele"

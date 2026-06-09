@@ -4,7 +4,7 @@ slug: "langzeitreiseversicherung-ratgeber"
 category: "Versicherungen"
 hero: "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=1200&q=75"
 excerpt: "Welcher Versicherungsschutz bei Weltreisen, Overlanding und Sabbaticals jenseits der 56-Tage-Grenze zählt."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-04-18
 readMinutes: 7
 cluster: "versicherungen"

@@ -4,7 +4,7 @@ slug: "offroad-routen-osteuropa"
 category: "Reise"
 hero: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=75"
 excerpt: "Von den rumänischen Karpaten über die Hochebenen Montenegros bis zu den Wäldern Polens - ein Überblick über die spannendsten Offroad-Regionen Osteuropas und worauf du dich rechtlich einstellen solltest."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 9
 cluster: "reiseziele"

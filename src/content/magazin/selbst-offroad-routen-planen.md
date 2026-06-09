@@ -4,7 +4,7 @@ slug: "selbst-offroad-routen-planen"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=75"
 excerpt: "Wie du eine eigene Offroad-Tour von der Idee bis zur Packliste planst: Recherche, Karten und GPS, realistische Etappen, Fahrzeug-Check und die rechtlichen Grenzen abseits befestigter Wege."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 9
 cluster: "ratgeber"

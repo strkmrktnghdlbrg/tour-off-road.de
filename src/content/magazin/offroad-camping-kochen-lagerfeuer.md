@@ -4,7 +4,7 @@ slug: "offroad-camping-kochen-lagerfeuer"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1475483768296-6163e08872a1?w=1200&q=75"
 excerpt: "Sichere Feuerstelle, das richtige Gusseisen und einfache Rezepte für die Outdoor-Küche - plus wann ein Gaskocher die bessere Wahl ist."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-02
 readMinutes: 9
 cluster: "ausruestung"

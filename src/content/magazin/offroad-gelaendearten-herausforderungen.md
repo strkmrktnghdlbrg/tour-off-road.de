@@ -4,7 +4,7 @@ slug: "offroad-gelaendearten-herausforderungen"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Sand, Fels, Schlamm und Wasser verlangen jeweils eine eigene Fahrweise. Eine Untergrundkunde, die zeigt, worauf es im jeweiligen Gelände wirklich ankommt."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-12
 readMinutes: 9
 cluster: "ratgeber"

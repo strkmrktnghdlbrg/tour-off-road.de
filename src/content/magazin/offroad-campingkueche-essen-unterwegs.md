@@ -4,7 +4,7 @@ slug: "offroad-campingkueche-essen-unterwegs"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&q=75"
 excerpt: "Welche Küchenausstattung wirklich mit muss, wie du Vorräte planst und platzsparend verstaust - eine defensive Praxis-Anleitung für die Verpflegung auf der Offroad-Tour."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-06-03
 readMinutes: 9
 cluster: "ausruestung"

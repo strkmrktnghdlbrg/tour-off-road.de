@@ -4,7 +4,7 @@ slug: "offroad-touren-britische-inseln"
 category: "Reise"
 hero: "https://images.unsplash.com/photo-1500380804539-4e1e8c1e7118?w=1200&q=75"
 excerpt: "Greenlaning in England, Schottland, Wales, Nordirland und auf der Isle of Man - ein Überblick über Reviere, die rechtlichen Grundlagen und die Vorbereitung für Overlander auf den Britischen Inseln."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-28
 readMinutes: 9
 cluster: "reiseziele"

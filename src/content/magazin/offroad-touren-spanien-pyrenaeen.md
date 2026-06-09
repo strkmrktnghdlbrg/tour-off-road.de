@@ -4,7 +4,7 @@ slug: "offroad-touren-spanien-pyrenaeen"
 category: "Reise"
 hero: "https://images.unsplash.com/photo-1558642084-fd07fae5282e?w=1200&q=75"
 excerpt: "Bergpisten, alte Schmugglerwege und Vulkanlandschaften: ein defensiver Überblick zu Offroad-Revieren in den spanischen Pyrenäen, samt Vorbereitung, Recht und Naturschutz."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-20
 readMinutes: 9
 cluster: "reiseziele"

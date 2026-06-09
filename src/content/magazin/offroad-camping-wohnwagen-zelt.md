@@ -4,7 +4,7 @@ slug: "offroad-camping-wohnwagen-zelt"
 category: "Ratgeber"
 hero: "https://images.unsplash.com/photo-1537905569824-f89f14cceb68?w=1200&q=75"
 excerpt: "Offroad-Wohnwagen oder Zelt: Welche Schlaflösung passt zu deiner Tour, deinem Fahrzeug und deinem Reisestil? Ein nüchterner Vergleich der Vor- und Nachteile."
-author: "Joshua Stark"
+author: "Lukas Hartmann"
 date: 2026-05-30
 readMinutes: 9
 cluster: "ratgeber"
