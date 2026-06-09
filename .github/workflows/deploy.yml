@@ -54,6 +54,7 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: nl1-ts109.a2hosting.com
+          port: 7822
           username: ${{ secrets.CPANEL_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: "cd /home/kdwwnlqe/tour-off-road.de/astro-site && git fetch origin main && git checkout main && git pull origin main"
