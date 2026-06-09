@@ -1,6 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/kdwwnlqe/tour-off-road.de/dist
-    - /bin/mkdir -p $DEPLOYPATH
-    - /bin/cp -R /home/kdwwnlqe/tour-off-road.de/astro-site/dist/. $DEPLOYPATH
+    - /bin/mkdir -p /home/kdwwnlqe/tour-off-road.de/dist
+    - /bin/cp -R /home/kdwwnlqe/tour-off-road.de/astro-site/dist/. /home/kdwwnlqe/tour-off-road.de/dist/
