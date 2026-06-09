@@ -57,4 +57,12 @@ jobs:
           port: 7822
           username: ${{ secrets.CPANEL_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: "cd /home/kdwwnlqe/tour-off-road.de/astro-site && git fetch origin main && git checkout main && git pull origin main"
+          script: |
+            cd /home/kdwwnlqe/tour-off-road.de/astro-site
+            git fetch origin main
+            git checkout main
+            git pull origin main
+            echo "=== dist/ contents ==="
+            ls -la dist/
+            echo "=== document root check ==="
+            ls -la /home/kdwwnlqe/tour-off-road.de/dist/ 2>&1 || echo "path does not exist"
