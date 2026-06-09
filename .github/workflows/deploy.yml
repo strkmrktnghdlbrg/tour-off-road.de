@@ -57,7 +57,8 @@ jobs:
           curl -s -w "\nHTTP %{http_code}\n" \
             -X POST \
             -H "Authorization: cpanel ${{ secrets.CPANEL_USER }}:${{ secrets.CPANEL_TOKEN }}" \
-            --data-urlencode "repository_root=/home/kdwwnlqe/tour-off-road.de/astro-site" \
+            -H "Content-Type: application/json" \
+            -d '{"repository_root":"/home/kdwwnlqe/tour-off-road.de/astro-site"}' \
             "https://${CPANEL_HOST}/execute/VersionControl/update"
           echo "Waiting 15s for pull to complete..."
           sleep 15
@@ -69,5 +70,6 @@ jobs:
           curl -s -w "\nHTTP %{http_code}\n" \
             -X POST \
             -H "Authorization: cpanel ${{ secrets.CPANEL_USER }}:${{ secrets.CPANEL_TOKEN }}" \
-            --data-urlencode "repository_root=/home/kdwwnlqe/tour-off-road.de/astro-site" \
+            -H "Content-Type: application/json" \
+            -d '{"repository_root":"/home/kdwwnlqe/tour-off-road.de/astro-site"}' \
             "https://${CPANEL_HOST}/execute/VersionControlDeployment/create"
