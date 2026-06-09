@@ -1,0 +1,102 @@
+<!DOCTYPE html><!-- RECHTSDATEN aus versandapotheken-astro (WEBMAGICS LTD) übernommen, vor Go-Live final prüfen/aktualisieren --><html lang="de"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Impressum - tour-off-road.de</title><meta name="description" content="Impressum und Anbieterkennzeichnung von tour-off-road.de."><meta name="robots" content="noindex, nofollow"><link rel="canonical" href="https://tour-off-road.de/impressum/"><meta property="og:type" content="website"><meta property="og:title" content="Impressum - tour-off-road.de"><meta property="og:description" content="Impressum und Anbieterkennzeichnung von tour-off-road.de."><meta property="og:url" content="https://tour-off-road.de/impressum/"><meta property="og:image" content="https://images.unsplash.com/photo-1489493887464-892be6d1daae?w=1200&q=75"><meta name="twitter:card" content="summary_large_image"><link rel="sitemap" href="/sitemap-index.xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="/_astro/_category_.Cz89V_Kj.css">
+<style>.prose[data-astro-cid-7dpr4qcz]{max-width:76ch;font-size:16px;line-height:1.7;color:#33302a}.prose[data-astro-cid-7dpr4qcz] h2[data-astro-cid-7dpr4qcz]{font-size:clamp(24px,3.5vw,32px);font-weight:800;letter-spacing:-.02em;line-height:1.1;margin:40px 0 14px}.prose[data-astro-cid-7dpr4qcz] h2[data-astro-cid-7dpr4qcz]:first-child{margin-top:0}.prose[data-astro-cid-7dpr4qcz] h3[data-astro-cid-7dpr4qcz]{font-size:20px;font-weight:700;letter-spacing:-.01em;margin:28px 0 8px}.prose[data-astro-cid-7dpr4qcz] p[data-astro-cid-7dpr4qcz]{margin-bottom:16px}.prose[data-astro-cid-7dpr4qcz] strong[data-astro-cid-7dpr4qcz]{color:var(--basalt);font-weight:700}.prose[data-astro-cid-7dpr4qcz] a[data-astro-cid-7dpr4qcz]{color:var(--blaze);font-weight:600;text-decoration:underline}.prose[data-astro-cid-7dpr4qcz] ul[data-astro-cid-7dpr4qcz]{margin:0 0 16px 22px;list-style:disc}.prose[data-astro-cid-7dpr4qcz] li[data-astro-cid-7dpr4qcz]{margin-bottom:6px}
+</style></head> <body>  <div class="announce">🏜️ Neu: 24 GPX-Routen für die Marokko-Saison 2026 - <a href="/reiseziele/marokko/">jetzt ansehen</a></div> <header class="nav"> <div class="wrap nav-inner"> <a href="/" class="logo"><span class="mark"><span></span></span> tour<span style="color:var(--blaze)">off</span>road</a> <nav class="nav-links"> <a href="/routen/"> Routen </a><a href="/reiseplanung/"> Reiseplanung </a><a href="/reiseziele/"> Reiseziele </a><a href="#"> Fahrzeuge </a><a href="/ausruestung/"> Ausrüstung </a><a href="#"> Ratgeber </a><a href="/versicherungen/"> Versicherungen </a><a href="/magazin/"> Magazin </a> </nav> <div class="nav-right"> <a href="/ueber-uns/" class="btn btn-ghost">Über uns</a> <a href="/routen/" class="btn btn-primary">Route finden</a> </div> <button type="button" class="nav-burger" id="navBurger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileDrawer"> <span></span><span></span><span></span> </button> </div> <div class="nav-backdrop" id="navBackdrop" hidden></div> <aside class="nav-drawer" id="mobileDrawer" aria-hidden="true" aria-label="Hauptnavigation"> <div class="nav-drawer-head"> <span class="nav-drawer-title">Navigation</span> <button type="button" class="nav-drawer-close" id="navClose" aria-label="Menü schließen"> <span></span><span></span> </button> </div> <nav class="nav-drawer-links"> <a href="/routen/"> Routen </a><a href="/reiseplanung/"> Reiseplanung </a><a href="/reiseziele/"> Reiseziele </a><a href="#"> Fahrzeuge </a><a href="/ausruestung/"> Ausrüstung </a><a href="#"> Ratgeber </a><a href="/versicherungen/"> Versicherungen </a><a href="/magazin/"> Magazin </a> </nav> <div class="nav-drawer-cta"> <a href="/ueber-uns/" class="btn btn-ghost">Über uns</a> <a href="/routen/" class="btn btn-primary">Route finden</a> </div> </aside> </header> <script>
+  (function () {
+    var burger = document.getElementById('navBurger');
+    var drawer = document.getElementById('mobileDrawer');
+    var backdrop = document.getElementById('navBackdrop');
+    var closeBtn = document.getElementById('navClose');
+    if (!burger || !drawer || !backdrop) return;
+
+    function open() {
+      document.body.classList.add('drawer-open');
+      burger.setAttribute('aria-expanded', 'true');
+      burger.setAttribute('aria-label', 'Menü schließen');
+      drawer.setAttribute('aria-hidden', 'false');
+      backdrop.hidden = false;
+    }
+
+    function close() {
+      document.body.classList.remove('drawer-open');
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Menü öffnen');
+      drawer.setAttribute('aria-hidden', 'true');
+      backdrop.hidden = true;
+    }
+
+    function toggle() {
+      if (document.body.classList.contains('drawer-open')) {
+        close();
+      } else {
+        open();
+      }
+    }
+
+    burger.addEventListener('click', toggle);
+    if (closeBtn) closeBtn.addEventListener('click', close);
+    backdrop.addEventListener('click', close);
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && document.body.classList.contains('drawer-open')) {
+        close();
+      }
+    });
+
+    // Bei Klick auf einen Link das Menü schließen.
+    drawer.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', close);
+    });
+  })();
+</script> <div class="wrap"> <div class="crumb"> <a href="/">Start</a><span>/</span><span>Impressum</span> </div> </div> <section class="page-hero" data-astro-cid-7dpr4qcz> <div class="wrap" data-astro-cid-7dpr4qcz> <p class="eyebrow" data-astro-cid-7dpr4qcz>Rechtliches</p> <h1 data-astro-cid-7dpr4qcz>Impressum</h1> <p data-astro-cid-7dpr4qcz>
+Angaben gemäß § 5 TMG sowie Haftungs- und Urheberrechtshinweise für
+        tour-off-road.de.
+</p> </div> </section> <section class="section tight" style="padding-top:8px" data-astro-cid-7dpr4qcz> <div class="wrap" data-astro-cid-7dpr4qcz> <article class="prose" data-astro-cid-7dpr4qcz> <h2 data-astro-cid-7dpr4qcz>Anbieter</h2> <p data-astro-cid-7dpr4qcz> <strong data-astro-cid-7dpr4qcz>WEBMAGICS LTD</strong><br data-astro-cid-7dpr4qcz>
+Gladstonos, 12-14<br data-astro-cid-7dpr4qcz>
+Paphos 8046<br data-astro-cid-7dpr4qcz>
+Cyprus
+</p> <h2 data-astro-cid-7dpr4qcz>Kontakt</h2> <p data-astro-cid-7dpr4qcz>
+E-Mail: [BITTE PRÜFEN]<br data-astro-cid-7dpr4qcz>
+Telefon: [BITTE PRÜFEN]
+</p> <h2 data-astro-cid-7dpr4qcz>Vertretungsberechtigte / Verantwortlich i.S.d. § 18 Abs. 2 MStV</h2> <p data-astro-cid-7dpr4qcz>
+[BITTE PRÜFEN]
+</p> <h2 data-astro-cid-7dpr4qcz>Registereintrag / Umsatzsteuer-ID</h2> <p data-astro-cid-7dpr4qcz>
+Handelsregister-Nummer: [BITTE PRÜFEN]<br data-astro-cid-7dpr4qcz>
+Umsatzsteuer-Identifikationsnummer: [BITTE PRÜFEN]
+</p> <h2 data-astro-cid-7dpr4qcz>Haftungsausschluss (Disclaimer)</h2> <h3 data-astro-cid-7dpr4qcz>Haftung für Inhalte</h3> <p data-astro-cid-7dpr4qcz>
+Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf
+          diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10
+          TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder
+          gespeicherte fremde Informationen zu überwachen oder nach Umständen zu
+          forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur
+          Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen
+          Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch
+          erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich.
+          Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese
+          Inhalte umgehend entfernen.
+</p> <h3 data-astro-cid-7dpr4qcz>Haftung für Links</h3> <p data-astro-cid-7dpr4qcz>
+Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte
+          wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch
+          keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der
+          jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten
+          Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße
+          überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht
+          erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist
+          jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei
+          Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend
+          entfernen.
+</p> <h3 data-astro-cid-7dpr4qcz>Urheberrecht</h3> <p data-astro-cid-7dpr4qcz>
+Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten
+          unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung,
+          Verbreitung und jede Art der Verwertung außerhalb der Grenzen des
+          Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors
+          bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten,
+          nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite
+          nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter
+          beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet.
+          Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden,
+          bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von
+          Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+</p> </article> </div> </section> <footer class="footer"> <div class="wrap"> <div class="foot-grid"> <div class="foot-col"> <a href="/" class="logo" style="margin-bottom:14px"><span class="mark"><span></span></span> tour<span style="color:var(--blaze)">off</span>road</a> <p class="muted" style="font-size:15px;max-width:34ch">
+Das Reiseportal für Offroad, Overland und alle, die das Abenteuer abseits der
+          Straße suchen.
+</p> </div> <div class="foot-col"> <h4>Entdecken</h4> <a href="/routen/">Routen</a> <a href="/reiseziele/">Reiseziele</a> <a href="#">Fahrzeuge</a> <a href="/magazin/">Magazin</a> </div> <div class="foot-col"> <h4>Service</h4> <a href="/reiseplanung/">Reiseplanung</a> <a href="/ausruestung/">Ausrüstung</a> <a href="#">Ratgeber</a> <a href="/versicherungen/">Versicherungen</a> <a href="#">GPX-Downloads</a> </div> <div class="foot-col"> <h4>Portal</h4> <a href="/ueber-uns/">Über uns</a> <a href="/impressum/">Impressum</a> <a href="/datenschutz/">Datenschutz</a> <a href="/kontakt/">Kontakt</a> </div> </div> <div class="foot-bottom"> <span>© 2026 tour-off-road.de</span> <span>Einige Links sind Affiliate-Links · Made for the trail</span> </div> </div> </footer>  </body></html> 

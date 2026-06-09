@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="de"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>tour-off-road.de - Offroad-Routen, Reiseziele &amp; Ausrüstung</title><meta name="description" content="Kuratierte Offroad-Routen mit GPX-Track, ehrliche Ausruestungs-Tests und der passende Versicherungs-Vergleich fuer jede Expedition."><link rel="canonical" href="https://tour-off-road.de/"><meta property="og:type" content="website"><meta property="og:title" content="tour-off-road.de - Offroad-Routen, Reiseziele &#38; Ausrüstung"><meta property="og:description" content="Kuratierte Offroad-Routen mit GPX-Track, ehrliche Ausruestungs-Tests und der passende Versicherungs-Vergleich fuer jede Expedition."><meta property="og:url" content="https://tour-off-road.de/"><meta property="og:image" content="https://images.unsplash.com/photo-1489493887464-892be6d1daae?w=1200&q=75"><meta name="twitter:card" content="summary_large_image"><link rel="sitemap" href="/sitemap-index.xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="/_astro/_category_.Cz89V_Kj.css"></head> <body>  <div class="announce">🏜️ Neu: 24 GPX-Routen für die Marokko-Saison 2026 - <a href="/reiseziele/marokko/">jetzt ansehen</a></div> <header class="nav"> <div class="wrap nav-inner"> <a href="/" class="logo"><span class="mark"><span></span></span> tour<span style="color:var(--blaze)">off</span>road</a> <nav class="nav-links"> <a href="/routen/"> Routen </a><a href="/reiseplanung/"> Reiseplanung </a><a href="/reiseziele/"> Reiseziele </a><a href="#"> Fahrzeuge </a><a href="/ausruestung/"> Ausrüstung </a><a href="#"> Ratgeber </a><a href="/versicherungen/"> Versicherungen </a><a href="/magazin/"> Magazin </a> </nav> <div class="nav-right"> <a href="/ueber-uns/" class="btn btn-ghost">Über uns</a> <a href="/routen/" class="btn btn-primary">Route finden</a> </div> <button type="button" class="nav-burger" id="navBurger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileDrawer"> <span></span><span></span><span></span> </button> </div> <div class="nav-backdrop" id="navBackdrop" hidden></div> <aside class="nav-drawer" id="mobileDrawer" aria-hidden="true" aria-label="Hauptnavigation"> <div class="nav-drawer-head"> <span class="nav-drawer-title">Navigation</span> <button type="button" class="nav-drawer-close" id="navClose" aria-label="Menü schließen"> <span></span><span></span> </button> </div> <nav class="nav-drawer-links"> <a href="/routen/"> Routen </a><a href="/reiseplanung/"> Reiseplanung </a><a href="/reiseziele/"> Reiseziele </a><a href="#"> Fahrzeuge </a><a href="/ausruestung/"> Ausrüstung </a><a href="#"> Ratgeber </a><a href="/versicherungen/"> Versicherungen </a><a href="/magazin/"> Magazin </a> </nav> <div class="nav-drawer-cta"> <a href="/ueber-uns/" class="btn btn-ghost">Über uns</a> <a href="/routen/" class="btn btn-primary">Route finden</a> </div> </aside> </header> <script>
+  (function () {
+    var burger = document.getElementById('navBurger');
+    var drawer = document.getElementById('mobileDrawer');
+    var backdrop = document.getElementById('navBackdrop');
+    var closeBtn = document.getElementById('navClose');
+    if (!burger || !drawer || !backdrop) return;
+
+    function open() {
+      document.body.classList.add('drawer-open');
+      burger.setAttribute('aria-expanded', 'true');
+      burger.setAttribute('aria-label', 'Menü schließen');
+      drawer.setAttribute('aria-hidden', 'false');
+      backdrop.hidden = false;
+    }
+
+    function close() {
+      document.body.classList.remove('drawer-open');
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Menü öffnen');
+      drawer.setAttribute('aria-hidden', 'true');
+      backdrop.hidden = true;
+    }
+
+    function toggle() {
+      if (document.body.classList.contains('drawer-open')) {
+        close();
+      } else {
+        open();
+      }
+    }
+
+    burger.addEventListener('click', toggle);
+    if (closeBtn) closeBtn.addEventListener('click', close);
+    backdrop.addEventListener('click', close);
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && document.body.classList.contains('drawer-open')) {
+        close();
+      }
+    });
+
+    // Bei Klick auf einen Link das Menü schließen.
+    drawer.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', close);
+    });
+  })();
+</script> <section class="hero"> <div class="wrap"> <p class="eyebrow">Offroad · Overland · Abenteuer-Reisen</p> <h1 style="margin-top:18px">Wo die <em>Straße</em> aufhört, fängt deine Tour an.</h1> <p class="lead">
+Kuratierte Offroad-Routen mit GPX-Track, Schwierigkeit und beste Reisezeit. Plus
+        ehrliche Ausrüstungs-Tests und der passende Versicherungs-Vergleich für jede
+        Expedition.
+</p> <div class="hero-cta"> <a href="/routen/" class="btn btn-primary">Routen entdecken</a> <a href="/ausruestung/" class="btn btn-ghost">Ausrüstungs-Guide</a> </div> <div class="searchbar"> <div class="field"><div class="lbl">Region</div><div class="val">Marokko</div></div> <div class="field"><div class="lbl">Terrain</div><div class="val">Wüste & Piste</div></div> <div class="field"><div class="lbl">Schwierigkeit</div><div class="val">Mittel</div></div> <a href="/routen/" class="btn btn-primary">Suchen</a> </div> <div class="hero-chips"> <div class="chip"><b>240+</b> Routen</div> <div class="chip"><b>32</b> Länder</div> <div class="chip"><b>180</b> Gear-Tests</div> <div class="chip"><b>GPX</b> zum Download</div> </div> </div> </section> <div class="logos"> <div class="wrap logos-row"> <span>OVERLAND JOURNAL</span><span>4×4 ABENTEUER</span><span>EXPEDITION PORTAL</span><span>CAMPER WEEKLY</span><span>ALLRAD MAGAZIN</span> </div> </div> <section class="section"> <div class="wrap"> <div class="section-head"> <div><p class="eyebrow">Beliebte Routen</p><h2>Strecken, die sich lohnen</h2></div> <p>
+Jede Route mit Distanz, Fahrzeit, Terrain-Profil und bester Saison.
+          Difficulty-Badge zeigt auf einen Blick, was dich erwartet.
+</p> </div> <div class="route-grid"> <a href="/routen/atlas-ueberquerung-marokko/" class="route"> <div class="img" style="background-image:url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&#38;q=70')"> <div class="badges"> <span class="badge hard">Schwer</span> <span class="badge">5 Tage</span> </div> </div> <div class="body"> <h3>Atlas-Überquerung, Marokko</h3> <p class="muted" style="font-size:14px">Hochgebirgspisten, Berber-Dörfer und der Tizi-n-Tichka-Pass.</p> <div class="meta"> <span>📏 410 km</span><span>⛰️ 2.260 hm</span><span>🗓️ Apr–Okt</span> </div> </div> </a><a href="/routen/atlas-ueberquerung-marokko/" class="route"> <div class="img" style="background-image:url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&#38;q=70')"> <div class="badges"> <span class="badge mid">Mittel</span> <span class="badge">3 Tage</span> </div> </div> <div class="body"> <h3>Highland-Piste F26, Island</h3> <p class="muted" style="font-size:14px">Furten, Lavafelder und die Sprengisandur-Hochebene.</p> <div class="meta"> <span>📏 230 km</span><span>🌊 7 Furten</span><span>🗓️ Jul–Sep</span> </div> </div> </a><a href="/routen/atlas-ueberquerung-marokko/" class="route"> <div class="img" style="background-image:url('https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800&#38;q=70')"> <div class="badges"> <span class="badge easy">Leicht</span> <span class="badge">2 Tage</span> </div> </div> <div class="body"> <h3>Transalp-Schotter, Westalpen</h3> <p class="muted" style="font-size:14px">Einsteiger-freundliche Militärstraßen mit Panorama-Garantie.</p> <div class="meta"> <span>📏 165 km</span><span>⛰️ 1.900 hm</span><span>🗓️ Jun–Sep</span> </div> </div> </a> </div> <div style="text-align:center;margin-top:32px"> <a href="/routen/" class="btn btn-ghost">Alle 240 Routen ansehen</a> </div> </div> </section> <section class="section dark"> <div class="wrap"> <div class="section-head"> <div> <p class="eyebrow" style="color:var(--blaze)">Reiseziele</p> <h2>Such dir dein Terrain</h2> </div> <p>
+Länder-Hubs mit Routen, Einreise-Infos, Tankstellen-Dichte und der Frage, die
+          wirklich zählt: Wann ist die beste Reisezeit?
+</p> </div> <div class="dest-grid"> <a href="/reiseziele/marokko/" class="dest" style="background-image:url('https://images.unsplash.com/photo-1489493887464-892be6d1daae?w=600&#38;q=70')"> <div class="label">Marokko<small>38 Routen</small></div> </a><a href="/reiseziele/" class="dest" style="background-image:url('https://images.unsplash.com/photo-1504218817471-3a4dd4758fc0?w=600&#38;q=70')"> <div class="label">Island<small>21 Routen</small></div> </a><a href="/reiseziele/" class="dest" style="background-image:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&#38;q=70')"> <div class="label">Balkan<small>29 Routen</small></div> </a><a href="/reiseziele/" class="dest" style="background-image:url('https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=600&#38;q=70')"> <div class="label">Südafrika<small>17 Routen</small></div> </a> </div> <div style="text-align:center;margin-top:32px"> <a href="/reiseziele/" class="btn btn-ghost-light">Alle 32 Reiseziele</a> </div> </div> </section> <section class="section"> <div class="wrap"> <div class="section-head"> <div><p class="eyebrow">Ausrüstung</p><h2>Getestet, nicht nur verlinkt</h2></div> <p>
+Wir fahren das Gear selbst. Affiliate-Empfehlungen nur, wenn sie den Härtetest
+          bestehen.
+</p> </div> <div class="split"> <a href="/ausruestung/" class="card-blaze" style="display:block"> <h3>Recovery-Set des Jahres</h3> <p>
+Bergegurt, Schäkel, Sandbleche und Kompressor - das Setup, das uns aus jedem
+            Loch geholt hat.
+</p> <div class="gear-list"> <div class="gear-item"><span>Maxtrax MKII Sandbleche</span><span class="price">ab 249 €</span></div> <div class="gear-item"><span>ARB Bergegurt 8t</span><span class="price">ab 79 €</span></div> <div class="gear-item"><span>VIAIR 88P Kompressor</span><span class="price">ab 119 €</span></div> </div> </a> <a href="/ausruestung/" class="card-dark" style="display:block"> <h3>Camp & Schlafen</h3> <p>
+Vom Dachzelt bis zur Camp-Küche - was den Trip komfortabel macht, ohne den
+            Kofferraum zu sprengen.
+</p> <div class="gear-list"> <div class="gear-item"><span>iKamper Skycamp Dachzelt</span><span class="price">ab 3.499 €</span></div> <div class="gear-item"><span>Petromax Feuertopf ft6</span><span class="price">ab 89 €</span></div> <div class="gear-item"><span>Dometic CFX3 Kühlbox</span><span class="price">ab 829 €</span></div> </div> </a> </div> </div> </section> <section class="section" style="background:var(--parchment)"> <div class="wrap"> <div class="section-head"> <div><p class="eyebrow">Versicherungen</p><h2>Abgesichert auf jeder Piste</h2></div> <p>
+Reise- und Auslandskrankenversicherungen im Vergleich - für Langzeit-Overlander
+          und das Wochenend-Abenteuer.
+</p> </div> <div class="compare"> <div class="compare-row head"> <span>Anbieter</span> <span class="hide">Tarif</span><span class="hide">Auslandsschutz</span> <span>Bewertung</span> <span></span> </div> <div class="compare-row"> <span class="prov">HanseMerkur</span> <span class="hide">Langzeit</span><span class="hide">bis 5 Jahre</span> <span class="stars">4,8 ★</span> <a href="/versicherungen/" class="btn btn-primary btn-sm">
+Zum Tarif
+</a> </div><div class="compare-row"> <span class="prov">ADAC Ambulant</span> <span class="hide">Welt</span><span class="hide">inkl. Rücktransport</span> <span class="stars">4,6 ★</span> <a href="/versicherungen/" class="btn btn-primary btn-sm">
+Zum Tarif
+</a> </div><div class="compare-row"> <span class="prov">Hep Young Travel</span> <span class="hide">Gruppen</span><span class="hide">bis 364 Tage</span> <span class="stars">4,5 ★</span> <a href="/versicherungen/" class="btn btn-primary btn-sm">
+Zum Tarif
+</a> </div> </div> <div style="text-align:center;margin-top:32px"> <a href="/versicherungen/" class="btn btn-ghost">Alle Versicherungen vergleichen</a> </div> </div> </section> <section class="section"> <div class="wrap"> <div class="section-head"> <div><p class="eyebrow">Magazin</p><h2>Geschichten von der Strecke</h2></div> <p>Trip-Reports, Fahrzeug-News und Wissen aus der Community.</p> </div> <div class="mag-grid"> <a href="/magazin/suedafrika-outdoor-abenteuer/" class="mag"> <div class="img" style="background-image:url('https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=700&#38;q=70')"></div> <div class="body"> <span class="cat">Reise</span> <h3>Südafrikas Outdoor-Abenteuer &amp; kulturelle Schätze</h3> <p>Von der Garden Route bis in die Karoo - vier Wochen im Allrad.</p> </div> </a><a href="/magazin/volvo-fl-4x4-extreme-offroad/" class="mag"> <div class="img" style="background-image:url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=700&#38;q=70')"></div> <div class="body"> <span class="cat">Fahrzeuge</span> <h3>Volvo FL 4×4 für extreme Offroad-Einsätze</h3> <p>Was der Truck-Umbau für Expeditionen taugt.</p> </div> </a><a href="/magazin/reifendruck-im-gelaende-faustregeln/" class="mag"> <div class="img" style="background-image:url('https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?w=700&#38;q=70')"></div> <div class="body"> <span class="cat">Ratgeber</span> <h3>Reifendruck im Gelände: die Faustregeln</h3> <p>Sand, Schlamm, Fels - wann du Luft ablässt und wie viel.</p> </div> </a> </div> </div> </section> <div class="wrap"> <div class="cta-band"> <h2>Bereit für die <em>nächste</em> Tour?</h2> <p>Hol dir die kuratierten GPX-Tracks und unsere Packliste als kostenlosen Download.</p> <div class="hero-cta"> <a href="#" class="btn btn-primary">Kostenlos starten</a> <a href="#" class="btn btn-ghost-light">Newsletter abonnieren</a> </div> </div> </div> <footer class="footer"> <div class="wrap"> <div class="foot-grid"> <div class="foot-col"> <a href="/" class="logo" style="margin-bottom:14px"><span class="mark"><span></span></span> tour<span style="color:var(--blaze)">off</span>road</a> <p class="muted" style="font-size:15px;max-width:34ch">
+Das Reiseportal für Offroad, Overland und alle, die das Abenteuer abseits der
+          Straße suchen.
+</p> </div> <div class="foot-col"> <h4>Entdecken</h4> <a href="/routen/">Routen</a> <a href="/reiseziele/">Reiseziele</a> <a href="#">Fahrzeuge</a> <a href="/magazin/">Magazin</a> </div> <div class="foot-col"> <h4>Service</h4> <a href="/reiseplanung/">Reiseplanung</a> <a href="/ausruestung/">Ausrüstung</a> <a href="#">Ratgeber</a> <a href="/versicherungen/">Versicherungen</a> <a href="#">GPX-Downloads</a> </div> <div class="foot-col"> <h4>Portal</h4> <a href="/ueber-uns/">Über uns</a> <a href="/impressum/">Impressum</a> <a href="/datenschutz/">Datenschutz</a> <a href="/kontakt/">Kontakt</a> </div> </div> <div class="foot-bottom"> <span>© 2026 tour-off-road.de</span> <span>Einige Links sind Affiliate-Links · Made for the trail</span> </div> </div> </footer>  </body></html>
