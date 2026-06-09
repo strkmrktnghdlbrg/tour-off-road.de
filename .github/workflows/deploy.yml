@@ -61,7 +61,6 @@ jobs:
             git fetch origin main
             git checkout main
             git pull origin main
-            echo "=== dist/ contents ==="
-            ls -la dist/
-            echo "=== document root check ==="
-            ls -la /home/kdwwnlqe/tour-off-road.de/dist/ 2>&1 || echo "path does not exist"
+            find dist -type d -exec chmod 755 {} \;
+            find dist -type f -exec chmod 644 {} \;
+            echo "Permissions fixed."
