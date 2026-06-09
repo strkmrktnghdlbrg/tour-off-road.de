@@ -50,26 +50,10 @@ jobs:
           git pull origin main --rebase
           git push origin main
 
-      - name: Trigger cPanel pull
-        run: |
-          CPANEL_HOST=$(echo "${{ secrets.CPANEL_HOST }}" | sed 's|https\?://||')
-          echo "=== Pull response ==="
-          curl -s -w "\nHTTP %{http_code}\n" \
-            -X POST \
-            -H "Authorization: cpanel ${{ secrets.CPANEL_USER }}:${{ secrets.CPANEL_TOKEN }}" \
-            -H "Content-Type: application/json" \
-            -d '{"repository_root":"/home/kdwwnlqe/tour-off-road.de/astro-site"}' \
-            "https://${CPANEL_HOST}/execute/VersionControl/update"
-          echo "Waiting 15s for pull to complete..."
-          sleep 15
-
-      - name: Deploy HEAD commit
-        run: |
-          CPANEL_HOST=$(echo "${{ secrets.CPANEL_HOST }}" | sed 's|https\?://||')
-          echo "=== Deploy response ==="
-          curl -s -w "\nHTTP %{http_code}\n" \
-            -X POST \
-            -H "Authorization: cpanel ${{ secrets.CPANEL_USER }}:${{ secrets.CPANEL_TOKEN }}" \
-            -H "Content-Type: application/json" \
-            -d '{"repository_root":"/home/kdwwnlqe/tour-off-road.de/astro-site"}' \
-            "https://${CPANEL_HOST}/execute/VersionControlDeployment/create"
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: nl1-ts109.a2hosting.com
+          username: ${{ secrets.CPANEL_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: "cd /home/kdwwnlqe/tour-off-road.de/astro-site && git fetch origin main && git checkout main && git pull origin main"
