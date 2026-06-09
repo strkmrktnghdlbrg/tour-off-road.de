@@ -53,13 +53,17 @@ jobs:
       - name: Trigger cPanel pull
         run: |
           CPANEL_HOST=$(echo "${{ secrets.CPANEL_HOST }}" | sed 's|https\?://||')
-          curl -sf -o /dev/null -w "%{http_code}\n" \
+          echo "=== Pull response ==="
+          curl -s -w "\nHTTP %{http_code}\n" \
             -H "Authorization: cpanel ${{ secrets.CPANEL_USER }}:${{ secrets.CPANEL_TOKEN }}" \
             "https://${CPANEL_HOST}/execute/VersionControl/update?repository=/home/kdwwnlqe/tour-off-road.de/astro-site"
+          echo "Waiting 15s for pull to complete..."
+          sleep 15
 
       - name: Deploy HEAD commit
         run: |
           CPANEL_HOST=$(echo "${{ secrets.CPANEL_HOST }}" | sed 's|https\?://||')
-          curl -sf -o /dev/null -w "%{http_code}\n" \
+          echo "=== Deploy response ==="
+          curl -s -w "\nHTTP %{http_code}\n" \
             -H "Authorization: cpanel ${{ secrets.CPANEL_USER }}:${{ secrets.CPANEL_TOKEN }}" \
             "https://${CPANEL_HOST}/execute/VersionControlDeployment/create?repository=/home/kdwwnlqe/tour-off-road.de/astro-site"
