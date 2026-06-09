@@ -61,6 +61,9 @@ jobs:
             git fetch origin main
             git checkout main
             git pull origin main
+            chmod 755 /home/kdwwnlqe
+            chmod 755 /home/kdwwnlqe/tour-off-road.de
+            chmod 755 /home/kdwwnlqe/tour-off-road.de/astro-site
             find dist -type d -exec chmod 755 {} \;
             find dist -type f -exec chmod 644 {} \;
             echo "Permissions fixed."
