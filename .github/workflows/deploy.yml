@@ -52,12 +52,14 @@ jobs:
 
       - name: Trigger cPanel pull
         run: |
-          curl -s -o /dev/null -w "%{http_code}" \
+          CPANEL_HOST=$(echo "${{ secrets.CPANEL_HOST }}" | sed 's|https\?://||')
+          curl -sf -o /dev/null -w "%{http_code}\n" \
             -H "Authorization: cpanel ${{ secrets.CPANEL_USER }}:${{ secrets.CPANEL_TOKEN }}" \
-            "https://${{ secrets.CPANEL_HOST }}/execute/VersionControl/update?repository=/home/kdwwnlqe/tour-off-road.de/astro-site"
+            "https://${CPANEL_HOST}/execute/VersionControl/update?repository=/home/kdwwnlqe/tour-off-road.de/astro-site"
 
       - name: Deploy HEAD commit
         run: |
-          curl -s -o /dev/null -w "%{http_code}" \
+          CPANEL_HOST=$(echo "${{ secrets.CPANEL_HOST }}" | sed 's|https\?://||')
+          curl -sf -o /dev/null -w "%{http_code}\n" \
             -H "Authorization: cpanel ${{ secrets.CPANEL_USER }}:${{ secrets.CPANEL_TOKEN }}" \
-            "https://${{ secrets.CPANEL_HOST }}/execute/VersionControlDeployment/create?repository=/home/kdwwnlqe/tour-off-road.de/astro-site"
+            "https://${CPANEL_HOST}/execute/VersionControlDeployment/create?repository=/home/kdwwnlqe/tour-off-road.de/astro-site"
