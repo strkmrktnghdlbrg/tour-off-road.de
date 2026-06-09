@@ -11,6 +11,7 @@ import StageList from '../../components/StageList.astro';
 import QABlock from '../../components/QABlock.astro';
 import AsideCard from '../../components/AsideCard.astro';
 import RouteCard from '../../components/RouteCard.astro';
+import { touristTripSchema, breadcrumbSchema, faqSchema } from '../../seo';
 
 export const getStaticPaths = (async () => {
   const routen = await getCollection('routen');
@@ -53,9 +54,28 @@ const facts = [
   { k: 'Dauer', v: `${d.days} Tage` },
   { k: 'Beste Zeit', v: d.bestSeason },
 ];
+
+const path = `/routen/${d.slug}/`;
+const jsonLd = [
+  touristTripSchema({
+    name: d.title,
+    description: d.excerpt,
+    image: d.hero,
+    url: path,
+    destination: regionTitle,
+    days: d.days,
+  }),
+  breadcrumbSchema([
+    { label: 'Start', href: '/' },
+    { label: 'Routen', href: '/routen/' },
+    { label: regionTitle, href: `/reiseziele/${d.region}/` },
+    { label: d.title },
+  ]),
+  faqSchema(d.faqs ?? []),
+].filter(Boolean) as Record<string, unknown>[];
 ---
 
-<Base title={`${d.title} - Route - tour-off-road.de`} description={d.excerpt} image={d.hero} path={`/routen/${d.slug}/`}>
+<Base title={`${d.title} - Route - tour-off-road.de`} description={d.excerpt} image={d.hero} path={path} jsonLd={jsonLd}>
   <Announce />
   <Header active="routen" />
 

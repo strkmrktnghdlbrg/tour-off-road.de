@@ -1,0 +1,146 @@
+---
+// =============================================================================
+// CookieBanner.astro - DSGVO-konformer Cookie-Consent-Banner (self-hosted)
+// =============================================================================
+// Verhalten:
+// - Kein Drittanbieter-Skript laeuft, bevor der Nutzer aktiv zugestimmt hat.
+// - Reject ist gleichwertig (eigener Button, kein Dark-Pattern).
+// - Auswahl wird in localStorage gespeichert; Banner verschwindet stillschweigend.
+// - Sobald "Akzeptieren" gewaehlt wird, feuert ein CustomEvent "consent:granted",
+//   auf das spaeter AdSense/GTM/Analytics-Loader hoeren koennen.
+//
+// Aufruf: einmal in Base.astro vor </body> einbinden. Aktiviert sich automatisch
+// nur, wenn ein "tor-consent"-Eintrag im localStorage fehlt.
+---
+
+<div
+  id="cookie-banner"
+  class="cookie-banner"
+  role="dialog"
+  aria-live="polite"
+  aria-label="Cookie-Hinweis"
+  hidden
+>
+  <div class="cookie-banner-inner wrap">
+    <div class="cookie-banner-text">
+      <p>
+        <strong>Cookies & Tracking.</strong> Wir nutzen technisch notwendige Cookies fuer den
+        Betrieb. Mit deiner Zustimmung setzen wir zusaetzlich Cookies fuer Reichweitenmessung
+        (Google Analytics / GTM) und Werbung (Google AdSense, Affiliate-Tracking via AWIN/Amazon).
+        Du kannst spaeter im Datenschutz widerrufen.
+        <a href="/datenschutz/">Mehr erfahren</a>
+      </p>
+    </div>
+    <div class="cookie-banner-actions">
+      <button type="button" class="btn btn-ghost btn-sm" data-consent="deny">Nur notwendige</button>
+      <button type="button" class="btn btn-primary btn-sm" data-consent="allow">Alles akzeptieren</button>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    var KEY = 'tor-consent'; // 'allow' | 'deny'
+    var banner = document.getElementById('cookie-banner');
+    if (!banner) return;
+    var saved = null;
+    try {
+      saved = localStorage.getItem(KEY);
+    } catch (e) {
+      // localStorage kann blockiert sein -> Banner trotzdem zeigen
+    }
+    if (saved !== 'allow' && saved !== 'deny') {
+      banner.hidden = false;
+      banner.classList.add('is-open');
+    }
+    if (saved === 'allow') {
+      window.dispatchEvent(new CustomEvent('consent:granted'));
+    }
+    banner.addEventListener('click', function (ev) {
+      var t = ev.target;
+      if (!(t instanceof HTMLElement)) return;
+      var choice = t.getAttribute('data-consent');
+      if (!choice) return;
+      try {
+        localStorage.setItem(KEY, choice);
+      } catch (e) {
+        // ignore
+      }
+      banner.hidden = true;
+      banner.classList.remove('is-open');
+      if (choice === 'allow') {
+        window.dispatchEvent(new CustomEvent('consent:granted'));
+      }
+    });
+  })();
+</script>
+
+<style>
+  .cookie-banner {
+    position: fixed;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    z-index: 80;
+    background: var(--basalt);
+    color: #fff;
+    border-radius: var(--radius);
+    padding: 18px;
+    box-shadow: 0 10px 30px rgba(27, 24, 20, 0.2);
+    transform: translateY(120%);
+    transition: transform 0.3s ease;
+  }
+  .cookie-banner.is-open {
+    transform: translateY(0);
+  }
+  .cookie-banner-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .cookie-banner-text {
+    flex: 1 1 320px;
+    min-width: 280px;
+  }
+  .cookie-banner-text p {
+    font-size: 14px;
+    line-height: 1.55;
+    color: #d6cfc4;
+    margin: 0;
+  }
+  .cookie-banner-text strong {
+    color: #fff;
+  }
+  .cookie-banner-text a {
+    color: var(--blaze);
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  .cookie-banner-actions {
+    display: flex;
+    gap: 10px;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+  }
+  .cookie-banner-actions .btn-ghost {
+    color: #fff;
+    border-color: #fff;
+  }
+  @media (max-width: 600px) {
+    .cookie-banner-actions {
+      width: 100%;
+    }
+    .cookie-banner-actions .btn {
+      flex: 1;
+      justify-content: center;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .cookie-banner {
+      transition: none;
+    }
+  }
+</style>

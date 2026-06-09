@@ -10,6 +10,7 @@ import FactGrid from '../../components/FactGrid.astro';
 import QABlock from '../../components/QABlock.astro';
 import AsideCard from '../../components/AsideCard.astro';
 import RouteCard from '../../components/RouteCard.astro';
+import { destinationSchema, breadcrumbSchema, faqSchema } from '../../seo';
 
 export const getStaticPaths = (async () => {
   const ziele = await getCollection('reiseziele');
@@ -29,9 +30,26 @@ const allRoutes = await getCollection('routen');
 const topRoutes = d.topRoutes
   .map((slug) => allRoutes.find((r) => r.data.slug === slug))
   .filter((r): r is (typeof allRoutes)[number] => Boolean(r));
+
+const path = `/reiseziele/${d.slug}/`;
+const destName = d.title.split(':')[0];
+const jsonLd = [
+  destinationSchema({
+    name: destName,
+    description: d.excerpt,
+    image: d.hero,
+    url: path,
+  }),
+  breadcrumbSchema([
+    { label: 'Start', href: '/' },
+    { label: 'Reiseziele', href: '/reiseziele/' },
+    { label: destName },
+  ]),
+  faqSchema(d.faqs ?? []),
+].filter(Boolean) as Record<string, unknown>[];
 ---
 
-<Base title={`${d.title.split(':')[0]} offroad - Reiseziel - tour-off-road.de`} description={d.excerpt} image={d.hero} path={`/reiseziele/${d.slug}/`}>
+<Base title={`${d.title.split(':')[0]} offroad - Reiseziel - tour-off-road.de`} description={d.excerpt} image={d.hero} path={path} jsonLd={jsonLd}>
   <Announce />
   <Header active="reiseziele" />
 

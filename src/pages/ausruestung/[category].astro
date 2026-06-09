@@ -9,6 +9,7 @@ import Breadcrumb from '../../components/Breadcrumb.astro';
 import Pills from '../../components/Pills.astro';
 import GearCard from '../../components/GearCard.astro';
 import { gearAffiliateHref } from '../../products';
+import { productSchema, breadcrumbSchema } from '../../seo';
 
 export const getStaticPaths = (async () => {
   const cats = ['recovery', 'camping', 'navigation', 'campkueche', 'reifen'];
@@ -42,6 +43,24 @@ const pills = [
   title={`${label} - Ausrüstung im Test - tour-off-road.de`}
   description={`Getestete ${label}-Ausrüstung für Offroad und Overland.`}
   path={`/ausruestung/${category}/`}
+  jsonLd={[
+    breadcrumbSchema([
+      { label: 'Start', href: '/' },
+      { label: 'Ausrüstung', href: '/ausruestung/' },
+      { label },
+    ]),
+    ...gear.map((g) =>
+      productSchema({
+        name: g.data.title,
+        description: g.data.excerpt,
+        image: g.data.image,
+        url: `/ausruestung/${category}/#${g.data.slug}`,
+        price: g.data.price,
+        rating: g.data.rating,
+        category: label,
+      }),
+    ),
+  ]}
 >
   <Announce />
   <Header active="ausruestung" />

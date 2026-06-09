@@ -1,0 +1,46 @@
+---
+import Base from '../layouts/Base.astro';
+import Announce from '../components/Announce.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Base
+  title="Seite nicht gefunden - tour-off-road.de"
+  description="Diese Seite gibt es nicht (mehr). Hier findest du den Weg zurück zu unseren Routen, Reisezielen und Ratgebern."
+  path="/404/"
+  noindex={true}
+>
+  <Announce />
+  <Header />
+
+  <section class="section" style="padding:96px 0">
+    <div class="wrap" style="text-align:center;max-width:680px">
+      <p class="eyebrow" style="color:var(--blaze)">404</p>
+      <h1
+        style="font-size:clamp(46px,9vw,96px);font-weight:800;line-height:.95;letter-spacing:-.035em;margin:14px 0 18px"
+      >
+        Hier endet die Piste.
+      </h1>
+      <p class="muted" style="font-size:18px;max-width:46ch;margin:0 auto 32px">
+        Diese Seite haben wir nicht gefunden. Wahrscheinlich wurde sie umbenannt oder gehört zu einem
+        alten Stand der Seite. Spring zurück und starte deine Tour neu.
+      </p>
+      <div class="hero-cta" style="justify-content:center">
+        <a href="/" class="btn btn-primary">Zur Startseite</a>
+        <a href="/routen/" class="btn btn-ghost">Routen entdecken</a>
+        <a href="/suche/" class="btn btn-ghost">Suche</a>
+      </div>
+
+      <div
+        style="margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:600px;margin-left:auto;margin-right:auto"
+      >
+        <a href="/reiseziele/" class="chip" style="justify-content:center"><b>32</b> Reiseziele</a>
+        <a href="/ausruestung/" class="chip" style="justify-content:center"><b>180</b> Gear-Tests</a>
+        <a href="/magazin/" class="chip" style="justify-content:center">Magazin</a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Base>

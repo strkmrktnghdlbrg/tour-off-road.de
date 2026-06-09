@@ -7,6 +7,7 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import MagCard from '../../components/MagCard.astro';
+import { articleSchema, breadcrumbSchema } from '../../seo';
 
 export const getStaticPaths = (async () => {
   const posts = await getCollection('magazin');
@@ -39,9 +40,26 @@ const more = [
   { href: '/magazin/reifendruck-im-gelaende-faustregeln/', hero: 'https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?w=700&q=70', category: 'Ratgeber', title: 'Reifendruck im Gelände: die Faustregeln' },
   { href: '/reiseziele/marokko/', hero: 'https://images.unsplash.com/photo-1489493887464-892be6d1daae?w=700&q=70', category: 'Reiseziel', title: 'Marokko: das Offroad-Paradies vor der Haustür' },
 ].slice(0, 3);
+
+const path = `/magazin/${d.slug}/`;
+const jsonLd = [
+  articleSchema({
+    title: d.title,
+    description: d.excerpt,
+    image: d.hero,
+    url: path,
+    author: d.author,
+    datePublished: d.date,
+  }),
+  breadcrumbSchema([
+    { label: 'Start', href: '/' },
+    { label: 'Magazin', href: '/magazin/' },
+    { label: d.title },
+  ]),
+];
 ---
 
-<Base title={`${d.title} - Magazin - tour-off-road.de`} description={d.excerpt} image={d.hero} path={`/magazin/${d.slug}/`}>
+<Base title={`${d.title} - Magazin - tour-off-road.de`} description={d.excerpt} image={d.hero} path={path} jsonLd={jsonLd}>
   <Announce />
   <Header active="magazin" />
 
@@ -72,6 +90,27 @@ const more = [
       <div class="wrap">
         <div class="prose" style="margin:0 auto">
           <Content />
+        </div>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="wrap">
+        <div
+          class="author-bio"
+          style="max-width:760px;margin:0 auto;background:var(--parchment);border:1px solid var(--stone);border-radius:var(--radius);padding:28px;display:flex;gap:18px;align-items:flex-start"
+        >
+          <div class="av" style="flex:none;width:64px;height:64px;border-radius:50%;background:var(--olive)"></div>
+          <div>
+            <p class="eyebrow" style="color:var(--graphite);margin:0 0 4px">Autor</p>
+            <h3 style="font-size:18px;font-weight:700;margin:0 0 6px">{d.author}</h3>
+            <p class="muted" style="font-size:14px;line-height:1.55;margin:0">
+              Fährt seit über zehn Jahren Offroad-Touren in Europa und Nordafrika. Schreibt über
+              das, was wir selbst auf der Strecke testen - von der Atlas-Pass-Querung bis zum
+              Recovery-Set für den Wochenend-Trip.
+              <a href="/ueber-uns/" style="color:var(--blaze);font-weight:600">Mehr über uns</a>
+            </p>
+          </div>
         </div>
       </div>
     </section>

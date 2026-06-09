@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import CookieBanner from '../components/CookieBanner.astro';
 
 interface Props {
   title: string;
@@ -9,6 +10,8 @@ interface Props {
   path?: string;
   /** Wenn true: Seite via Meta-Robots von Index/Folgen ausschliessen (z.B. Rechtsseiten) */
   noindex?: boolean;
+  /** Optionale JSON-LD-Schemas (eines oder mehrere) - werden als application/ld+json eingebettet */
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const {
@@ -17,7 +20,10 @@ const {
   image = 'https://images.unsplash.com/photo-1489493887464-892be6d1daae?w=1200&q=75',
   path,
   noindex = false,
+  jsonLd,
 } = Astro.props;
+
+const schemas = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 
 const canonical = new URL(path ?? Astro.url.pathname, Astro.site).href;
 ---
@@ -41,6 +47,12 @@ const canonical = new URL(path ?? Astro.url.pathname, Astro.site).href;
 
     <link rel="sitemap" href="/sitemap-index.xml" />
 
+    {
+      schemas.map((s) => (
+        <script type="application/ld+json" set:html={JSON.stringify(s)} />
+      ))
+    }
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -50,5 +62,6 @@ const canonical = new URL(path ?? Astro.url.pathname, Astro.site).href;
   </head>
   <body>
     <slot />
+    <CookieBanner />
   </body>
 </html>
