@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang="de"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Longboard selber bauen: vom Deck bis zu den Achsen - Magazin - tour-off-road.de</title><meta name="description" content="Ein Longboard selbst bauen: Deck-Form und Holz, Trucks, Rollen und Lager auswählen, das Deck pressen oder fertig kaufen und alles richtig montieren."><link rel="canonical" href="https://tour-off-road.de/magazin/longboard-selber-bauen/"><meta property="og:type" content="website"><meta property="og:title" content="Longboard selber bauen: vom Deck bis zu den Achsen - Magazin - tour-off-road.de"><meta property="og:description" content="Ein Longboard selbst bauen: Deck-Form und Holz, Trucks, Rollen und Lager auswählen, das Deck pressen oder fertig kaufen und alles richtig montieren."><meta property="og:url" content="https://tour-off-road.de/magazin/longboard-selber-bauen/"><meta property="og:image" content="https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200&q=75"><meta name="twitter:card" content="summary_large_image"><link rel="sitemap" href="/sitemap-index.xml"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Longboard selber bauen: vom Deck bis zu den Achsen","description":"Ein Longboard selbst bauen: Deck-Form und Holz, Trucks, Rollen und Lager auswählen, das Deck pressen oder fertig kaufen und alles richtig montieren.","image":["https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200&q=75"],"author":{"@type":"Person","name":"Lukas Hartmann"},"publisher":{"@id":"https://tour-off-road.de/#organization"},"datePublished":"2026-06-11T00:00:00.000Z","dateModified":"2026-06-11T00:00:00.000Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://tour-off-road.de/magazin/longboard-selber-bauen/"},"inLanguage":"de-DE"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Start","item":"https://tour-off-road.de/"},{"@type":"ListItem","position":2,"name":"Magazin","item":"https://tour-off-road.de/magazin/"},{"@type":"ListItem","position":3,"name":"Longboard selber bauen: vom Deck bis zu den Achsen"}]}</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="/_astro/_category_.CqeN4_I3.css"></head> <body>  <div class="announce">🏜️ Neu: 24 GPX-Routen für die Marokko-Saison 2026 - <a href="/reiseziele/marokko/">jetzt ansehen</a></div> <header class="nav"> <div class="wrap nav-inner"> <a href="/" class="logo"><span class="mark"><span></span></span> tour<span style="color:var(--blaze)">off</span>road</a> <nav class="nav-links"> <a href="/routen/"> Routen </a><a href="/reiseplanung/"> Reiseplanung </a><a href="/reiseziele/"> Reiseziele </a><a href="#"> Fahrzeuge </a><a href="/ausruestung/"> Ausrüstung </a><a href="#"> Ratgeber </a><a href="/versicherungen/"> Versicherungen </a><a href="/magazin/" class="active"> Magazin </a> </nav> <div class="nav-right"> <a href="/ueber-uns/" class="btn btn-ghost">Über uns</a> <a href="/routen/" class="btn btn-primary">Route finden</a> </div> <button type="button" class="nav-burger" id="navBurger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileDrawer"> <span></span><span></span><span></span> </button> </div> <div class="nav-backdrop" id="navBackdrop" hidden></div> <aside class="nav-drawer" id="mobileDrawer" aria-hidden="true" aria-label="Hauptnavigation"> <div class="nav-drawer-head"> <span class="nav-drawer-title">Navigation</span> <button type="button" class="nav-drawer-close" id="navClose" aria-label="Menü schließen"> <span></span><span></span> </button> </div> <nav class="nav-drawer-links"> <a href="/routen/"> Routen </a><a href="/reiseplanung/"> Reiseplanung </a><a href="/reiseziele/"> Reiseziele </a><a href="#"> Fahrzeuge </a><a href="/ausruestung/"> Ausrüstung </a><a href="#"> Ratgeber </a><a href="/versicherungen/"> Versicherungen </a><a href="/magazin/" class="active"> Magazin </a> </nav> <div class="nav-drawer-cta"> <a href="/ueber-uns/" class="btn btn-ghost">Über uns</a> <a href="/routen/" class="btn btn-primary">Route finden</a> </div> </aside> </header> <script>
+  (function () {
+    var burger = document.getElementById('navBurger');
+    var drawer = document.getElementById('mobileDrawer');
+    var backdrop = document.getElementById('navBackdrop');
+    var closeBtn = document.getElementById('navClose');
+    if (!burger || !drawer || !backdrop) return;
+
+    function open() {
+      document.body.classList.add('drawer-open');
+      burger.setAttribute('aria-expanded', 'true');
+      burger.setAttribute('aria-label', 'Menü schließen');
+      drawer.setAttribute('aria-hidden', 'false');
+      backdrop.hidden = false;
+    }
+
+    function close() {
+      document.body.classList.remove('drawer-open');
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Menü öffnen');
+      drawer.setAttribute('aria-hidden', 'true');
+      backdrop.hidden = true;
+    }
+
+    function toggle() {
+      if (document.body.classList.contains('drawer-open')) {
+        close();
+      } else {
+        open();
+      }
+    }
+
+    burger.addEventListener('click', toggle);
+    if (closeBtn) closeBtn.addEventListener('click', close);
+    backdrop.addEventListener('click', close);
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && document.body.classList.contains('drawer-open')) {
+        close();
+      }
+    });
+
+    // Bei Klick auf einen Link das Menü schließen.
+    drawer.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', close);
+    });
+  })();
+</script> <div class="wrap"> <div class="crumb"> <a href="/">Start</a><span>/</span><a href="/magazin/">Magazin</a><span>/</span><span>Off-Road Boards</span> </div> </div> <article> <section class="page-hero" style="padding-bottom:16px"> <div class="wrap" style="max-width:760px;margin:0 auto"> <span class="eyebrow" style="color:var(--blaze)">Off-Road Boards · offroad-boards</span> <h1 style="margin-top:10px">Longboard selber bauen: vom Deck bis zu den Achsen</h1> <div class="byline"> <div class="av"></div> <div>Von <b>Lukas Hartmann</b> · 11. Juni 2026 · 8 Min. Lesezeit</div> </div> </div> <div class="wrap"> <div class="g" style="height:440px;border-radius:var(--radius);background-image:url('https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200&#38;q=75');background-size:cover;background-position:center"></div> </div> </section> <section class="section" style="padding-top:40px"> <div class="wrap"> <div class="prose" style="margin:0 auto"> <p>Ein Longboard selbst zu bauen ist machbarer, als es zunächst klingt. Du entscheidest selbst über Form, Flex und Fahrverhalten, statt ein Komplettboard von der Stange zu kaufen. Dieser Leitfaden zeigt dir die zwei realistischen Wege, erklärt die Komponenten und führt dich durch die Montage. Wenn du das Prinzip lieber an einem kürzeren Board kennenlernen willst, ist unser Guide zum Thema <a href="/magazin/skateboard-selber-bauen/">Skateboard selber bauen</a> ein guter Einstieg.</p>
+<h2 id="zwei-wege-zum-eigenen-board">Zwei Wege zum eigenen Board</h2>
+<p>Es gibt grundsätzlich zwei Ansätze. Beim ersten presst du dein Deck selbst aus dünnen Holzfurnieren. Du brauchst dafür sieben bis neun Lagen Ahorn- oder Birkenfurnier (je etwa 1,5 mm), wasserfesten Leim und eine Form. Die Form kannst du aus zwei MDF-Platten fräsen oder als einfache Biegeform mit Spanngurten und Schraubzwingen bauen. Die Furniere werden kreuzweise verleimt, in die Form gepresst und müssen mindestens acht Stunden aushärten. Anschließend sägst du die Außenkontur aus und schleifst die Kanten. Dieser Weg gibt dir volle Kontrolle über Concave und Flex, kostet aber Zeit und etwas Übung.</p>
+<p>Der zweite, deutlich einfachere Weg: Du kaufst ein fertiges Blank-Deck oder ein Multiplex-Deck und baust es individuell auf. Du sparst dir Pressform und Aushärtezeit und konzentrierst dich auf Form, Grafik und Komponentenwahl. Für die meisten Einsteiger ist das die sinnvollere Variante, weil du ein erprobtes Deck mit definiertem Flex bekommst.</p>
+<h2 id="deck-form-und-flex-je-nach-fahrstil">Deck-Form und Flex je nach Fahrstil</h2>
+<p>Die Deck-Form bestimmt, wie sich dein Board fährt. Für entspanntes Cruisen und Pendeln passt ein Pintail oder ein Drop-Through-Deck mit leichtem bis mittlerem Flex. Der weiche Flex schluckt Unebenheiten und macht lange Strecken angenehm.</p>
+<p>Für Freeride und Slides willst du ein steiferes Deck mit ausgeprägtem Concave und symmetrischer Form, damit es sich in beide Richtungen gleich fährt. Beim Downhill brauchst du maximale Steifigkeit und eine tiefe Fußtasche für Kontrolle bei hohem Tempo. Wenn dich diese Disziplin reizt, lies unseren Beitrag zum <a href="/magazin/downhill-longboarding-offroad/">Downhill-Longboarding</a>. Als Faustregel gilt: je höher die Geschwindigkeit, desto steifer das Deck.</p>
+<h2 id="die-komponenten-im-überblick">Die Komponenten im Überblick</h2>
+<ul>
+<li><strong>Trucks (Achsen):</strong> Für Longboards nimmst du Reverse-Kingpin-Trucks mit 150 bis 180 mm Breite. Sie lenken weicher und laufruhiger als die TKP-Achsen vom Skateboard. Die Breite sollte ungefähr zur Deck-Breite passen.</li>
+<li><strong>Rollen:</strong> Größe und Härte entscheiden über Rollverhalten. Für Cruising und Off-Road-nahe Strecken sind große, weiche Rollen ideal (70 bis 85 mm, 78A bis 80A). Für Slides nimmst du etwas härtere Rollen um 82A bis 86A, die kontrolliert ausbrechen.</li>
+<li><strong>Lager (Bearings):</strong> Standard ist die Größe 608. ABEC-Werte sagen wenig über Haltbarkeit aus, achte eher auf solide Markenqualität und Spacer für gleichmäßigen Lauf.</li>
+<li><strong>Griptape:</strong> Grobkörniges Tape gibt Halt. Für Downhill darf es ruhig aggressiver sein, fürs Cruisen reicht mittlere Körnung.</li>
+<li><strong>Kleinteile:</strong> Montage-Schrauben (meist 1 bis 1,25 Zoll), passende Riser-Pads gegen Wheelbite und Lock-Nuts.</li>
+</ul>
+<p>Wenn du die einzelnen Teile vergleichen willst, findest du in unserer <a href="/ausruestung/">Ausrüstung</a> eine Übersicht.</p>
+<h2 id="werkzeug">Werkzeug</h2>
+<p>Du brauchst nicht viel: einen Skate-Tool oder Inbus- und Maulschlüssel, einen Kreuzschlitz-Schraubendreher, ein Cuttermesser, eine Feile oder feines Schleifpapier und einen Bohrer mit passendem Aufsatz, falls dein Deck nicht vorgebohrt ist.</p>
+<h2 id="montageanleitung-schritt-für-schritt">Montageanleitung Schritt für Schritt</h2>
+<ol>
+<li><strong>Griptape aufziehen:</strong> Lege das Tape mittig auf, drücke es blasenfrei an und schneide die Kanten mit der Feile als Führung ab. Mit dem Cutter sauber nachtrimmen.</li>
+<li><strong>Achslöcher freilegen:</strong> Stich mit einer Schraube durch das Tape, damit du die vier Bohrungen pro Achse findest.</li>
+<li><strong>Schrauben einsetzen:</strong> Stecke die Montage-Schrauben von oben durch das Deck. Bei Bedarf Riser-Pads dazwischenlegen.</li>
+<li><strong>Trucks montieren:</strong> Setze die Reverse-Kingpin-Trucks auf, sodass die Kingpins nach innen zeigen. Schrauben handfest, dann über Kreuz fest anziehen.</li>
+<li><strong>Lager einsetzen:</strong> Drücke je zwei Lager in jede Rolle, mit Spacer dazwischen. Notfalls die Achse als Presse nutzen.</li>
+<li><strong>Rollen montieren:</strong> Schiebe die Rollen auf die Achsen und ziehe die Lock-Nuts an, bis die Rolle ohne seitliches Spiel frei dreht.</li>
+<li><strong>Probelauf:</strong> Stell dich vorsichtig drauf und prüfe Lenkverhalten und Spiel, bevor du losfährst.</li>
+</ol>
+<h2 id="setup-feinheiten-und-pflege">Setup-Feinheiten und Pflege</h2>
+<p>Das Lenkverhalten stimmst du über die <strong>Bushings</strong> ab. Weiche Bushings (etwa 78A bis 85A) machen das Board wendig und kippelig, harte (90A und mehr) bringen Stabilität bei Tempo. Über die Kingpin-Mutter regelst du die Vorspannung: lockerer lenkt direkter, fester läuft ruhiger. Taste dich in kleinen Schritten heran und teste nach jeder Änderung.</p>
+<p>Achte darauf, dass die Achs-Muttern fest sitzen, aber die Rollen frei drehen. Zu fest blockiert, zu locker erzeugt Spiel. Reinige die Lager bei Schmutz oder Nässe, öle sie leicht nach und kontrolliere regelmäßig alle Schrauben. So bleibt dein selbst gebautes Longboard lange fahrbar.</p>
+<p>Wenn dich motorisierte Alternativen interessieren, wirf danach einen Blick auf unsere <a href="/magazin/offroad-hoverboards-guide/">Off-Road-Hoverboards</a>. Für den Anfang gilt aber: Ein durchdacht aufgebautes Longboard ist die beste Schule fürs Fahrgefühl.</p> </div> </div> </section> <section class="section tight"> <div class="wrap"> <div class="author-bio" style="max-width:760px;margin:0 auto;background:var(--parchment);border:1px solid var(--stone);border-radius:var(--radius);padding:28px;display:flex;gap:18px;align-items:flex-start"> <div class="av" style="flex:none;width:64px;height:64px;border-radius:50%;background:var(--olive)"></div> <div> <p class="eyebrow" style="color:var(--graphite);margin:0 0 4px">Autor</p> <h3 style="font-size:18px;font-weight:700;margin:0 0 6px">Lukas Hartmann</h3> <p class="muted" style="font-size:14px;line-height:1.55;margin:0">
+Fährt seit über zehn Jahren Offroad-Touren in Europa und Nordafrika. Schreibt über
+              das, was wir selbst auf der Strecke testen - von der Atlas-Pass-Querung bis zum
+              Recovery-Set für den Wochenend-Trip.
+<a href="/ueber-uns/" style="color:var(--blaze);font-weight:600">Mehr über uns</a> </p> </div> </div> </div> </section> </article> <section class="section tight"> <div class="wrap"> <div class="card-blaze" style="text-align:center"> <h3 style="max-width:20ch;margin:0 auto 10px">Planst du selbst eine Fernreise?</h3> <p style="max-width:48ch;margin:0 auto 20px">
+Vergleich der Auslandskrankenversicherungen mit Rücktransport - speziell für lange
+          Overland-Touren.
+</p> <a href="/versicherungen/" class="btn btn-ghost">Zum Versicherungs-Vergleich</a> </div> </div> </section> <section class="section tight"> <div class="wrap"> <div class="section-head"> <div> <p class="eyebrow">Weiterlesen</p> <h2>Mehr aus dem Magazin</h2> </div> </div> <div class="mag-grid"> <a href="/magazin/allradantrieb-erklaert-offroad/" class="mag"> <div class="img" style="background-image:url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&#38;q=75')"></div> <div class="body"> <span class="cat">Fahrzeuge</span> <h3>Allradantrieb erklärt: 4×4-Technik, Differenziale und Untersetzung</h3>  </div> </a><a href="/magazin/anfaengerfehler-offroad-vermeiden/" class="mag"> <div class="img" style="background-image:url('https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&#38;q=75')"></div> <div class="body"> <span class="cat">Ratgeber</span> <h3>Anfängerfehler im Offroad vermeiden: typische Stolperfallen und wie du sie umgehst</h3>  </div> </a><a href="/magazin/beste-gelaendewagen-einsteiger/" class="mag"> <div class="img" style="background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&#38;q=75')"></div> <div class="body"> <span class="cat">Kaufberatung</span> <h3>Die besten Geländewagen für Einsteiger</h3>  </div> </a> </div> </div> </section> <footer class="footer"> <div class="wrap"> <div class="foot-grid"> <div class="foot-col"> <a href="/" class="logo" style="margin-bottom:14px"><span class="mark"><span></span></span> tour<span style="color:var(--blaze)">off</span>road</a> <p class="muted" style="font-size:15px;max-width:34ch">
+Das Reiseportal für Offroad, Overland und alle, die das Abenteuer abseits der
+          Straße suchen.
+</p> </div> <div class="foot-col"> <h4>Entdecken</h4> <a href="/routen/">Routen</a> <a href="/reiseziele/">Reiseziele</a> <a href="#">Fahrzeuge</a> <a href="/magazin/">Magazin</a> </div> <div class="foot-col"> <h4>Service</h4> <a href="/reiseplanung/">Reiseplanung</a> <a href="/ausruestung/">Ausrüstung</a> <a href="#">Ratgeber</a> <a href="/versicherungen/">Versicherungen</a> <a href="#">GPX-Downloads</a> </div> <div class="foot-col"> <h4>Portal</h4> <a href="/ueber-uns/">Über uns</a> <a href="/impressum/">Impressum</a> <a href="/datenschutz/">Datenschutz</a> <a href="/kontakt/">Kontakt</a> </div> </div> <div class="foot-bottom"> <span>© 2026 tour-off-road.de</span> <span>Einige Links sind Affiliate-Links · Made for the trail</span> </div> </div> </footer>  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie-Hinweis" hidden data-astro-cid-fzbxxtek> <div class="cookie-banner-inner wrap" data-astro-cid-fzbxxtek> <div class="cookie-banner-text" data-astro-cid-fzbxxtek> <p data-astro-cid-fzbxxtek> <strong data-astro-cid-fzbxxtek>Cookies & Tracking.</strong> Wir nutzen technisch notwendige Cookies fuer den
+        Betrieb. Mit deiner Zustimmung setzen wir zusaetzlich Cookies fuer Reichweitenmessung
+        (Google Analytics / GTM) und Werbung (Google AdSense, Affiliate-Tracking via AWIN/Amazon).
+        Du kannst spaeter im Datenschutz widerrufen.
+<a href="/datenschutz/" data-astro-cid-fzbxxtek>Mehr erfahren</a> </p> </div> <div class="cookie-banner-actions" data-astro-cid-fzbxxtek> <button type="button" class="btn btn-ghost btn-sm" data-consent="deny" data-astro-cid-fzbxxtek>Nur notwendige</button> <button type="button" class="btn btn-primary btn-sm" data-consent="allow" data-astro-cid-fzbxxtek>Alles akzeptieren</button> </div> </div> </div> <script>
+  (function () {
+    var KEY = 'tor-consent'; // 'allow' | 'deny'
+    var banner = document.getElementById('cookie-banner');
+    if (!banner) return;
+    var saved = null;
+    try {
+      saved = localStorage.getItem(KEY);
+    } catch (e) {
+      // localStorage kann blockiert sein -> Banner trotzdem zeigen
+    }
+    if (saved !== 'allow' && saved !== 'deny') {
+      banner.hidden = false;
+      banner.classList.add('is-open');
+    }
+    if (saved === 'allow') {
+      window.dispatchEvent(new CustomEvent('consent:granted'));
+    }
+    banner.addEventListener('click', function (ev) {
+      var t = ev.target;
+      if (!(t instanceof HTMLElement)) return;
+      var choice = t.getAttribute('data-consent');
+      if (!choice) return;
+      try {
+        localStorage.setItem(KEY, choice);
+      } catch (e) {
+        // ignore
+      }
+      banner.hidden = true;
+      banner.classList.remove('is-open');
+      if (choice === 'allow') {
+        window.dispatchEvent(new CustomEvent('consent:granted'));
+      }
+    });
+  })();
+</script>  </body></html>
