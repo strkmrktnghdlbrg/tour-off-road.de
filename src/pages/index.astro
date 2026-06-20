@@ -81,12 +81,20 @@ const magPosts = [
         <a href="/routen/" class="btn btn-primary">Routen entdecken</a>
         <a href="/ausruestung/" class="btn btn-ghost">Ausrüstungs-Guide</a>
       </div>
-      <div class="searchbar">
-        <div class="field"><div class="lbl">Region</div><div class="val">Marokko</div></div>
-        <div class="field"><div class="lbl">Terrain</div><div class="val">Wüste & Piste</div></div>
-        <div class="field"><div class="lbl">Schwierigkeit</div><div class="val">Mittel</div></div>
-        <a href="/routen/" class="btn btn-primary">Suchen</a>
-      </div>
+      <form class="searchbar" action="/suche/" method="get" role="search">
+        <div class="field" style="flex:3">
+          <label class="lbl" for="hero-q">Suche</label>
+          <input
+            type="search"
+            id="hero-q"
+            name="q"
+            class="val hero-search-input"
+            placeholder="Region, Route, Ausrüstung ..."
+            aria-label="Suchbegriff"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Suchen</button>
+      </form>
       <div class="hero-chips">
         <div class="chip"><b>240+</b> Routen</div>
         <div class="chip"><b>32</b> Länder</div>
