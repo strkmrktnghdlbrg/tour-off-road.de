@@ -1,4 +1,5 @@
 ---
+import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Announce from '../../components/Announce.astro';
 import Header from '../../components/Header.astro';
@@ -42,11 +43,17 @@ const faqs = [
   },
 ];
 
-const ratgeber = [
-  { href: '/magazin/suedafrika-outdoor-abenteuer/', hero: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=700&q=70', category: 'Versicherung', title: 'Langzeitreise-Versicherung: Langzeitaufenthalte absichern' },
-  { href: '/magazin/suedafrika-outdoor-abenteuer/', hero: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=700&q=70', category: 'Versicherung', title: 'Gruppenreisen-Versicherung: Gruppen sicher unterwegs' },
-  { href: '/magazin/suedafrika-outdoor-abenteuer/', hero: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=700&q=70', category: 'Versicherung', title: 'Reisegepäck-Versicherung: Wertgegenstände auf Reisen sichern' },
-];
+// Versicherungs-Ratgeber: echte Artikel aus dem Cluster "versicherungen".
+const versicherungsArtikel = await getCollection('magazin');
+const ratgeber = versicherungsArtikel
+  .filter((p) => p.data.cluster === 'versicherungen')
+  .slice(0, 3)
+  .map((p) => ({
+    href: `/magazin/${p.data.slug}/`,
+    hero: p.data.hero,
+    category: p.data.category,
+    title: p.data.title,
+  }));
 ---
 
 <Base

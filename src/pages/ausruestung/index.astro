@@ -7,9 +7,22 @@ import Footer from '../../components/Footer.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import Pills from '../../components/Pills.astro';
 import GearCard from '../../components/GearCard.astro';
+import MagCard from '../../components/MagCard.astro';
 import { gearAffiliateHref } from '../../products';
 
 const gear = await getCollection('ausruestung');
+
+// Ratgeber & Wissen: Magazin-Artikel aus dem Cluster "ausruestung".
+const allMagazin = await getCollection('magazin');
+const ausruestungRatgeber = allMagazin
+  .filter((p) => p.data.cluster === 'ausruestung')
+  .slice(0, 3)
+  .map((p) => ({
+    href: `/magazin/${p.data.slug}/`,
+    hero: p.data.hero,
+    category: p.data.category,
+    title: p.data.title,
+  }));
 
 const categoryLabel: Record<string, string> = {
   recovery: 'Recovery',
@@ -88,6 +101,24 @@ const pills = [
       </p>
     </div>
   </section>
+
+  {
+    ausruestungRatgeber.length > 0 && (
+      <section class="section tight">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Ratgeber & Wissen</p>
+              <h2>Mehr zur Ausrüstung</h2>
+            </div>
+          </div>
+          <div class="mag-grid">
+            {ausruestungRatgeber.map((r) => <MagCard {...r} />)}
+          </div>
+        </div>
+      </section>
+    )
+  }
 
   <Footer />
 </Base>
