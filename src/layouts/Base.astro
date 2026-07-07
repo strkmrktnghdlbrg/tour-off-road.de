@@ -1,6 +1,5 @@
 ---
 import '../styles/global.css';
-import CookieBanner from '../components/CookieBanner.astro';
 
 interface Props {
   title: string;
@@ -53,6 +52,12 @@ const canonical = new URL(path ?? Astro.url.pathname, Astro.site).href;
       ))
     }
 
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3946820918041547"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -62,6 +67,5 @@ const canonical = new URL(path ?? Astro.url.pathname, Astro.site).href;
   </head>
   <body>
     <slot />
-    <CookieBanner />
   </body>
 </html>
