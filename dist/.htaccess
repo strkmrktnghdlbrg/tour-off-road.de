@@ -37,7 +37,12 @@
   # /impressum/ und /datenschutz/ bleiben unveraendert (kein Redirect)
 
   # --- Einzel-Artikel (on-topic / unbedenklich) -----------------------------
-  RewriteRule ^suedafrikas-outdoor-abenteuer-kulturelle-schaetze/?$        /magazin/suedafrika-outdoor-abenteuer/        [R=301,L]
+  # /suedafrikas-outdoor-abenteuer-kulturelle-schaetze/ = ERHALTENER GASTBEITRAG
+  # (bezahlter dofollow-Backlink djoser.de). Als eigenstaendige Seite unter der
+  # Original-URL hergestellt -> KEIN Redirect. Siehe src/pages/suedafrikas-*.astro
+  # Migrations-Rewrites (ohne Backlink) entfernt -> 301 auf die erhaltenen Gastbeitraege:
+  RewriteRule ^magazin/suedafrika-outdoor-abenteuer/?$   /suedafrikas-outdoor-abenteuer-kulturelle-schaetze/   [R=301,L]
+  RewriteRule ^magazin/kuba-outdoor-abenteuer/?$         /kuba-outdoor-abenteuer-kulturelle/                  [R=301,L]
   RewriteRule ^volvo-trucks-ruestet-fl-4x4-fuer-extreme-offroad-einsaetze-auf/?$   /magazin/volvo-fl-4x4-extreme-offroad/        [R=301,L]
   RewriteRule ^was-du-ueber-offroad-trekking-wissen-musst/?$               /magazin/offroad-trekking-grundlagen/         [R=301,L]
   RewriteRule ^offroad-trekking-mit-autos/?$                               /magazin/offroad-trekking-mit-autos/          [R=301,L]
