@@ -20,7 +20,12 @@
 # /impressum/  und  /datenschutz/  bleiben unveraendert (kein Redirect noetig)
 
 # --- Einzel-Artikel (on-topic / unbedenklich) -------------------------------
-/suedafrikas-outdoor-abenteuer-kulturelle-schaetze/   /magazin/suedafrika-outdoor-abenteuer/   301
+# /suedafrikas-outdoor-abenteuer-kulturelle-schaetze/ = ERHALTENER GASTBEITRAG
+# (bezahlter dofollow-Backlink djoser.de). Wieder als eigenstaendige Seite unter
+# der Original-URL hergestellt -> KEIN Redirect. Siehe src/pages/suedafrikas-*.astro
+# Migrations-Rewrites (ohne Backlink) entfernt -> 301 auf die erhaltenen Gastbeitraege:
+/magazin/suedafrika-outdoor-abenteuer/   /suedafrikas-outdoor-abenteuer-kulturelle-schaetze/   301
+/magazin/kuba-outdoor-abenteuer/         /kuba-outdoor-abenteuer-kulturelle/                  301
 /volvo-trucks-ruestet-fl-4x4-fuer-extreme-offroad-einsaetze-auf/   /magazin/volvo-fl-4x4-extreme-offroad/   301
 /was-du-ueber-offroad-trekking-wissen-musst/          /magazin/offroad-trekking-grundlagen/    301
 /offroad-trekking-mit-autos/                          /magazin/offroad-trekking-mit-autos/     301
