@@ -25,7 +25,9 @@
 # der Original-URL hergestellt -> KEIN Redirect. Siehe src/pages/suedafrikas-*.astro
 # Migrations-Rewrites (ohne Backlink) entfernt -> 301 auf die erhaltenen Gastbeitraege:
 /magazin/suedafrika-outdoor-abenteuer/   /suedafrikas-outdoor-abenteuer-kulturelle-schaetze/   301
-/magazin/kuba-outdoor-abenteuer/         /kuba-outdoor-abenteuer-kulturelle/                  301
+# Kuba-Gastbeitrag am 16.07.2026 auf Kundenwunsch ersatzlos entfernt (neu auf
+# ev-duisburg.de/kuba-outdoor-abenteuer-kulturelle/). Bewusst KEIN Redirect:
+# /magazin/kuba-outdoor-abenteuer/ und /kuba-outdoor-abenteuer-kulturelle/ liefern 404.
 /volvo-trucks-ruestet-fl-4x4-fuer-extreme-offroad-einsaetze-auf/   /magazin/volvo-fl-4x4-extreme-offroad/   301
 /was-du-ueber-offroad-trekking-wissen-musst/          /magazin/offroad-trekking-grundlagen/    301
 /offroad-trekking-mit-autos/                          /magazin/offroad-trekking-mit-autos/     301
