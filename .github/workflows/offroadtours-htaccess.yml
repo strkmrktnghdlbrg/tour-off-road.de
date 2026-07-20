@@ -1,0 +1,69 @@
+name: off-roadtours.de htaccess (manual)
+
+# Manuell ausloesbar. mode=inspect (Standard) sucht nur den Docroot von
+# off-roadtours.de im A2-Account und zeigt die aktuelle .htaccess.
+# mode=place legt die aktuelle 301-.htaccess (Quelle: Ordner
+# "Hotel, Reiseportale/off-roadtours.de-301/", hier base64-embedded) NUR dann
+# ab, wenn ein Ordner gefunden wird, dessen Name "off-roadtours" enthaelt
+# (und niemals in einem tour-off-road-Pfad).
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "inspect (nur suchen) oder place (htaccess ablegen)"
+        required: true
+        default: "inspect"
+        type: choice
+        options: [inspect, place]
+
+jobs:
+  offroadtours-htaccess:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: SSH inspect / place
+        uses: appleboy/ssh-action@v1.0.3
+        env:
+          MODE: ${{ inputs.mode }}
+          HT_B64: "IyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQojIG9mZi1yb2FkdG91cnMuZGUgIC0+ICB0b3VyLW9mZi1yb2FkLmRlICAgMzAxLVJlZGlyZWN0cyAoQXBhY2hlIC8gY1BhbmVsKQojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiMgWndlY2s6IERpZSBhbHRlIERvbWFpbiBvZmYtcm9hZHRvdXJzLmRlIHdpcmQgc3RpbGxnZWxlZ3QuIElocmUgTGluay1Qb3dlcgojIChCYWNrbGlua3MgKyBHb29nbGUtUmFua2luZ3MpIHdpcmQgYXVmIHRvdXItb2ZmLXJvYWQuZGUga29uc29saWRpZXJ0LgojCiMgLSBKZWRlIFNlaXRlLCBkaWUgYmVpIEdvb2dsZSByYW5rdCwgemVpZ3QgMzAxIGF1ZiBpaHIgaW5oYWx0bGljaGVzIFBlbmRhbnQKIyAgIGltIE1hZ2F6aW4gdm9uIHRvdXItb2ZmLXJvYWQuZGUgKGVyaGFlbHQgZGFzIEtleXdvcmQtUmFua2luZykuCiMgLSBBbGxlIHVlYnJpZ2VuIFVSTHMgc293aWUgZGllIFN0YXJ0c2VpdGUgemVpZ2VuIDMwMSBhdWYgZGVuIFBpbGxhci1BcnRpa2VsCiMgICAoTW90b3JyYWQtICYgT2ZmLVJvYWQtVG91cmVuIFRoYWlsYW5kIC8gR29sZGVuZXMgRHJlaWVjayksIGRlciBkYXMKIyAgIHVyc3BydWVuZ2xpY2hlIFRoZW1hICsgZGllIFRoYWlsYW5kLUJhY2tsaW5rcyBhdWZuaW1tdC4KIwojIEluc3RhbGxhdGlvbjogRGllc2UgRGF0ZWkgYWxzIC5odGFjY2VzcyBpbiBkYXMgV2Vicm9vdCB2b24gb2ZmLXJvYWR0b3Vycy5kZQojIGxlZ2VuLiBEZXIgYWx0ZSAoaGluZmFlbGxpZ2UpIFdvcmRQcmVzcy1JbmhhbHQga2FubiBlbnRmZXJudCB3ZXJkZW47IGRpZXNlCiMgRGF0ZWkgcmVpY2h0IGF1cywgdW0gZGllIERvbWFpbiByZWluIGFscyAzMDEtV2VpdGVybGVpdHVuZyB6dSBiZXRyZWliZW4uCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCk9wdGlvbnMgK0ZvbGxvd1N5bUxpbmtzClJld3JpdGVFbmdpbmUgT24KCiMgQWxsZSBaaWVsZSBzaW5kIGFic29sdXRlIGh0dHBzOi8vLVVSTHMgLT4gamVkZSBBbHQtVVJMID0gZ2VuYXUgRUlOIDMwMS1Ib3AuCiMgKEtlaW4gc2VwYXJhdGVyIEhUVFBTLVJlZGlyZWN0IG5vZXRpZy4pCgojIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiMgMS4gUmFua2VuZGUgU2VpdGVuIC0+IGluaGFsdGxpY2hlcyBQZW5kYW50IChLZXl3b3JkLVJhbmtpbmcgZXJoYWx0ZW4pCiMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KUmV3cml0ZVJ1bGUgXmNvb2wtb2Zmcm9hZC1ob3ZlcmJvYXJkcy8/JCAgICAgICAgICAgICAgICBodHRwczovL3RvdXItb2ZmLXJvYWQuZGUvbWFnYXppbi9vZmZyb2FkLWFiZW50ZXVlci1tYWx0YS1nb3pvLyAgICAgIFtSPTMwMSxMLE5FXQpSZXdyaXRlUnVsZSBeZG93bmhpbGwtbG9uZ2JvYXJkaW5nLWVpbmZ1ZWhydW5nLz8kICAgICAgIGh0dHBzOi8vdG91ci1vZmYtcm9hZC5kZS9tYWdhemluL2Rvd25oaWxsLWxvbmdib2FyZGluZy1vZmZyb2FkLyAgICBbUj0zMDEsTCxORV0KUmV3cml0ZVJ1bGUgXnNrYXRlYm9hcmRpbmctdHJpY2tzLXRlY2huaWtlbi8/JCAgICAgICAgICBodHRwczovL3RvdXItb2ZmLXJvYWQuZGUvbWFnYXppbi9za2F0ZWJvYXJkLXRyaWNrcy10ZWNobmlrZW4vICAgICAgW1I9MzAxLEwsTkVdClJld3JpdGVSdWxlIF5ob3ZlcmJvYXJkLWJlbGllYnRoZWl0Lz8kICAgICAgICAgICAgICAgICAgaHR0cHM6Ly90b3VyLW9mZi1yb2FkLmRlL21hZ2F6aW4vb2Zmcm9hZC1ob3ZlcmJvYXJkcy1ndWlkZS8gICAgICAgICBbUj0zMDEsTCxORV0KUmV3cml0ZVJ1bGUgXmhvdmVyYm9hcmQtYW5mYW5nZXIvPyQgICAgICAgICAgICAgICAgICAgICBodHRwczovL3RvdXItb2ZmLXJvYWQuZGUvbWFnYXppbi9vZmZyb2FkLWhvdmVyYm9hcmQtZmFocmVuLWxlcm5lbi8gIFtSPTMwMSxMLE5FXQpSZXdyaXRlUnVsZSBec2thdGVib2FyZC1zZWxic3QtYmF1ZW4vPyQgICAgICAgICAgICAgICAgIGh0dHBzOi8vdG91ci1vZmYtcm9hZC5kZS9tYWdhemluL3NrYXRlYm9hcmQtc2VsYmVyLWJhdWVuLyAgICAgICAgICAgW1I9MzAxLEwsTkVdClJld3JpdGVSdWxlIF5kaXktc2thdGVib2FyZC1yYW1wZW4tdW5kLW9ic3RhY2xlcy8/JCAgICAgaHR0cHM6Ly90b3VyLW9mZi1yb2FkLmRlL21hZ2F6aW4vZGl5LXNrYXRlYm9hcmQtcmFtcGVuLW9ic3RhY2xlcy8gICBbUj0zMDEsTCxORV0KUmV3cml0ZVJ1bGUgXndpZS1tYW4tZWluLWxvbmdib2FyZC8/JCAgICAgICAgICAgICAgICAgICBodHRwczovL3RvdXItb2ZmLXJvYWQuZGUvbWFnYXppbi9sb25nYm9hcmQtc2VsYmVyLWJhdWVuLyAgICAgICAgICAgIFtSPTMwMSxMLE5FXQpSZXdyaXRlUnVsZSBea3ViYS1vdXRkb29yLWFiZW50ZXVlci1rdWx0dXJlbGxlLz8kICAgICAgIGh0dHBzOi8vdG91ci1vZmYtcm9hZC5kZS9rdWJhLW91dGRvb3ItYWJlbnRldWVyLWt1bHR1cmVsbGUvICAgICAgICAgW1I9MzAxLEwsTkVdCgojIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiMgMi4gV2VpdGVyZSBpbmRleGllcnRlIFNlaXRlbiAtPiB0aGVtYXRpc2NoIG5hZWNoc3RlcyBQZW5kYW50CiMgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KUmV3cml0ZVJ1bGUgXnRvcC0xMC1sb25nYm9hcmRzLz8kICAgICAgICAgICAgICAgICAgICAgICBodHRwczovL3RvdXItb2ZmLXJvYWQuZGUvbWFnYXppbi9kb3duaGlsbC1sb25nYm9hcmRpbmctb2Zmcm9hZC8gICAgW1I9MzAxLEwsTkVdClJld3JpdGVSdWxlIF5sb25nYm9hcmQtd2FydHVuZy8/JCAgICAgICAgICAgICAgICAgICAgICAgaHR0cHM6Ly90b3VyLW9mZi1yb2FkLmRlL21hZ2F6aW4vbG9uZ2JvYXJkLXNlbGJlci1iYXVlbi8gICAgICAgICAgICBbUj0zMDEsTCxORV0KUmV3cml0ZVJ1bGUgXmF1c3J1ZXN0dW5nLWVzc2VudGlhbHMvPyQgICAgICAgICAgICAgICAgICBodHRwczovL3RvdXItb2ZmLXJvYWQuZGUvbWFnYXppbi9sb25nYm9hcmQtc2VsYmVyLWJhdWVuLyAgICAgICAgICAgIFtSPTMwMSxMLE5FXQpSZXdyaXRlUnVsZSBeZnJhdWVuLWxvbmdib2FyZGluZy8/JCAgICAgICAgICAgICAgICAgICAgIGh0dHBzOi8vdG91ci1vZmYtcm9hZC5kZS9tYWdhemluL2Rvd25oaWxsLWxvbmdib2FyZGluZy1vZmZyb2FkLyAgICBbUj0zMDEsTCxORV0KUmV3cml0ZVJ1bGUgXmdlc2NoaWNodGUtZGVzLWxvbmdib2FyZGluZ3MvPyQgICAgICAgICAgICBodHRwczovL3RvdXItb2ZmLXJvYWQuZGUvbWFnYXppbi9kb3duaGlsbC1sb25nYm9hcmRpbmctb2Zmcm9hZC8gICAgW1I9MzAxLEwsTkVdClJld3JpdGVSdWxlIF5sb25nYm9hcmQta3VsdHVyLWxpZmVzdHlsZS8/JCAgICAgICAgICAgICAgaHR0cHM6Ly90b3VyLW9mZi1yb2FkLmRlL21hZ2F6aW4vZG93bmhpbGwtbG9uZ2JvYXJkaW5nLW9mZnJvYWQvICAgIFtSPTMwMSxMLE5FXQpSZXdyaXRlUnVsZSBeZGl5LWxvbmdib2FyZC1yYW1wZW4vPyQgICAgICAgICAgICAgICAgICAgIGh0dHBzOi8vdG91ci1vZmYtcm9hZC5kZS9tYWdhemluL2RpeS1za2F0ZWJvYXJkLXJhbXBlbi1vYnN0YWNsZXMvICAgW1I9MzAxLEwsTkVdClJld3JpdGVSdWxlIF5za2F0ZWJvYXJkLWFuZmFlbmdlci1ndWlkZS8/JCAgICAgICAgICAgICAgaHR0cHM6Ly90b3VyLW9mZi1yb2FkLmRlL21hZ2F6aW4vc2thdGVib2FyZC10cmlja3MtdGVjaG5pa2VuLyAgICAgIFtSPTMwMSxMLE5FXQpSZXdyaXRlUnVsZSBeaG92ZXJib2FyZHMta29zdGVuLz8kICAgICAgICAgICAgICAgICAgICAgIGh0dHBzOi8vdG91ci1vZmYtcm9hZC5kZS9tYWdhemluL29mZnJvYWQtaG92ZXJib2FyZHMtZ3VpZGUvICAgICAgICAgW1I9MzAxLEwsTkVdClJld3JpdGVSdWxlIF5sb25nYm9hcmRpbmctc3RhZHQtcmVjaHRsaWNoZXMvPyQgICAgICAgICAgaHR0cHM6Ly90b3VyLW9mZi1yb2FkLmRlL21hZ2F6aW4vZG93bmhpbGwtbG9uZ2JvYXJkaW5nLW9mZnJvYWQvICAgIFtSPTMwMSxMLE5FXQpSZXdyaXRlUnVsZSBec2thdGVib2FyZC10cmFpbmluZy11ZWJ1bmdlbi8/JCAgICAgICAgICAgIGh0dHBzOi8vdG91ci1vZmYtcm9hZC5kZS9tYWdhemluL3NrYXRlYm9hcmQtdHJpY2tzLXRlY2huaWtlbi8gICAgICBbUj0zMDEsTCxORV0KUmV3cml0ZVJ1bGUgXmRpZS1iZXN0ZW4tbG9uZ2JvYXJkaW5nLWFwcHMvPyQgICAgICAgICAgICBodHRwczovL3RvdXItb2ZmLXJvYWQuZGUvbWFnYXppbi9vZmZyb2FkLWFwcHMtdG91ci1oZWxmZXIvICAgICAgICAgIFtSPTMwMSxMLE5FXQpSZXdyaXRlUnVsZSBebG9uZ2JvYXJkLXNjaHVoZnVlaHJlci8/JCAgICAgICAgICAgICAgICAgIGh0dHBzOi8vdG91ci1vZmYtcm9hZC5kZS9tYWdhemluL2xvbmdib2FyZC1zZWxiZXItYmF1ZW4vICAgICAgICAgICAgW1I9MzAxLEwsTkVdClJld3JpdGVSdWxlIF5za2F0ZWJvYXJkaW5nLXN0YWR0LXJlY2h0bGljaGVzLz8kICAgICAgICAgaHR0cHM6Ly90b3VyLW9mZi1yb2FkLmRlL21hZ2F6aW4vc2thdGVib2FyZC10cmlja3MtdGVjaG5pa2VuLyAgICAgIFtSPTMwMSxMLE5FXQoKIyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQojIDMuIFN0YXJ0c2VpdGUgKyBBTExFIHVlYnJpZ2VuIFVSTHMgLT4gUGlsbGFyLUFydGlrZWwgKFRoYWlsYW5kIC8gR29sZGVuZXMgRHJlaWVjaykKIyAgICBGYWVuZ3QgYXVjaCBkaWUgQmFja2xpbmtzIGF1ZiAib2ZmIHJvYWQgdG91cnMiLCAiZ29sZGVuIHRyaWFuZ2xlIGJpa2UgdG91cnMiLAojICAgICJtb3RvcnJhZCAmIG9mZi1yb2FkIHRvdXJzIGluIHRoYWlsYW5kIiwgImFkdmVudHVyZSB0b3VyZW4iLCAicXVhZCBvZmZyb2FkIHRvdXIiLgojIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tClJld3JpdGVSdWxlIF4oLiopJCAgaHR0cHM6Ly90b3VyLW9mZi1yb2FkLmRlL21hZ2F6aW4vb2Zmcm9hZC1tb3RvcnJhZHRvdXJlbi10aGFpbGFuZC1nb2xkZW5lcy1kcmVpZWNrLyAgW1I9MzAxLEwsTkVdCg=="
+        with:
+          host: nl1-ts109.a2hosting.com
+          username: ${{ secrets.CPANEL_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          envs: MODE,HT_B64
+          script: |
+            set -e
+            echo "===== MODE: $MODE ====="
+            CAND="$(find "$HOME" -maxdepth 3 -type d -iname '*off-roadtours*' 2>/dev/null | grep -vi 'tour-off-road' | head -1 || true)"
+            echo "===== Kandidat-Docroot: '${CAND:-<keiner>}' ====="
+
+            if [ "$MODE" = "place" ]; then
+              if [ -z "$CAND" ]; then
+                echo "ABBRUCH: Kein off-roadtours-Docroot gefunden. Es wurde NICHTS geschrieben."
+                exit 1
+              fi
+              case "$CAND" in
+                *tour-off-road*) echo "SICHERHEITS-ABBRUCH: Pfad enthaelt tour-off-road. Kein Schreiben."; exit 1 ;;
+              esac
+              echo "===== Inhalt Ziel-Docroot VOR dem Schreiben ====="
+              ls -la "$CAND" | head -20
+              if [ -f "$CAND/.htaccess" ]; then
+                echo "===== Vorhandene .htaccess -> Backup .htaccess.bak-malta ====="
+                cp -p "$CAND/.htaccess" "$CAND/.htaccess.bak-malta"
+              fi
+              echo "$HT_B64" | base64 -d > "$CAND/.htaccess"
+              chmod 644 "$CAND/.htaccess"
+              echo "===== GESCHRIEBEN nach $CAND/.htaccess (Malta-Regel:) ====="
+              grep -n "malta" "$CAND/.htaccess" || true
+            else
+              echo "Inspect-Modus: keine Aenderung vorgenommen."
+              if [ -n "$CAND" ]; then
+                ls -la "$CAND" | head -20
+                if [ -f "$CAND/.htaccess" ]; then
+                  echo "===== AKTUELLE $CAND/.htaccess (erste 30 Zeilen) ====="
+                  head -30 "$CAND/.htaccess"
+                else
+                  echo "(noch keine .htaccess im Docroot)"
+                fi
+              fi
+            fi
