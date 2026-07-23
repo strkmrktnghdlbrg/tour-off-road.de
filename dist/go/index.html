@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="origin">
+<title>Weiterleitung</title>
+<style>body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0;color:#4a5568;background:#f7fafc;text-align:center;padding:1.5rem}</style>
+</head>
+<body>
+<p id="m">Weiterleitung zum Anbieter …</p>
+<noscript><p>Für die Weiterleitung wird JavaScript benötigt. Bitte aktiviere JavaScript und lade die Seite neu.</p></noscript>
+<script>
+(function(){
+var H=["awin1.com","awin.com","zenaps.com","adcell.com","adcell.de","financeads.net","financeads.com","neqty.net","performancehero.de","digidip.net","amzn.to","amazon-adsystem.com","digistore24.com","digistore24.eu","joturl.com","jo.my","tradedoubler.com","clk.tradedoubler.com","belboon.de","belboon.com","webgains.com","track.webgains.com","partner-ads.com","shareasale.com","linksynergy.com","tradetracker.net","adtraction.com","daisycon.io","zanox.com","affilinet.de","clickbank.net","hop.clickbank.net","anrdoezrs.net","dpbolvw.net","jdoqocy.com","kqzyfj.com","tkqlhce.com","awin1.de"];
+var AMZ=/^(?:www\.)?amazon\.(?:de|com|co\.uk|fr|it|es|nl|se|pl|at|ch|ca)$/i;
+function d(s){s=String(s).replace(/-/g,'+').replace(/_/g,'/');while(s.length%4)s+='=';return decodeURIComponent(atob(s));}
+function ok(u){try{var x=new URL(u);if(x.protocol!=='https:'&&x.protocol!=='http:')return false;
+var h=x.hostname.replace(/^www\./,'');
+for(var i=0;i<H.length;i++){if(h===H[i]||h.endsWith('.'+H[i]))return true;}
+if(AMZ.test(x.hostname)&&x.searchParams.get('tag'))return true;}catch(e){}return false;}
+var raw=new URLSearchParams(location.search).get('u'),t='';
+try{t=raw?d(raw):'';}catch(e){t='';}
+if(t&&ok(t)){location.replace(t);}else{document.getElementById('m').textContent='Ungültiger Link – zurück zur Startseite …';location.replace('/');}
+})();
+</script>
+</body>
+</html>

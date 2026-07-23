@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /go/
 Allow: /
 
 Sitemap: https://tour-off-road.de/sitemap-index.xml
