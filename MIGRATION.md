@@ -111,7 +111,7 @@ oder die WP-Seite fuer diese Pfade weiter ausliefern. KEIN Eintrag in
 - [ ] **Google AdSense**: `ca-pub-XXXXXXXXXXXXXXXX` Publisher-ID + ggf.
       `ads.txt` ergaenzen (noch offen).
 - [ ] **Amazon-Partner-Tag**: Im CONTRACT-Beispiel steht Platzhalter
-      `tag=touroffroad-21`. Echtes Partner-Tag verifizieren / anlegen und in
+      `tag=tour-off-road.de-21`. Echtes Partner-Tag verifizieren / anlegen und in
       allen `ausruestung`-`affiliateUrl`-Feldern setzen.
 - [ ] **Stay22 / GetYourGuide**: Falls Reiseziel-Buchungen monetarisiert werden,
       individuelle lmaID anfragen (NIEMALS aus anderem Projekt uebernehmen).

@@ -29,7 +29,7 @@
 ## 4. Monetarisierung (vorhanden / fehlend / kaputt)
 
 **Vorhanden:**
-- Amazon-Tag `touroffroad-21` (zentral in `src/site.ts`, Ausrüstungs-Silo).
+- Amazon-Tag `tour-off-road.de-21` (zentral in `src/site.ts`, Ausrüstungs-Silo).
 - AWIN-Deeplink-Infrastruktur (`awinDeeplink()` in `src/site.ts`) + komplette Partner-Recherche in `AFFILIATE-AWIN.md`.
 - Web3Forms Kontaktformular (`src/pages/kontakt.astro`).
 - `public/ads.txt` mit pub-3946820918041547.
@@ -54,7 +54,7 @@
 
 | URL | Keyword-Idee | Monetarisierung |
 |---|---|---|
-| `/ausruestung/dachzelt-test/` | Dachzelt Test 2026 / bestes Dachzelt | Amazon `touroffroad-21` + AWIN Fritz Berger/CampingWagner |
+| `/ausruestung/dachzelt-test/` | Dachzelt Test 2026 / bestes Dachzelt | Amazon `tour-off-road.de-21` + AWIN Fritz Berger/CampingWagner |
 | `/ausruestung/overlanding-packliste/` | Overlanding Packliste / Offroad Packliste | Amazon + AWIN Bergzeit |
 | `/ausruestung/sandbleche-test/` | Sandbleche Test (Maxtrax & Co.) | Amazon + AWIN |
 | `/ausruestung/kompressor-kuehlbox-test/` | Kompressor-Kühlbox 12V Test | Amazon |

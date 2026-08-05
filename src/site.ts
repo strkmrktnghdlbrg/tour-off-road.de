@@ -30,7 +30,7 @@ export const awin = {
 // Amazon (PA-API / Partnernet) — separat, hier nur der Vollständigkeit halber
 // -----------------------------------------------------------------------------
 export const amazon = {
-  /** Amazon-Partner-Tag, z.B. 'tour-off-road-21'. Leer lassen bis vergeben. */
+  /** Amazon-Partner-Tag, z.B. 'tour-off-road.de-21'. Leer lassen bis vergeben. */
   partnerTag: '',
   marketplace: 'amazon.de',
 };

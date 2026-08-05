@@ -222,7 +222,7 @@ Body-Text in Markdown ...
   "rating": 4.9,
   "badge": "Testsieger",
   "excerpt": "Der Standard zum Freikommen aus Sand & Schlamm. Unkaputtbar.",
-  "affiliateUrl": "https://www.amazon.de/dp/XXXX?tag=touroffroad-21"
+  "affiliateUrl": "https://www.amazon.de/dp/XXXX?tag=tour-off-road.de-21"
 }
 ```
 
