@@ -1,0 +1,7 @@
+/* Selbst gehostete Fonts (DSGVO) - generiert, ersetzt fonts.googleapis.com */
+@font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/archivo-regular.woff2') format('woff2');}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/archivo-500.woff2') format('woff2');}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:600;font-display:swap;src:url('/fonts/archivo-600.woff2') format('woff2');}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/archivo-700.woff2') format('woff2');}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:800;font-display:swap;src:url('/fonts/archivo-800.woff2') format('woff2');}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:900;font-display:swap;src:url('/fonts/archivo-900.woff2') format('woff2');}
