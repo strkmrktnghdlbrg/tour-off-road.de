@@ -67,15 +67,34 @@ function encodeTarget(url) {
     .replace(/=+$/, '');
 }
 
-/** HTML-Entities aus einem Attributwert zurueckdrehen (`&amp;` -> `&`). */
+/** Ein numerisches HTML-Entity aufloesen; ungueltige bleiben unveraendert stehen. */
+function fromCharRef(raw, code, radix) {
+  const n = parseInt(code, radix);
+  if (!Number.isFinite(n) || n < 0 || n > 0x10ffff) return raw;
+  try {
+    return String.fromCodePoint(n);
+  } catch {
+    return raw;
+  }
+}
+
+/**
+ * HTML-Entities aus einem Attributwert zurueckdrehen (`&amp;` -> `&`).
+ *
+ * Wichtig: Astro escaped `&` in Markdown-URLs als `&#x26;`, nicht als `&amp;`.
+ * Bleibt das stehen, liest `new URL()` alles ab dem `#` als Fragment - dann ist
+ * `searchParams.has('tag')` false und der Amazon-Link laeuft am Gate vorbei.
+ * Darum werden alle numerischen Entities generisch aufgeloest (hex und dezimal).
+ */
 function unescapeAttr(v) {
   return v
-    .replace(/&amp;/g, '&')
-    .replace(/&#38;/g, '&')
+    .replace(/&#[xX]([0-9a-fA-F]+);/g, (raw, hex) => fromCharRef(raw, hex, 16))
+    .replace(/&#(\d+);/g, (raw, dec) => fromCharRef(raw, dec, 10))
     .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
+    .replace(/&apos;/g, "'")
     .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>');
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&');
 }
 
 function makeMatcher(hosts) {
