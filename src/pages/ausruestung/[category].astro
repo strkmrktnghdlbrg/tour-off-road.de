@@ -40,8 +40,8 @@ const pills = [
 ---
 
 <Base
-  title={`${label} - Ausrüstung im Test - tour-off-road.de`}
-  description={`Getestete ${label}-Ausrüstung für Offroad und Overland.`}
+  title={`${label} - Ausrüstung im Überblick - tour-off-road.de`}
+  description={`${label}-Ausrüstung für Offroad und Overland, nach Einsatzzweck eingeordnet.`}
   path={`/ausruestung/${category}/`}
   jsonLd={[
     breadcrumbSchema([
@@ -77,7 +77,7 @@ const pills = [
     <div class="wrap">
       <p class="eyebrow">Kategorie</p>
       <h1>{label}</h1>
-      <p>Getestete {label}-Ausrüstung aus echtem Offroad-Einsatz.</p>
+      <p>{label}-Ausrüstung für Offroad und Overland, nach Einsatzzweck eingeordnet.</p>
     </div>
   </section>
 
@@ -104,7 +104,7 @@ const pills = [
             ))}
           </div>
         ) : (
-          <p class="muted">In dieser Kategorie sind noch keine getesteten Produkte hinterlegt.</p>
+          <p class="muted">In dieser Kategorie sind noch keine Produkte hinterlegt.</p>
         )
       }
     </div>
