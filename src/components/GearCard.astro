@@ -7,7 +7,7 @@ interface Props {
   category: string; // Anzeige-Label, z.B. "Recovery"
   excerpt?: string;
   price: string;
-  rating: number;
+  rating?: number;
   badge?: string | null;
   /** optionale Badge-Hintergrundfarbe (CSS-Wert) */
   badgeColor?: string;
@@ -26,7 +26,7 @@ const {
   badgeTextColor = 'var(--basalt)',
 } = Astro.props;
 
-const ratingStr = String(rating).replace('.', ',');
+const ratingStr = rating == null ? null : String(rating).replace('.', ',');
 ---
 
 <a href={href} target="_blank" rel="sponsored noopener" class="route">
@@ -47,7 +47,7 @@ const ratingStr = String(rating).replace('.', ',');
     {excerpt && <p class="muted" style="font-size:14px">{excerpt}</p>}
     <div class="meta" style="justify-content:space-between">
       <span style="font-size:16px;font-weight:700;color:var(--basalt)">{price}</span>
-      <span class="badge">★ {ratingStr}</span>
+      {ratingStr && <span class="badge">★ {ratingStr}</span>}
     </div>
   </div>
 </a>

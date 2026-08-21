@@ -74,7 +74,9 @@ const ausruestung = defineCollection({
     category: z.enum(['recovery', 'camping', 'navigation', 'campkueche', 'reifen']),
     image: z.string(), // volle Unsplash-URL
     price: z.string(),
-    rating: z.number(),
+    // Optional: eigene Bewertungen gibt es hier nicht. Wo keine belastbare Quelle
+    // existiert, bleibt das Feld leer, statt eine Note zu erfinden (§ 5a UWG).
+    rating: z.number().optional(),
     badge: z.string().nullable().default(null),
     excerpt: z.string(),
     affiliateUrl: z.string(),

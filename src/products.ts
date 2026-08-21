@@ -28,6 +28,13 @@ export interface AwinMerchant {
    * Sobald angenommen: ID setzen, fertig.
    */
   awinmid: number | null;
+  /**
+   * Im Konto 631151 tatsaechlich ZUGELASSEN (Dashboard, Tab "Joined").
+   * Nur dann wird ein getrackter Deeplink gebaut. Eine recherchierte awinmid
+   * allein reicht nicht: fuer ein Programm, dem wir nicht beigetreten sind,
+   * zaehlt Awin nichts, der Link waere nur Schein-Tracking.
+   */
+  joined?: boolean;
   /** Fallback-Ziel, wenn kein produktspezifisches Ziel übergeben wird. */
   homepage: string;
   cluster: MerchantCluster;
@@ -43,6 +50,39 @@ export interface AwinMerchant {
 // dann bleibt der Link ein untracked Direktlink zum Händler.
 // -----------------------------------------------------------------------------
 export const awinMerchants = {
+  // --- Energie: die einzigen auf Konto 631151 zugelassenen Programme --------
+  // Stand 21.08.2026 im Awin-Dashboard geprueft. tour-off-road.de ist seit dem
+  // 21.08.2026 dort als Werbeflaeche eingetragen.
+  ecoflow: {
+    name: 'EcoFlow',
+    awinmid: 51793,
+    joined: true,
+    homepage: 'https://de.ecoflow.com/',
+    cluster: 'ausruestung',
+    commission: 'ca. 5 %',
+  },
+  jackery: {
+    name: 'Jackery',
+    awinmid: 30415,
+    joined: true,
+    homepage: 'https://de.jackery.com/',
+    cluster: 'ausruestung',
+  },
+  ankersolix: {
+    name: 'Anker SOLIX',
+    awinmid: 32623,
+    joined: true,
+    homepage: 'https://www.ankersolix.com/de/',
+    cluster: 'ausruestung',
+  },
+  allpowers: {
+    name: 'ALLPOWERS',
+    awinmid: 67914,
+    joined: true,
+    homepage: 'https://www.iallpowers.de/',
+    cluster: 'ausruestung',
+  },
+
   // --- Versicherungen -------------------------------------------------------
   hansemerkur: {
     name: 'HanseMerkur Reiseversicherung',
@@ -181,7 +221,7 @@ export function merchantLink(
   const m = awinMerchants[key];
   if (!m) return opts.target ?? '#';
   const target = opts.target ?? m.homepage;
-  if (m.awinmid == null) return target; // noch nicht angenommen -> Direktlink
+  if (m.awinmid == null || !m.joined) return target; // nicht zugelassen -> Direktlink
   return awinDeeplink({ merchantId: m.awinmid, target, clickref: opts.clickref });
 }
 

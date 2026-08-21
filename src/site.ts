@@ -21,7 +21,7 @@ export const awin = {
    * AWIN Publisher-ID (= `awinaffid`). NACH ANNAHME hier eintragen.
    * Beispiel: '1234567'. Leer lassen, bis der Account bestätigt ist.
    */
-  publisherId: '',
+  publisherId: '631151',
   /** Globaler Schalter. Greift nur, wenn `publisherId` gesetzt ist. */
   enabled: true,
 };
