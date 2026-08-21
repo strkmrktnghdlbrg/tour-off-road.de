@@ -4,7 +4,7 @@ slug: "offroad-abenteuer-malta-gozo"
 category: "Reise"
 hero: "https://images.unsplash.com/photo-1592486058517-36236ba247c8?w=1200&q=75"
 excerpt: "Quad-Touren auf Gozo, Jeep-Safaris entlang der Steilküste und staubige Pisten über der Marfa Ridge: warum der kleinste Inselstaat der EU ein überraschend lohnendes Offroad-Ziel ist."
-author: "Lukas Hartmann"
+author: "Redaktion tour-off-road.de"
 date: 2026-07-20
 readMinutes: 9
 cluster: "reiseziele"

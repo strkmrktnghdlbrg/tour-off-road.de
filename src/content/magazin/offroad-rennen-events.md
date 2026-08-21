@@ -4,7 +4,7 @@ slug: "offroad-rennen-events"
 category: "Szene"
 hero: "https://images.unsplash.com/photo-1710350994752-2a18a2199b42?w=1200&q=75"
 excerpt: "Von der Rallye Dakar bis zu Community-Treffen wie dem Buschtaxi-Treffen - ein Überblick über Rennserien, Events und worauf es als Zuschauer oder Einsteiger ankommt."
-author: "Lukas Hartmann"
+author: "Redaktion tour-off-road.de"
 date: 2026-06-02
 readMinutes: 9
 cluster: "magazin"

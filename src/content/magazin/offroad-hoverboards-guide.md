@@ -4,7 +4,7 @@ slug: "offroad-hoverboards-guide"
 category: "Off-Road Boards"
 hero: "https://images.unsplash.com/photo-1558642084-fd07fae5282e?w=1200&q=75"
 excerpt: "Warum All-Terrain-Hoverboards so beliebt sind: Technik, Reifen, Motorleistung und worauf du beim Kauf eines geländetauglichen Hoverboards achten solltest."
-author: "Lukas Hartmann"
+author: "Redaktion tour-off-road.de"
 date: 2026-06-17
 readMinutes: 8
 cluster: "offroad-boards"

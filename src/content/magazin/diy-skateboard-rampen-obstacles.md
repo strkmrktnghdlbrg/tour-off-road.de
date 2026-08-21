@@ -4,7 +4,7 @@ slug: "diy-skateboard-rampen-obstacles"
 category: "Off-Road Boards"
 hero: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1200&q=75"
 excerpt: "Eigene Skateboard-Rampen und Obstacles bauen: Materialliste, Werkzeug und Bauanleitungen für Kicker, Grindbox und Mini-Quarterpipe für den Garten."
-author: "Lukas Hartmann"
+author: "Redaktion tour-off-road.de"
 date: 2026-06-12
 readMinutes: 8
 cluster: "offroad-boards"

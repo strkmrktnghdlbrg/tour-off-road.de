@@ -4,7 +4,7 @@ slug: "longboard-selber-bauen"
 category: "Off-Road Boards"
 hero: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200&q=75"
 excerpt: "Ein Longboard selbst bauen: Deck-Form und Holz, Trucks, Rollen und Lager auswählen, das Deck pressen oder fertig kaufen und alles richtig montieren."
-author: "Lukas Hartmann"
+author: "Redaktion tour-off-road.de"
 date: 2026-06-11
 readMinutes: 8
 cluster: "offroad-boards"

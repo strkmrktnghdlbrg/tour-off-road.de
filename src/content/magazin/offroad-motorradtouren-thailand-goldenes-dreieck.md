@@ -4,7 +4,7 @@ slug: "offroad-motorradtouren-thailand-goldenes-dreieck"
 category: "Reise"
 hero: "https://images.unsplash.com/photo-1489493887464-892be6d1daae?w=1200&q=75"
 excerpt: "Motorradreisen und Jeep-Touren im Norden Thailands: das Goldene Dreieck, die Strecken rund um Chiang Mai und Chiang Rai und alles, was du für ein sicheres Off-Road-Abenteuer brauchst."
-author: "Lukas Hartmann"
+author: "Redaktion tour-off-road.de"
 date: 2026-06-18
 readMinutes: 12
 cluster: "reiseziele"

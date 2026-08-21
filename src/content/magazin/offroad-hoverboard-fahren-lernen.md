@@ -4,7 +4,7 @@ slug: "offroad-hoverboard-fahren-lernen"
 category: "Off-Road Boards"
 hero: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=75"
 excerpt: "Vom ersten Aufsteigen bis zur sicheren Fahrt im Gelände: Schritt-für-Schritt-Anleitung, Schutzausrüstung und Übungen für das All-Terrain-Hoverboard."
-author: "Lukas Hartmann"
+author: "Redaktion tour-off-road.de"
 date: 2026-06-17
 readMinutes: 7
 cluster: "offroad-boards"

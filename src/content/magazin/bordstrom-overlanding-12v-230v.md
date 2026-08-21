@@ -4,7 +4,7 @@ slug: "bordstrom-overlanding-12v-230v"
 category: "Ausrüstung"
 hero: "https://images.unsplash.com/photo-1571687949921-1306bfb24b72?w=1200&q=75"
 excerpt: "Warum die Kühlbox über den Stromverbrauch entscheidet, wo der Unterschied zwischen 12 V und 230 V wirklich weh tut und wie man das System auslegt, statt Einzelteile zu kaufen."
-author: "Lukas Hartmann"
+author: "Redaktion tour-off-road.de"
 date: 2026-08-21
 readMinutes: 9
 cluster: "ausruestung"

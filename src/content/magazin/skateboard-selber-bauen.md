@@ -4,7 +4,7 @@ slug: "skateboard-selber-bauen"
 category: "Off-Road Boards"
 hero: "https://images.unsplash.com/photo-1581553680321-4fffae59fccd?w=1200&q=75"
 excerpt: "Ein Skateboard selbst zusammenbauen: Deck, Trucks, Rollen, Kugellager und Griptape richtig auswählen und montieren, mit Werkzeugliste und Tipps."
-author: "Lukas Hartmann"
+author: "Redaktion tour-off-road.de"
 date: 2026-06-13
 readMinutes: 8
 cluster: "offroad-boards"

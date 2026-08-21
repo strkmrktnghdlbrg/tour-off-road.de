@@ -4,7 +4,7 @@ slug: "offroad-apps-tour-helfer"
 category: "Ausrüstung"
 hero: "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1200&q=75"
 excerpt: "Welche Apps für Offline-Navigation, Tourenplanung und Tracking im Gelände wirklich helfen - und worauf du dich abseits des Smartphones nie verlassen solltest."
-author: "Lukas Hartmann"
+author: "Redaktion tour-off-road.de"
 date: 2026-06-02
 readMinutes: 8
 cluster: "ausruestung"

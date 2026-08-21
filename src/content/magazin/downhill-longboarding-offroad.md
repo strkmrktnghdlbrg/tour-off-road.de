@@ -4,7 +4,7 @@ slug: "downhill-longboarding-offroad"
 category: "Off-Road Boards"
 hero: "https://images.unsplash.com/photo-1500380804539-4e1e8c1e7118?w=1200&q=75"
 excerpt: "Downhill-Longboarding von Grund auf: Ausrüstung, Fahrtechnik, Bremsen, Sicherheit und der Sprung von der Straße auf rauen Asphalt und Schotterabfahrten."
-author: "Lukas Hartmann"
+author: "Redaktion tour-off-road.de"
 date: 2026-06-15
 readMinutes: 8
 cluster: "offroad-boards"
