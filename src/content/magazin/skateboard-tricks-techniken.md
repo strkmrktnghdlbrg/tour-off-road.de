@@ -2,7 +2,7 @@
 title: "Skateboard-Tricks und Techniken: vom Ollie bis zum Grind"
 slug: "skateboard-tricks-techniken"
 category: "Off-Road Boards"
-hero: "https://images.unsplash.com/photo-1531794343805-c93a8de558bb?w=1200&q=75"
+hero: "https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?w=1200&q=75"
 excerpt: "Die wichtigsten Skateboard-Tricks und Techniken Schritt für Schritt erklärt: Stance, Ollie, Shove-it, Grinds und Slides, plus Übungstipps für Einsteiger."
 author: "Lukas Hartmann"
 date: 2026-06-14

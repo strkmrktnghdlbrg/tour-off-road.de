@@ -33,13 +33,9 @@ const categoryLabel: Record<string, string> = {
 };
 
 // Demo-Kacheln aus dem Mockup (kommen via Content-Agent als echte Eintraege nach).
-const demoGear = [
-  { href: '/ausruestung/camping/', image: 'https://images.unsplash.com/photo-1571687949921-1306bfb24b72?w=800&q=70', title: 'iKamper Skycamp 3.0 Dachzelt', category: 'Camping', excerpt: 'In 60 Sekunden aufgebaut, schläft zwei bis drei Personen.', price: 'ab 3.499 €', rating: 4.7, badge: 'Preis-Tipp', badgeColor: 'var(--olive)', badgeTextColor: '#fff' },
-  { href: '/ausruestung/campkueche/', image: 'https://images.unsplash.com/photo-1606044466411-207a9a49eea3?w=800&q=70', title: 'Dometic CFX3 45 Kühlbox', category: 'Camp-Küche', excerpt: 'Kompressor-Kühlung bis -22 °C, app-gesteuert, robust.', price: 'ab 829 €', rating: 4.8, badge: null },
-  { href: '/ausruestung/recovery/', image: 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800&q=70', title: 'VIAIR 88P Kompressor', category: 'Recovery', excerpt: 'Reifen nach der Sandpiste in Minuten wieder auf Druck.', price: 'ab 119 €', rating: 4.6, badge: null },
-  { href: '/ausruestung/navigation/', image: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&q=70', title: 'Garmin Tread XL Overland', category: 'Navigation', excerpt: 'Offline-Topo, Tracks, Gruppen-Tracking ohne Netz.', price: 'ab 699 €', rating: 4.5, badge: null },
-  { href: '/ausruestung/campkueche/', image: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=70', title: 'Petromax Feuertopf ft6', category: 'Camp-Küche', excerpt: 'Gusseiserner Dutch Oven für das Lagerfeuer-Dinner.', price: 'ab 89 €', rating: 4.9, badge: null },
-];
+// demoGear entfernt (21.08.2026): die fuenf Produkte stehen als echte Eintraege
+// in src/content/ausruestung und wurden hier mit erfundenen Noten und Preisen
+// gedoppelt.
 
 const pills = [
   { label: 'Alle', href: '/ausruestung/', on: true },
@@ -93,7 +89,6 @@ const pills = [
             />
           ))
         }
-        {demoGear.map((g) => <GearCard {...g} />)}
       </div>
       <p class="muted" style="font-size:13px;text-align:center;margin-top:32px">
         Produktlinks sind Affiliate-Links. Du zahlst dadurch nicht mehr, wir bekommen eine kleine Provision. Preise nennen wir nur dort, wo wir sie beim Händler geprüft haben — sonst steht der Preis beim Händler.

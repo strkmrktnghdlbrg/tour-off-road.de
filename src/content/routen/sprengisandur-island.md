@@ -13,7 +13,7 @@ fuelAvailability: "keine"
 hero: "https://images.unsplash.com/photo-1490682143684-14369e18dce8?w=900&q=75"
 gallery:
   - "https://images.unsplash.com/photo-1504457047772-27faf1c00561?w=500&q=70"
-  - "https://images.unsplash.com/photo-1520637836862-4d197d17c38a?w=500&q=70"
+  - "https://images.unsplash.com/photo-1675110973742-4e4c19b37399?w=500&q=70"
 excerpt: "Die längste Hochland-Durchquerung Islands durch eine vulkanische Steinwüste mit tiefen Furten."
 stages:
   - title: "Þórisvatn → Nyidalur"

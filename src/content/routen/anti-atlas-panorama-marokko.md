@@ -10,7 +10,7 @@ bestSeason: "Okt–Apr"
 terrain: ["Piste", "Geröll", "Asphalt"]
 vehicle: "Allrad-SUV"
 fuelAvailability: "spärlich"
-hero: "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?w=900&q=75"
+hero: "https://images.unsplash.com/photo-1729442045650-5415faf2f669?w=900&q=75"
 gallery:
   - "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=500&q=70"
   - "https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=500&q=70"
